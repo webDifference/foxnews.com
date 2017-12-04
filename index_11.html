@@ -1,99 +1,96 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
-<head profile="http://dublincore.org/documents/dcq-html/">
-  <script type="text/javascript">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xml:lang="en" lang="en">	
+	<head profile="http://dublincore.org/documents/dcq-html/">
+	    <!-- This page is generated from portal v8-www3 -->
+		<link href="http://global.fncstatic.com/static/v/all/css/ag.base.css?201705261158" rel="stylesheet" type="text/css" media="all">
+	<script type="text/javascript">
 	var FOX_pagedescriptor = window.FOX_pagedescriptor = {breadcrumb:
-	"/about us", isMgmt: "false", site: "fn2" };
+	"/weather/your-weather", isMgmt: "false", site: "fn2" };
 </script>
-<meta http-equiv="content-language" content="en">
-<meta http-equiv="content-type" content="text/html;charset=utf-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQMGVlJADQcFXVdSDwk="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
-<meta http-equiv="pragma" content="no-cache">
-<meta name="dc.title" lang="en" content="Proud American | Content Spotlight | Fox News">
-<meta name="dc.language" scheme="dcterms.RFC4646" content="en-US">
-<meta name="dc.publisher" content="FOX News">
-<meta name="dc.date" content="2017/12/04">
-<meta name="dc.description" content="">
-<meta name="dc.format" scheme="dcterms.IMT" content="text/html">
-<meta name="dc.type" scheme="dcterms.DCMIType" content="Collection">
-<meta name="dc.subject" content="">
-<meta name="dcterms.abstract" content="">
-<meta name="dcterms.created" scheme="dcterms.ISO8601" content="2017-04-27 11:28:38 AM">
-<meta name="dcterms.modified" scheme="dcterms.ISO8601" content="2017-04-27 11:28:38 AM">
+
+<link rel="icon" href="http://global.fncstatic.com/static/v/fn2/img/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="http://global.fncstatic.com/static/v/fn2/img/favicon.ico">
+	<link rel="schema.dc" href="http://purl.org/dc/elements/1.1/"> 
+<link rel="schema.dcterms" href="http://purl.org/dc/terms/"> 
+<link rel="schema.prism" href="http://prismstandard.org/namespaces/basic/2.1/"> 
+<link rel="schema.iptc" href="http://iptc.org/std/nar/2006-10-01/"> 
+<meta name="robots" content="noarchive,noodp">
+<title>Your Weather | Weather | Fox News    </title>
+				<meta name="dc.title" content="Your Weather">
+<meta itemprop="description" name="description" content="Your Weather forecast updated hourly from FOXNews.com.">
+<meta name="dc.description" content="Your Weather forecast updated hourly from FOXNews.com.">
+<meta name="dcterms.abstract" content="Your Weather forecast updated hourly from FOXNews.com.">
+<meta name="dc.publisher" content="Fox News">
+<meta name="dc.source" content="Fox News">
+<meta name="keywords" content="">
+<meta name="dc.subject" content=" ">
+<meta name="dc.identifier" scheme="dcterms.URI" content="urn:uuid:2b9be853393c4210VgnVCM100000cf3ce80aRCRD">
+<link rel="shorturl" href="http://fxn.ws/JmlJuh">
+<link rel="canonical" href="http://www.foxnews.com/weather/your-weather/index.html">
 <meta name="prism.aggregationType" content="subsection">
 <meta name="prism.genre" content="homePage">
+<meta name="dc.type" scheme="dcterms.DCMIType" content="Collection">
 <meta name="prism.channel" content="fnc">
-<meta name="prism.section" content="content-spotlight">
-<meta name="prism.subsection1" content="proud-american">
+<meta name="prism.section" content="weather">
+<meta name="prism.subsection1" content="your-weather">
 <meta name="prism.subsection2" content="">
 <meta name="prism.subsection3" content="">
 <meta name="prism.subsection4" content="">
-<meta property="og:title" content="Proud American | Content Spotlight | Fox News">
-<meta property="og:description" content="">
+<meta name="pagetype" content="sub-section">
+<meta property="og:title" content="Your Weather">
+<meta property="og:description" content="Your Weather forecast updated hourly from FOXNews.com.">
 <meta property="og:type" content="article">
-<meta property="og:image" content="http://www.foxnews.com/i/fn_128x128.jpg">
-<meta property="og:url" content="">
+<link rel="image_src" href="http://global.fncstatic.com/static/v/all/img/og/og-fn-foxnews.jpg">
+<meta property="og:image" content="http://global.fncstatic.com/static/v/all/img/og/og-fn-foxnews.jpg">
+<meta property="og:url" content="http://www.foxnews.com/weather/your-weather/index.html">
 <meta property="og:site_name" content="Fox News">
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="schema.dc" href="http://purl.org/dc/elements/1.1/">
-<link rel="schema.dcterms" href="http://purl.org/dc/terms/">
-<link rel="schema.prism" href="http://prismstandard.org/namespaces/basic/2.1/">
-<link rel="schema.iptc" href="http://iptc.org/std/nar/2006-10-01/">
-<link rel="canonical" href="">
-<link rel="icon" href="http://global.fncstatic.com/static/v/fn-hp/img/favicon.png" type="image/png">
-<link rel="shortcut icon" href="http://global.fncstatic.com/static/v/fn-hp/img/favicon.ico">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="fb:app_id" content="113186182048399">
+<meta name="livefyreconfig" collectionMeta="eyJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IllvdXIgV2VhdGhlciIsImNoZWNrc3VtIjoiMzRhODliMGRlZjg3OGRhOGIwZjk2N2NjMmViMmQwNzMiLCJhcnRpY2xlSWQiOiIyYjliZTg1MzM5M2M0MjEwVmduVkNNMTAwMDAwY2YzY2U4MGFSQ1JEIiwidXJsIjoiL3dlYXRoZXIveW91ci13ZWF0aGVyL2luZGV4Lmh0bWwifQ.0JVruKFPEaien_N0kCgY09hjrvST9VyQbtef-H9xm9c" checksum="34a89b0def878da8b0f967cc2eb2d073" articleId="2b9be853393c4210VgnVCM100000cf3ce80aRCRD" siteId="310256">
+<meta name="livefyreblogconfig" collectionMeta="eyJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IllvdXIgV2VhdGhlciIsImNoZWNrc3VtIjoiMDZiNzRiYTkxMDU1ZjdhOGE2MWJmMDk4NDc2YjEzYjUiLCJ0eXBlIjoibGl2ZWJsb2ciLCJhcnRpY2xlSWQiOiIyYjliZTg1MzM5M2M0MjEwVmduVkNNMTAwMDAwY2YzY2U4MGFSQ1JEYmxvZyIsInVybCI6Ii93ZWF0aGVyL3lvdXItd2VhdGhlci9pbmRleC5odG1sIn0.Pzc2W9-N0Jvd0SWklDnu4_cgzMnm-UTFinaTK8vSKhQ" checksum="06b74ba91055f7a8a61bf098476b13b5" articleId="2b9be853393c4210VgnVCM100000cf3ce80aRCRDblog" siteId="310256">
+<meta name="dc.format" scheme="dcterms.IMT" content="text/html">
+<meta name="dc.language" scheme="dcterms.RFC4646" content="en-US">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-language" content="en">
+<link rel="alternate" href="android-app://com.foxnews.android/http/www.foxnews.com/weather/your-weather/index.html" /> <meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//a57.foxnews.com">
+<link rel="dns-prefetch" href="//global.fncstatic.com">
+<link rel="dns-prefetch" href="//images.outbrain.com">
+<link rel="dns-prefetch" href="//widgets.outbrain.com">
+<link rel="dns-prefetch" href="//widget-cdn.rpxnow.com">
+<link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
+<link rel="dns-prefetch" href="//securepubads.g.doubleclick.net">
+<link rel="dns-prefetch" href="//z.moatads.com">
+<link rel="dns-prefetch" href="//hpr.outbrain.com">
+<link rel="dns-prefetch" href="//metrics.foxnews.com">
+<link rel="dns-prefetch" href="//cdn.tt.omtrdc.net">
+<link rel="dns-prefetch" href="//foxnews.demdex.net">
+<link rel="dns-prefetch" href="//static.chartbeat.com">
+<link rel="dns-prefetch" href="//cdn.taboola.com">
+<link rel="dns-prefetch" href="//assets.tapad.com">
+<link rel="dns-prefetch" href="//www.googletagservices.com">
+<link rel="dns-prefetch" href="//cdn.livefyre.com">
+<link rel="dns-prefetch" href="//foxnews.tt.omtrdc.net">
+<link rel="dns-prefetch" href="//log.outbrain.com">
+<link rel="dns-prefetch" href="//cdn.optimizely.com">
+<link rel="dns-prefetch" href="//b.scorecardresearch.com">
 
-<link href="//global.fncstatic.com/static/v/all/css/global.rs.css" rel="stylesheet" type="text/css" media="all">
-
-<link href="//global.fncstatic.com/static/p/apps.foxnews.com/content-spotlight/css/content-spotlight.rs.css" rel="stylesheet" type="text/css">
-<link href="//global.fncstatic.com/static/v/fn2/site/css/site.css" rel="stylesheet" type="text/css" charset="utf-8">
-
-<script type="text/javascript" src="//global.fncstatic.com/static/all/js/ag.jquery.js"></script>
-<script type="text/javascript" src="http://global.fncstatic.com/static/isa/core.js"></script>
-
-<!--[if lt IE 9]>
-  <script src="//global.fncstatic.com/static/v/all/js/css3-mediaqueries.js"></script>
-  <script src="//global.fncstatic.com/static/v/all/js/html5shiv.js"></script>
-  <link rel="stylesheet" type="text/css" href="//global.fncstatic.com/static/fn2/site/css/ie.rs.css">
-  <link rel="stylesheet" type="text/css" href="//global.fncstatic.com/static/p/apps.foxnews.com/content-spotlight/css/content-spotlight.ie.rs.css">
+<script src="http://global.fncstatic.com/static/v/all/js/ag.jquery.js?201705261158"></script>
+<script src="http://global.fncstatic.com/static/isa/core.js"></script>
+<script src="http://global.fncstatic.com/static/v/all/js/ag.base.js?201705261158"></script>
+<link href="http://global.fncstatic.com/static/v/fn2/ch/css/ag.weather.css?201705261158" rel="stylesheet" type="text/css" media="all">
+		<script src="http://global.fncstatic.com/static/v/fn2/ch/js/ag.weather.js?201705261158"></script>
+	<!--[if lt IE 9]>
+	<script src="http://global.fncstatic.com/static/v/all/js/html5shiv.js"></script>
+	<link rel="stylesheet" href="http://global.fncstatic.com/static/v/fn2/site/css/ie.css" type="text/css">
 <![endif]-->
-<!--[if IE 9]>
-  <link rel="stylesheet" type="text/css" href="//global.fncstatic.com/static/fn-hp/css/ie9.css">
-<![endif]-->
 
-<script src="//global.fncstatic.com/static/v/all/js/lodash.js"></script>
-<script src="//global.fncstatic.com/static/v/all/js/plugins/Startup.js"></script>
-<script src="//global.fncstatic.com/static/v/all/js/jquery/plugins/Unveil.js"></script>
-<script src="//global.fncstatic.com/static/v/all/js/jquery/plugins/Masonry.js"></script>
-<script src="//global.fncstatic.com/static/v/all/js/jquery/plugins/imagesLoaded.js"></script>
-<script src="//global.fncstatic.com/static/v/all/js/ag.head-ext.js" type="text/javascript"></script>
-<script src="//global.fncstatic.com/static/v/all/js/drawer.js"></script>
-
-<script src="//global.fncstatic.com/static/p/apps.foxnews.com/content-spotlight/js/jquery.ba-hashchange.min.js"></script>
-<script src="//global.fncstatic.com/static/p/apps.foxnews.com/content-spotlight/js/content_spotlight.js"></script>
-<script type="text/javascript">
-
-
-  var CS_FeedObj = [{"name":"Select All","url":"\/\/apps.foxnews.com\/content-spotlight\/feed\/proud-american\/all.json"},{"name":"Proud American","url":"\/\/apps.foxnews.com\/content-spotlight\/feed\/proud-american\/1.json"}];
-  var grid_layout = "simple";
-
-  if (window.FOX && FOX.site && FOX.site.topInit) { FOX.site.topInit(); }
-
-</script>
-<title>Proud American | Content Spotlight | Fox News</title>
+<script> FOX.site.topInit(); </script>
+<!--  top channel name is weather -->
 </head>
-<body class="spotlight proud-american">
-
-		<div>
-        </div>
-	
-<div id="wrapper">
-<div id="bg" >
-  <div id="bg-desktop" class="fixed" style="background-image: url(http://apps.foxnews.com/content-spotlight/img/uploads/landing_page.proud-american.background.1404327401.jpg)"></div>
-    </div>
-    <header class="masthead">
+	<body>
+		<div id="wrapper">
+		<!-- header from frag -->
+			<header class="masthead">
 	<nav id="network">
 	<div>
 		<ul>
@@ -146,109 +143,1533 @@
 			</nav>
 		</div>
 	</div>
-</header>  <div id="doc">
-  <div id="head" class="wrapper">
-    
-    <div class="featured">
-      <div class="image"><img src="http://apps.foxnews.com/content-spotlight/img/uploads/landing_page.proud-american.header.1404327401.png" /></div>      <p>                                                                                                                                                          </p>
-            
-          </div>
+</header><div id="headline-callout"></div>
+		<div id="section-branding">	
+		    <div><div><div><div class="c c-bdr-1">
+     <div class="c-item c-item-first">
+       <div class="advert">
+        <div class="ad dc" id="top-728x90">
+			   		</div>	   
+			   </div>
+     </div>
+    </div>
+        </div></div></div>
+			<div class="doc-info">		
+						<h1 class="title">Your Weather</h1>
+					  </div>
+					<div id="nav-sub" data-track-zone="subnav"><!--  Sub Nav -->
+				<div class="component"><div><div><div class="c-bdr-1 t--1ms" >
+		<div class="c-item c-item-first c-item-last">
+				<div class="dv-list t--1ms">	
+	<ul class="dv-encap">
+	<li class="dv-item teaser-ct dv-item-first">
+        <h2><a href="/weather/your-weather/index.html" >
+		Your Weather<span class="type type-teaser"></span>
+		      </a>
+		</h2></li><!-- closing dv-item li -->
+	<li class="dv-item teaser-ct dv-item-last">
+        <h2><a href="/weather/index.html" >
+		Weather News<span class="type type-teaser"></span>
+		      </a>
+		</h2></li><!-- closing dv-item li -->
+	</ul><!-- closing dv-encap ul -->
+	</div></div>
+		</div>
+   </div></div></div>
+			</div>
+			</div><!-- /section-branding -->
+		<script type="text/javascript">try { foxHeader.init(); } catch(err) { }</script>
+	<div id="section-content">
+			<div class="g-28">
+    <div class="g-28 g-last">
+		<div class="component"><div><div><div class="c c-var-47 c-bdr-1 your-weather-mod t--1ms" >
+		<div class="c-item c-item-first c-item-last">
+				<div class="dv-feature">
+			<ul class="dv-encap">
+				<li class="dv-item dv-item-first dv-item-last">
+					<div class="local-weather">
+						<div class="weather-icon">
+				        	<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        </div>
+				        <span class="city">&nbsp;</span>
+				        <span class="condition">&nbsp;</span>
+				        <span class="temp">&nbsp;</span>
+			   		</div>   	
+				
+					<div class="active" id="weather-widget">
+					    <div>  
+					        <form method="get" action="#">
+					            <fieldset>
+					                <div style="display: none;">
+					                    <input id="weather_widgetInput" type="text" class="cs-search" name="zip" value="Enter Zip Code">
+					                    <input type="submit" class="cs-btn" name="submit" value="Update">
+					                </div>
+					                <div class="region" style="display: block;">
+					                    <a class="change-location" href="#">Change location</a>
+					                </div>
+					            </fieldset>
+					        </form>
+					        <p class="error">
+					            <span>Please enter a valid zip code</span>
+					        </p>
+					    </div>  
+					</div>				
+				
+					<div class="local-weather-info">
+						<span class="current-conditions">&nbsp;</span>
+							<div class="col">
+								<div class="col1">
+									<span>Feels Like</span>
+									<span>Barometer</span>
+									<span>Humidity</span>
+									<span>Visibility</span>
+								</div>
+								<div class="col2">
+									<span class="feel">&nbsp;</span>
+									<span class="barometer">&nbsp;</span>
+									<span class="humidity">&nbsp;</span>
+									<span class="visibility">&nbsp;</span>
+								</div>
+							</div>
+							<div class="col">
+								<div class="col1">
+									<span>Dewpoint</span>
+									<span>Wind</span>
+									<span>Sunrise</span>
+									<span>Sunset</span>
+								</div>
+								<div class="col2">
+									<span class="dewpoint">&nbsp;</span>
+									<span class="wind">&nbsp;</span>
+									<span class="sunrise">&nbsp;</span>
+									<span class="sunset">&nbsp;</span>
+								</div>
+							</div>
+					</div>
+				</li><!-- closing dv-item li -->   
+			</ul><!-- closing dv-encap ul -->
+		</div>
+	
 
-  </div>
-        <div class="ad gpt" id="proudamerican-88x31"></div>
-    <script type="text/javascript">try { jQuery.ad.pre(); foxHeader.init(); } catch(err) { }</script>
 
-  <div id="main-content" class="wrapper">
-    <div id="grid-container"></div>
-  </div>
+		<div class="dv-feature">
+			<ul class="dv-encap">
+				<li class="dv-item dv-item-first dv-item-last">
+					
+					<ul class="weather-tabs">
+						<li class="active"><a href="">10 Day Forecast</a></li>
+						<li><a href="">Hourly Forecast</a></li>
+					</ul>
 
-  <div id="shadow" class="wrapper">
-      </div>
+					
+					<ul class="ten-day-forecast">
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+						<li>
+							<div>
+								<span class="day">&nbsp;</span>
+								<span class="date">&nbsp;</span>
+								<div class="weather-icon">
+				        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+				        		</div>
+				        		<span class="temp-high">&nbsp;</span>
+								<span class="temp-low">&nbsp;</span>
+								<span class="conditions">&nbsp;</span>
+							</div>
+						</li>
+					</ul>
 
-</div>
-  <footer id="bottom" class="fn">
-	<div>
-		<a href="#" class="index">Site Index</a>
-		<nav>
-			<nav>
-				<h2>Sections</h2>
-				<ul>
-					<li><a href="//www.foxnews.com/">Home</a></li>
-					<li><a href="//video.foxnews.com/">Video</a></li>
-					<li><a href="//www.foxnews.com/politics.html">Politics</a></li>
-					<li><a href="//www.foxnews.com/us.html">U.S.</a></li>
-					<li><a href="//www.foxnews.com/opinion.html">Opinion</a></li>
-					<li><a href="//www.foxnews.com/entertainment.html">Entertainment</a></li>
-					<li><a href="//www.foxnews.com/tech.html">Tech</a></li>
-					<li><a href="//www.foxnews.com/science.html">Science</a></li>
-					<li><a href="//www.foxnews.com/health.html">Health</a></li>
-					<li><a href="//www.foxnews.com/travel.html">Travel</a></li>
-					<li><a href="//www.foxnews.com/lifestyle.html">Lifestyle</a></li>
-					<li><a href="//www.foxnews.com/world.html">World</a></li>
-					<li><a href="//www.foxnews.com/sports.html">Sports</a></li>
-					<li><a href="//www.foxnews.com/weather">Weather</a></li>
-					<li><a href="//www.foxnews.com/shows.html">On Air</a></li>
-				</ul>
-			</nav>
-			<nav>
-				<h2>Tools</h2>
-				<ul>
-					<li><a href="//video.foxnews.com/#sp=watch-live">Live Video</a></li>
-					<li><a href="//www.foxnews.com/trending">Trending</a></li>
-					<li><a href="//www.foxnews.com/alerts/subscribe.html">Newsletters</a></li>
-					<li><a href="//www.foxnews.com/newsletter-signup/alerts">Alerts</a></li>
-					<li><a href="//radio.foxnews.com/podcast/">Podcasts</a></li>
-					<li><a href="//radio.foxnews.com/">Radio</a></li>
-					<li><a href="//www.foxnews.com/about/apps-downloads/">Apps &amp; Products</a></li>
-				</ul>
-			</nav>
-			<nav>
-				<h2>About</h2>
-				<ul>
-					<li><a href="//www.foxnews.com/on-air/personalities/">On Air Personalities</a></li>
-					<li><a href="//careers.foxnews.com/">Careers</a></li>
-					<li><a href="//careers.foxnews.com/students">College Students</a></li>
-					<li><a href="//www.foxnews.com/foxaroundtheworld/">Fox Around the World</a></li>
-					<li><a href="//advertise.foxnews.com">Advertise With Us</a></li>
-					<li><a href="//www.foxnews.com/about/terms-of-use/">New Terms of Use </a> <a href="//www.foxnews.com/about/terms-new">(What's New)</a></li>
-					<li><a href="//www.foxnews.com/about/privacy-policy/">New Privacy Policy</a></li>
-					<li><a href="//www.foxnews.com/about/privacy-policy/#ad-choice">Ad Choices</a></li>
-					<li><a href="//help.foxnews.com/index.html">Help</a></li>
-					<li><a href="mailto:newsmanager@foxnews.com">Email Newsroom</a></li>
-					<li><a href="//press.foxnews.com/">Media Relations</a></li>
-					<li><a href="//www.foxnews.com/closed-captioning">Closed Captioning Policy</a></li>
-				</ul>
-			</nav>
-			<nav>
-				<h2>Follow</h2>
-				<ul>
-					<li><a href="//www.facebook.com/FoxNews">Facebook</a></li>
-					<li><a href="//twitter.com/foxnews">Twitter</a></li>
-					<li><a href="//www.google.com/+FoxNews">Google+</a></li>
-					<li><a href="//www.instagram.com/foxnews/">Instagram</a></li>
-					<li><a href="//www.foxnews.com/about/rss/">RSS</a></li>
-					<li><a href="//www.foxnews.com/alerts/subscribe.html">Newsletters</a></li>
-				</ul>
-			</nav>
-		</nav><!-- /nav -->
-		<div class="options">
-			<a href="//www.foxnews.com" class="branding">Fox News</a>
-			<a href="#" class="top">Back to Top</a>
-		</div><!-- /options -->
-		<p class="legal">This material may not be published, broadcast, rewritten, or redistributed. &copy;2017 FOX News Network, LLC. All rights reserved. All market data delayed 20 minutes.</p>
+					<ul class="hourly-forecast">
+						<li class="col1">
+							<ul>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>								
+							</ul>
+						</li>
+
+
+						<li class="col2">
+							<ul>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								<li>
+									<span class="hour">&nbsp;</span>
+									<div class="weather-icon">
+					        			<img src="http://global.fncstatic.com/static/v/all/img/clear.gif">
+					        		</div>
+					        		<span class="temp">&nbsp;</span>
+					        		<span class="conditions">&nbsp;</span>
+								</li>
+								
+							</ul>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
 	</div>
-</footer><!-- /footer -->
+		</div>
+   </div><div><div class="c c-var-20 load-more-v2 t--1ms" >
+		<h2 class="title">Latest Weather News</h2>
+		<div class="c-item c-item-first c-item-last">
+				<div class="dv-feature dv-feature-24 m-11 m-l ov-48 t--1ms" >
+	<ul class="dv-encap"  itemscope itemtype="http://schema.org/ItemList">
+	<li class="dv-item article-ct dv-item-first"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/11/02/storms-to-threaten-midwestern-us-with-snow-locally-severe-weather-through-this/" >	  		
+	  		Storms to threaten midwestern US with snow, locally severe weather through this weekend <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">Dramatic temperature swings will set the stage for an array of disruptive weather to sweep across the midwestern United States through Sunday.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-11-02T11:02:17Z">
+<meta itemprop="description" name="description" content="Dramatic temperature swings will set the stage for an array of disruptive weather to sweep across the midwestern United States through Sunday.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/11/01/winds-from-north-korea-nuclear-test-site-may-send-radiation-toward-japan/" >	  		
+	  		Winds from North Korea nuclear test site may send radiation toward Japan, AccuWeather says <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">Following a deadly tunnel collapse at a North Korean nuclear test site, winds may strengthen from the northwest and direct radiation toward northern Japan, according to...</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-11-01T21:13:27Z">
+<meta itemprop="description" name="description" content="Following a deadly tunnel collapse at a North Korean nuclear test site, winds may strengthen from the northwest and direct radiation toward northern Japan, according to AccuWeather research.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/11/01/storm-to-cause-flooding-mudslide-risk-in-fire-damaged-northern-california/" >	  		
+	  		Storm to cause flooding, mudslide risk in fire-damaged Northern California <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">A double-barreled storm will affect a large part of California from Friday to Monday with areas of drenching rain and mountain snow.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-11-01T15:56:40Z">
+<meta itemprop="description" name="description" content="A double-barreled storm will affect a large part of California from Friday to Monday with areas of drenching rain and mountain snow.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/11/01/winterlike-storm-to-unleash-travel-disrupting-snow-in-northwestern-us-for-days/" >	  		
+	  		Winterlike storm to unleash travel-disrupting snow in northwestern US for days <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">A winterlike storm associated with colder air will spread rain and snow over the northwestern United States late this week and this weekend.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-11-01T13:56:59Z">
+<meta itemprop="description" name="description" content="A winterlike storm associated with colder air will spread rain and snow over the northwestern United States late this week and this weekend.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/31/nfl-thursday-night-football-dry-weather-expected-as-bills-jets-collide-at/" >	  		
+	  		NFL Thursday Night Football: Dry weather expected as Bills, Jets collide at MetLife Stadium <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">The Buffalo Bills and New York Jets will play for the second and final time this season as they meet at MetLife Stadium on Thursday night.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-31T16:12:47Z">
+<meta itemprop="description" name="description" content="The Buffalo Bills and New York Jets will play for the second and final time this season as they meet at MetLife Stadium on Thursday night.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/31/2017-new-york-city-marathon-forecast-cloudy-conditions-to-greet-runners/" >	  		
+	  		2017 New York City Marathon forecast: Cloudy conditions to greet runners <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">Favorable temperatures and cloudy conditions will greet runners on Sunday morning in the 47th annual New York City Marathon.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-31T16:02:30Z">
+<meta itemprop="description" name="description" content="Favorable temperatures and cloudy conditions will greet runners on Sunday morning in the 47th annual New York City Marathon.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/31/winterlike-storm-to-pound-washington-to-california-flooding-to-threaten/" >	  		
+	  		Winterlike storm to pound Washington to California; Flooding to threaten wildfire-ravaged areas <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">A storm associated with colder air will spread rain and mountain snow over part of the western United States late this week and this weekend.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-31T14:57:24Z">
+<meta itemprop="description" name="description" content="A storm associated with colder air will spread rain and mountain snow over part of the western United States late this week and this weekend.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/31/5-halloween-hacks-for-staying-warm-while-trick-or-treating/" >	  		
+	  		5 Halloween hacks for staying warm while trick-or-treating <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">Being comfortable while trick-or-treating can make Halloween much more enjoyable.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-31T12:31:12Z">
+<meta itemprop="description" name="description" content="Being comfortable while trick-or-treating can make Halloween much more enjoyable.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/30/photos-1-million-endure-power-outages-as-damaging-northeast-storm-unleashes/" >	  		
+	  		Photos: 1 million endure power outages as damaging Northeast storm unleashes hurricane-force winds <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">A powerful storm unleashed flooding and strong winds, which resulted in widespread power outages and travel disruptions, in the northeastern United States from Sunday to Monday.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-30T19:40:49Z">
+<meta itemprop="description" name="description" content="A powerful storm unleashed flooding and strong winds, which resulted in widespread power outages and travel disruptions, in the northeastern United States from Sunday to Monday.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/30/5-years-post-sandy-new-york-new-jersey-make-strides-as-some-victims-struggle-to/" >	  		
+	  		5 years post Sandy: New York, New Jersey make strides as some victims struggle to recover <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">The fifth anniversary of Superstorm Sandy brought a solemn reminder of the storm's damage as well as how affected areas are better prepared for future disasters.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-30T16:56:58Z">
+<meta itemprop="description" name="description" content="The fifth anniversary of Superstorm Sandy brought a solemn reminder of the storm's damage as well as how affected areas are better prepared for future disasters.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/30/november-to-take-on-role-quick-change-artist-in-midwestern-northeastern-us/" >	  		
+	  		November to take on role of quick-change artist in midwestern, northeastern US <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">A fast flow of air will prevent cold, warm and dry episodes from lasting very long over much of the midwestern and northeastern United States well into November</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-30T14:54:50Z">
+<meta itemprop="description" name="description" content="A fast flow of air will prevent cold, warm and dry episodes from lasting very long over much of the midwestern and northeastern United States well into November">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/30/unusually-warm-weather-in-us-prompts-late-3000-mile-monarch-migration/" >	  		
+	  		Unusually warm weather in US prompts late 3,000-mile monarch migration <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">Residents of the northern regions of the United States and the southern parts of Canada may have noticed that there have been a larger number of monarch butterflies fluttering...</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-30T14:33:47Z">
+<meta itemprop="description" name="description" content="Residents of the northern regions of the United States and the southern parts of Canada may have noticed that there have been a larger number of monarch butterflies fluttering through the skies...">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/30/blustery-conditions-in-store-for-trick-or-treaters-in-northeastern-central-us/" >	  		
+	  		Blustery conditions in store for trick-or-treaters in northeastern, central US <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">Anyone planning on venturing out this Tuesday evening in the northern and central United States should make sure they don water- and windproof costumes.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-30T11:18:12Z">
+<meta itemprop="description" name="description" content="Anyone planning on venturing out this Tuesday evening in the northern and central United States should make sure they don water- and windproof costumes.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/29/reports-damaging-winds-flooding-leads-to-dangerous-conditions/" >	  		
+	  		Reports: Damaging winds, flooding leads to dangerous conditions <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">A powerful storm will pummel the northeastern United States with heavy rain, locally damaging winds and significant travel disruptions into Monday.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-30T02:46:09Z">
+<meta itemprop="description" name="description" content="A powerful storm will pummel the northeastern United States with heavy rain, locally damaging winds and significant travel disruptions into Monday.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct dv-item-last"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/29/flooding-rain-damaging-winds-to-wallop-northeastern-us-into-monday/" >	  		
+	  		Flooding rain, damaging winds to wallop northeastern US into Monday <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<div class="summary">A powerful storm will lash the northeastern United States with heavy rain, locally damaging winds and significant travel disruptions into Monday.</div>
+<div class="social-count left">
+		<a class="fbk" href="#">Facebook</a><span class="fbk"></span>
+		<a class="twt" href="#">Twitter</a><span class="twt"></span>
+	</div> 
+<meta itemprop="datePublished" content="2017-10-29T13:38:31Z">
+<meta itemprop="description" name="description" content="A powerful storm will lash the northeastern United States with heavy rain, locally damaging winds and significant travel disruptions into Monday.">
+</li><!-- closing dv-item li -->        
+	</ul><!-- closing dv-encap ul -->
+	</div></div>
+		</div>
+   </div><div><div class="c c-bdr-1">
+     <div class="c-item c-item-first">
+       <div class="advert">
+        <div class="ad qu" id="qu_channel_5">
+			   		</div>	   
+			   </div>
+     </div>
+    </div>
+        </div></div></div>
+	</div>
+	<div class="g-28 g-last">
+		<div class="component"><div></div></div>
+	</div>						
+</div>
+<div class="g-13 g-last">
+		<div class="component"><div><div><div class="c c-bdr-1">
+     <div class="c-item c-item-first">
+       <div class="advert">
+        <div class="ad dc" id="frame1-300x250">
+			   		</div>	   
+			   <p class="advert-txt advert-txt-3">Advertisement</p></div>
+     </div>
+    </div>
+        </div><div><div class="c c-var-48 c-mod your-weather-video t--1ms" >
+		<h2 class="title">Forecast</h2>
+		<div class="c-item c-item-first c-item-last">
+				<div class="dv-feature ">
+	<ul class="dv-encap">
+	<!--
+		<li class="dv-item dv-item-first">
 
+			<div class="regional-forecast">
+				 <select NAME="minp" class="">
+					  <option value="">&nbsp;</option>
+				  </select>
+			</div>
+
+		</li>
+	-->
+		<!-- closing dv-item li --> 
+		<li class="dv-item dv-item-last ">
+			<div id="yw-video-player"></div>
+		</li><!-- closing dv-item li -->   
+	</ul><!-- closing dv-encap ul -->
+</div></div>
+		</div>
+   </div><div><div class="c c-var-2 t--1ms" >
+		<div class="c-head">
+			 <h2 class="title">
+	    	<a href="/travel/flight-tracker/index.html">FLIGHT TRACKER</a>
+	        </h2>
+    </div>			
+		<div class="c-body"><!-- / start of body div-->
+		<div class="c-item c-item-first c-item-last">
+				<div class="c-tab c-tab-1 ft-track-mod">
+<div class="c-head">
+	<ul class="c-nav">
+		<li class="active first"><a href="#" id="us-market">By Flight</a></li>
+		<li class="last"><a id="eu-market" href="#">By Route</a></li>
+	</ul>
+</div>
+<div class="c-body">
+	<div class="c-item c-item-first c-active">
+		<div id="flight-tracker">
+			<form action="">
+				<fieldset>
+					<legend>Flight Tracker</legend>
+					<ul>
+						<li>
+							<label for="airline">Airline</label>
+							<select class="airline" name="airline">
+								<option value="">Select an airline...</option>
+	<option value="others">Others...</option>
+	<option value="EI">Aer Lingus - EI</option>
+	<option value="SU">Aeroflot Airlines - SU</option>
+	<option value="AM">Aeromexico - AM</option>
+	<option value="AC">Air Canada - AC</option>
+
+	<option value="CA">Air China - CA</option>
+	<option value="AF">Air France - AF</option>
+	<option value="AI">Air India - AI</option>
+	<option value="3H">Air Inuit - 3H</option>
+	<option value="JM">Air Jamaica - JM</option>
+	<option value="NZ">Air New Zealand - NZ</option>
+
+	<option value="TS">Air Transat Canada - TS</option>
+	<option value="FL">AirTran - FL</option>
+	<option value="AS">Alaska Airlines - AS</option>
+	<option value="AZ">Alitalia - AZ</option>
+	<option value="NH">All Nippon Airways - NH</option>
+	<option value="G4">Allegiant Air - G4</option>
+
+	<option value="AA">American Airlines - AA</option>
+	<option value="AV">Avianca - AV</option>
+	<option value="UP">Bahamasair - UP</option>
+	<option value="JV">Bearskin Airlines - JV</option>
+	<option value="BA">British Airways - BA</option>
+	<option value="BD">British Midland - BD</option>
+
+	<option value="SN">Brussels Airlines - SN</option>
+	<option value="5T">Canadian North - 5T</option>
+	<option value="CX">Cathay Pacific - CX</option>
+	<option value="MU">China Eastern Airlines - MU</option>
+	<option value="CZ">China Southern Airlines - CZ</option>
+	<option value="CO">Continental Airlines - CO</option>
+
+	<option value="CM">Copa Airlines - CM</option>
+	<option value="DL">Delta Air Lines - DL</option>
+	<option value="7H">ERA Aviation - 7H</option>
+	<option value="BR">EVA Airways - BR</option>
+	<option value="U2">Easyjet - U2</option>
+	<option value="LY">El Al Israel Airlines - LY</option>
+
+	<option value="EK">Emirates - EK</option>
+	<option value="AY">Finnair - AY</option>
+	<option value="7F">First Air - 7F</option>
+	<option value="F9">Frontier Airlines - F9</option>
+	<option value="GA">Garuda Indonesia - GA</option>
+	<option value="ZK">Great Lakes Airlines - ZK</option>
+
+	<option value="HA">Hawaiian Airlines - HA</option>
+	<option value="IB">Iberia - IB</option>
+	<option value="FI">Icelandair - FI</option>
+	<option value="IR">Iran Air - IR</option>
+	<option value="JL">Japan Airlines - JL</option>
+	<option value="9W">Jet Airways - 9W</option>
+
+	<option value="B6">JetBlue Airways - B6</option>
+	<option value="KL">KLM Royal Dutch Airlines - KL</option>
+	<option value="KE">Korean Air Lines - KE</option>
+	<option value="WJ">Labrador Airways LTD - WJ</option>
+	<option value="LH">Lufthansa - LH</option>
+	<option value="MH">Malaysia Airlines - MH</option>
+
+	<option value="YV">Mesa Airlines - YV</option>
+	<option value="MX">Mexicana - MX</option>
+	<option value="YX">Midwest Airlines - YX</option>
+	<option value="OA">Olympic Airways - OA</option>
+	<option value="KS">Penair - KS</option>
+	<option value="PR">Philippine Airlines - PR</option>
+
+	<option value="QF">Qantas Airways - QF</option>
+	<option value="QR">Qatar Airways - QR</option>
+	<option value="S6">Salmon Air - S6</option>
+	<option value="SV">Saudi Arabian Airlines - SV</option>
+	<option value="SK">Scandinavian Airlines SAS - SK</option>
+	<option value="YR">Scenic Airlines - YR</option>
+
+	<option value="SQ">Singapore Airlines - SQ</option>
+	<option value="SA">South African Airways - SA</option>
+	<option value="WN">Southwest Airlines - WN</option>
+	<option value="JK">Spanair - JK</option>
+	<option value="NK">Spirit Airlines - NK</option>
+	<option value="SY">Sun Country Airlines - SY</option>
+
+	<option value="WG">Sunwing Airlines - WG</option>
+	<option value="LX">Swiss Intl Airlines - LX</option>
+	<option value="TG">Thai Airways - TG</option>
+	<option value="TK">Turkish Airlines - TK</option>
+	<option value="US">US Airways - US</option>
+	<option value="U5">USA3000 - U5</option>
+
+	<option value="UA">United Airlines - UA</option>
+	<option value="VX">Virgin America - VX</option>
+	<option value="VS">Virgin Atlantic - VS</option>
+	<option value="WS">WestJet Airlines - WS</option>
+	<option value="MF">Xiamen Airlines - MF</option>
+</select>
+						</li>
+						<li><label for="airlinecode">Or Airline Code</label> <input class="airlinecode" name="airlinecode"></li>
+						<li><label for="flightnumber">Flight Number</label> <input class="flightnumber" name="flightnumber"></li>
+						<li><label for="date">Date</label> <select class="date" name="date"> </select></li>
+						<li class="last"><input type="submit" name="submit" class="btn-smll" value="Find Flight"></li>
+					</ul>
+					<p class="error-message">Missing or invalid entries. Please search again.</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div style="display: none;" class="c-item c-item-first c-active">
+		<div id="flight-tracker-by-route">
+			<form action="">
+				<fieldset>
+					<legend>Track By Route</legend>
+					<ul>
+						<li>
+							<label for="departureairport">Departure Airport</label> 
+							<select class="departureairport" name="departureairport">
+								<option value="">Select an airport...</option>
+	<option value="ALB" >Albany, NY - ALB</option>
+	<option value="ABQ" >Albuquerque, NM - ABQ</option>
+	<option value="ANC" >Anchorage, AK - ANC</option>
+	<option value="ATL" >Atlanta, GA - ATL</option>
+	<option value="AUS" >Austin, TX - AUS</option>
+	<option value="BWI" >Baltimore, MD - BWI</option>
+	<option value="BGR" >Bangor, ME - BGR</option>
+	<option value="BTR" >Baton Rouge, LA - BTR</option>
+	<option value="BIL" >Billings, MT - BIL</option>
+	<option value="BHM" >Birmingham, AL - BHM</option>
+	<option value="BIS" >Bismarck, ND - BIS</option>
+	<option value="BOI" >Boise, ID - BOI</option>
+	<option value="BOS" >Boston, MA - BOS</option>
+	<option value="BZN" >Bozeman, MT - BZN</option>
+	<option value="BUF" >Buffalo, NY - BUF</option>
+	<option value="BUR" >Burbank, CA - BUR</option>
+	<option value="BTV" >Burlington, VT - BTV</option>
+	<option value="CPR" >Casper, WY - CPR</option>
+	<option value="CID" >Cedar Rapids, IA - CID</option>
+	<option value="CHS" >Charleston, SC - CHS</option>
+	<option value="CRW" >Charleston, WV - CRW</option>
+	<option value="CLT" >Charlotte, NC - CLT</option>
+	<option value="ORD" >Chicago, IL (O'Hare) - ORD</option>
+	<option value="MDW" >Chicago, IL (Midway) - MDW</option>
+	<option value="CVG" >Cincinnati, OH - CVG</option>
+	<option value="CLE" >Cleveland, OH - CLE</option>
+	<option value="COS" >Colorado Springs, CO - COS</option>
+	<option value="CMH" >Columbus, OH - CMH</option>
+	<option value="DFW" >Dallas, TX (Dallas/Ft Worth) - DFW</option>
+	<option value="DAL" >Dallas, TX (Love Field) - DAL</option>
+	<option value="DAY" >Dayton, OH - DAY</option>
+	<option value="DEN" >Denver, CO - DEN</option>
+	<option value="DSM" >Des Moines, IA - DSM</option>
+	<option value="DTW" >Detroit, MI - DTW</option>
+	<option value="ELP" >El Paso, TX - ELP</option>
+	<option value="FAI" >Fairbanks, AK - FAI</option>
+	<option value="FAR" >Fargo, ND - FAR</option>
+	<option value="FLL" >Fort Lauderdale, FL - FLL</option>
+	<option value="RSW" >Fort Myers, FL - RSW</option>
+	<option value="FWA" >Fort Wayne, IN - FWA</option>
+	<option value="GJT" >Grand Junction, CO - GJT</option>
+	<option value="GRR" >Grand Rapids, MI - GRR</option>
+	<option value="GSO" >Greensboro, NC - GSO</option>
+	<option value="GSP" >Greenville, SC - GSP</option>
+	<option value="GPT" >Gulfport, MS - GPT</option>
+	<option value="BDL" >Hartford, CT - BDL</option>
+	<option value="HNL" >Honolulu, HI - HNL</option>
+	<option value="IAH" >Houston, TX (Intercontinental) - IAH</option>
+	<option value="HOU" >Houston, TX (Hobby) - HOU</option>
+	<option value="IND" >Indianapolis, IN - IND</option>
+	<option value="JAN" >Jackson, MS - JAN</option>
+	<option value="JAX" >Jacksonville, FL - JAX</option>
+	<option value="JNU" >Juneau, AK - JNU</option>
+	<option value="OGG" >Kahului, Maui, HI - OGG</option>
+	<option value="KOA" >Kailua-Kona, HI - KOA</option>
+	<option value="MCI" >Kansas City, MO - MCI</option>
+	<option value="TYS" >Knoxville, TN - TYS</option>
+	<option value="LAS" >Las Vegas, NV - LAS</option>
+	<option value="LNK" >Lincoln, NE - LNK</option>
+	<option value="LIT" >Little Rock, AR - LIT</option>
+	<option value="LGB" >Long Beach, CA - LGB</option>
+	<option value="LAX" >Los Angeles, CA - LAX</option>
+	<option value="SDF" >Louisville, KY - SDF</option>
+	<option value="MSN" >Madison, WI - MSN</option>
+	<option value="MHT" >Manchester, NH - MHT</option>
+	<option value="MEM" >Memphis, TN - MEM</option>
+	<option value="MIA" >Miami, FL - MIA</option>
+	<option value="MKE" >Milwaukee, WI - MKE</option>
+	<option value="MSP" >Minneapolis, MN - MSP</option>
+	<option value="MYR" >Myrtle Beach, SC - MYR</option>
+	<option value="BNA" >Nashville, TN - BNA</option>
+	<option value="MSY" >New Orleans, LA - MSY</option>
+	<option value="JFK" >New York, NY (Kennedy) - JFK</option>
+	<option selected="1" value="LGA" >New York, NY (LaGuardia) - LGA</option>
+	<option value="EWR" >Newark, NJ - EWR</option>
+	<option value="ORF" >Norfolk, VA - ORF</option>
+	<option value="OAK" >Oakland, CA - OAK</option>
+	<option value="OKC" >Oklahoma City, OK - OKC</option>
+	<option value="OMA" >Omaha, NE - OMA</option>
+	<option value="ONT" >Ontario, CA - ONT</option>
+	<option value="SNA" >Orange County, CA - SNA</option>
+	<option value="MCO" >Orlando, FL - MCO</option>
+	<option value="PNS" >Pensacola, FL - PNS</option>
+	<option value="PHL" >Philadelphia, PA - PHL</option>
+	<option value="PHX" >Phoenix, AZ - PHX</option>
+	<option value="PIT" >Pittsburgh, PA - PIT</option>
+	<option value="PWM" >Portland, ME - PWM</option>
+	<option value="PDX" >Portland, OR - PDX</option>
+	<option value="PVD" >Providence, RI - PVD</option>
+	<option value="RDU" >Raleigh Durham, NC - RDU</option>
+	<option value="RAP" >Rapid City, SD - RAP</option>
+	<option value="RNO" >Reno, NV - RNO</option>
+	<option value="RIC" >Richmond, VA - RIC</option>
+	<option value="ROC" >Rochester, NY - ROC</option>
+	<option value="SMF" >Sacramento, CA - SMF</option>
+	<option value="SLC" >Salt Lake City, UT - SLC</option>
+	<option value="SAT" >San Antonio, TX - SAT</option>
+	<option value="SAN" >San Diego, CA - SAN</option>
+	<option value="SFO" >San Francisco, CA - SFO</option>
+	<option value="SJC" >San Jose, CA - SJC</option>
+	<option value="SAV" >Savannah, GA - SAV</option>
+	<option value="SEA" >Seattle, WA - SEA</option>
+	<option value="SHV" >Shreveport, LA - SHV</option>
+	<option value="FSD" >Sioux Falls, SD - FSD</option>
+	<option value="GEG" >Spokane, WA - GEG</option>
+	<option value="STL" >St. Louis, MO - STL</option>
+	<option value="SYR" >Syracuse, NY - SYR</option>
+	<option value="TPA" >Tampa, FL - TPA</option>
+	<option value="TUS" >Tucson, AZ - TUS</option>
+	<option value="TUL" >Tulsa, OK - TUL</option>
+	<option value="IAD" >Washington, DC (Dulles) - IAD</option>
+	<option value="DCA" >Washington, DC (National) - DCA</option>
+	<option value="PBI" >West Palm Beach, FL - PBI</option>
+	<option value="ICT" >Wichita, KS - ICT</option></select>
+						</li>
+						<li>
+							<label for="arrivalairport">Arrival Airport</label>
+							<select class="arrivalairport" name="arrivalairport">
+								<option value="">Select an airport...</option>
+	<option value="ALB" >Albany, NY - ALB</option>
+	<option value="ABQ" >Albuquerque, NM - ABQ</option>
+	<option value="ANC" >Anchorage, AK - ANC</option>
+	<option value="ATL" >Atlanta, GA - ATL</option>
+	<option value="AUS" >Austin, TX - AUS</option>
+	<option value="BWI" >Baltimore, MD - BWI</option>
+	<option value="BGR" >Bangor, ME - BGR</option>
+	<option value="BTR" >Baton Rouge, LA - BTR</option>
+	<option value="BIL" >Billings, MT - BIL</option>
+	<option value="BHM" >Birmingham, AL - BHM</option>
+	<option value="BIS" >Bismarck, ND - BIS</option>
+	<option value="BOI" >Boise, ID - BOI</option>
+	<option value="BOS" >Boston, MA - BOS</option>
+	<option value="BZN" >Bozeman, MT - BZN</option>
+	<option value="BUF" >Buffalo, NY - BUF</option>
+	<option value="BUR" >Burbank, CA - BUR</option>
+	<option value="BTV" >Burlington, VT - BTV</option>
+	<option value="CPR" >Casper, WY - CPR</option>
+	<option value="CID" >Cedar Rapids, IA - CID</option>
+	<option value="CHS" >Charleston, SC - CHS</option>
+	<option value="CRW" >Charleston, WV - CRW</option>
+	<option value="CLT" >Charlotte, NC - CLT</option>
+	<option value="ORD" >Chicago, IL (O'Hare) - ORD</option>
+	<option value="MDW" >Chicago, IL (Midway) - MDW</option>
+	<option value="CVG" >Cincinnati, OH - CVG</option>
+	<option value="CLE" >Cleveland, OH - CLE</option>
+	<option value="COS" >Colorado Springs, CO - COS</option>
+	<option value="CMH" >Columbus, OH - CMH</option>
+	<option value="DFW" >Dallas, TX (Dallas/Ft Worth) - DFW</option>
+	<option value="DAL" >Dallas, TX (Love Field) - DAL</option>
+	<option value="DAY" >Dayton, OH - DAY</option>
+	<option value="DEN" >Denver, CO - DEN</option>
+	<option value="DSM" >Des Moines, IA - DSM</option>
+	<option value="DTW" >Detroit, MI - DTW</option>
+	<option value="ELP" >El Paso, TX - ELP</option>
+	<option value="FAI" >Fairbanks, AK - FAI</option>
+	<option value="FAR" >Fargo, ND - FAR</option>
+	<option value="FLL" >Fort Lauderdale, FL - FLL</option>
+	<option value="RSW" >Fort Myers, FL - RSW</option>
+	<option value="FWA" >Fort Wayne, IN - FWA</option>
+	<option value="GJT" >Grand Junction, CO - GJT</option>
+	<option value="GRR" >Grand Rapids, MI - GRR</option>
+	<option value="GSO" >Greensboro, NC - GSO</option>
+	<option value="GSP" >Greenville, SC - GSP</option>
+	<option value="GPT" >Gulfport, MS - GPT</option>
+	<option value="BDL" >Hartford, CT - BDL</option>
+	<option value="HNL" >Honolulu, HI - HNL</option>
+	<option value="IAH" >Houston, TX (Intercontinental) - IAH</option>
+	<option value="HOU" >Houston, TX (Hobby) - HOU</option>
+	<option value="IND" >Indianapolis, IN - IND</option>
+	<option value="JAN" >Jackson, MS - JAN</option>
+	<option value="JAX" >Jacksonville, FL - JAX</option>
+	<option value="JNU" >Juneau, AK - JNU</option>
+	<option value="OGG" >Kahului, Maui, HI - OGG</option>
+	<option value="KOA" >Kailua-Kona, HI - KOA</option>
+	<option value="MCI" >Kansas City, MO - MCI</option>
+	<option value="TYS" >Knoxville, TN - TYS</option>
+	<option value="LAS" >Las Vegas, NV - LAS</option>
+	<option value="LNK" >Lincoln, NE - LNK</option>
+	<option value="LIT" >Little Rock, AR - LIT</option>
+	<option value="LGB" >Long Beach, CA - LGB</option>
+	<option value="LAX" >Los Angeles, CA - LAX</option>
+	<option value="SDF" >Louisville, KY - SDF</option>
+	<option value="MSN" >Madison, WI - MSN</option>
+	<option value="MHT" >Manchester, NH - MHT</option>
+	<option value="MEM" >Memphis, TN - MEM</option>
+	<option value="MIA" >Miami, FL - MIA</option>
+	<option value="MKE" >Milwaukee, WI - MKE</option>
+	<option value="MSP" >Minneapolis, MN - MSP</option>
+	<option value="MYR" >Myrtle Beach, SC - MYR</option>
+	<option value="BNA" >Nashville, TN - BNA</option>
+	<option value="MSY" >New Orleans, LA - MSY</option>
+	<option value="JFK" >New York, NY (Kennedy) - JFK</option>
+	<option selected="1" value="LGA" >New York, NY (LaGuardia) - LGA</option>
+	<option value="EWR" >Newark, NJ - EWR</option>
+	<option value="ORF" >Norfolk, VA - ORF</option>
+	<option value="OAK" >Oakland, CA - OAK</option>
+	<option value="OKC" >Oklahoma City, OK - OKC</option>
+	<option value="OMA" >Omaha, NE - OMA</option>
+	<option value="ONT" >Ontario, CA - ONT</option>
+	<option value="SNA" >Orange County, CA - SNA</option>
+	<option value="MCO" >Orlando, FL - MCO</option>
+	<option value="PNS" >Pensacola, FL - PNS</option>
+	<option value="PHL" >Philadelphia, PA - PHL</option>
+	<option value="PHX" >Phoenix, AZ - PHX</option>
+	<option value="PIT" >Pittsburgh, PA - PIT</option>
+	<option value="PWM" >Portland, ME - PWM</option>
+	<option value="PDX" >Portland, OR - PDX</option>
+	<option value="PVD" >Providence, RI - PVD</option>
+	<option value="RDU" >Raleigh Durham, NC - RDU</option>
+	<option value="RAP" >Rapid City, SD - RAP</option>
+	<option value="RNO" >Reno, NV - RNO</option>
+	<option value="RIC" >Richmond, VA - RIC</option>
+	<option value="ROC" >Rochester, NY - ROC</option>
+	<option value="SMF" >Sacramento, CA - SMF</option>
+	<option value="SLC" >Salt Lake City, UT - SLC</option>
+	<option value="SAT" >San Antonio, TX - SAT</option>
+	<option value="SAN" >San Diego, CA - SAN</option>
+	<option value="SFO" >San Francisco, CA - SFO</option>
+	<option value="SJC" >San Jose, CA - SJC</option>
+	<option value="SAV" >Savannah, GA - SAV</option>
+	<option value="SEA" >Seattle, WA - SEA</option>
+	<option value="SHV" >Shreveport, LA - SHV</option>
+	<option value="FSD" >Sioux Falls, SD - FSD</option>
+	<option value="GEG" >Spokane, WA - GEG</option>
+	<option value="STL" >St. Louis, MO - STL</option>
+	<option value="SYR" >Syracuse, NY - SYR</option>
+	<option value="TPA" >Tampa, FL - TPA</option>
+	<option value="TUS" >Tucson, AZ - TUS</option>
+	<option value="TUL" >Tulsa, OK - TUL</option>
+	<option value="IAD" >Washington, DC (Dulles) - IAD</option>
+	<option value="DCA" >Washington, DC (National) - DCA</option>
+	<option value="PBI" >West Palm Beach, FL - PBI</option>
+	<option value="ICT" >Wichita, KS - ICT</option></select>
+						</li>
+						<li><input class="departureairportcode" name="departureairportcode"></li>
+						<li><input class="arrivalairportcode" name="arrivalairportcode"> </li>
+						<li><label for="departuredate">Departure Date</label> <select class="departuredate" name="departuredate"></select></li>
+						<li class="last"><input type="submit" name="submit" class="btn-smll" value="Find Flight"></li>
+					</ul>
+					<p class="error-message">Missing or invalid entries. Please search again.</p>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+</div>
+<div class="c-foot"></div>
+</div>
+</div>
+		</div>
+      	</div>
+   </div><div><div class="c trending t--1ms" >
+		<h2 class="title">Trending In Weather</h2>
+		<div class="c-item c-item-first">
+				<div class="dv-list dv-list-2 t--1ms" >
+	<ul class="dv-encap"  itemscope itemtype="http://schema.org/ItemList">
+	<li class="dv-item article-ct dv-item-first trending-1"  itemprop="itemListElement">
+	        <p>1</p><h3 >
+	  <a href="http://www.foxnews.com/weather/2017/11/02/storms-to-threaten-midwestern-us-with-snow-locally-severe-weather-through-this/" >	  		
+	  		Storms to threaten midwestern US with snow, locally severe weather through this weekend <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-11-02T11:02:17Z">
+<meta itemprop="description" name="description" content="Dramatic temperature swings will set the stage for an array of disruptive weather to sweep across the midwestern United States through Sunday.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct trending-2"  itemprop="itemListElement">
+	        <p>2</p><h3 >
+	  <a href="http://www.foxnews.com/weather/2017/11/01/winds-from-north-korea-nuclear-test-site-may-send-radiation-toward-japan/" >	  		
+	  		Winds from North Korea nuclear test site may send radiation toward Japan, AccuWeather says <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-11-01T21:13:27Z">
+<meta itemprop="description" name="description" content="Following a deadly tunnel collapse at a North Korean nuclear test site, winds may strengthen from the northwest and direct radiation toward northern Japan, according to AccuWeather research.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct trending-3"  itemprop="itemListElement">
+	        <p>3</p><h3 >
+	  <a href="http://www.foxnews.com/weather/2017/11/01/storm-to-cause-flooding-mudslide-risk-in-fire-damaged-northern-california/" >	  		
+	  		Storm to cause flooding, mudslide risk in fire-damaged Northern California <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-11-01T15:56:40Z">
+<meta itemprop="description" name="description" content="A double-barreled storm will affect a large part of California from Friday to Monday with areas of drenching rain and mountain snow.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct trending-4"  itemprop="itemListElement">
+	        <p>4</p><h3 >
+	  <a href="http://www.foxnews.com/weather/2017/11/01/winterlike-storm-to-unleash-travel-disrupting-snow-in-northwestern-us-for-days/" >	  		
+	  		Winterlike storm to unleash travel-disrupting snow in northwestern US for days <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-11-01T13:56:59Z">
+<meta itemprop="description" name="description" content="A winterlike storm associated with colder air will spread rain and snow over the northwestern United States late this week and this weekend.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item article-ct dv-item-last trending-5"  itemprop="itemListElement">
+	        <p>5</p><h3 >
+	  <a href="http://www.foxnews.com/weather/2017/10/31/nfl-thursday-night-football-dry-weather-expected-as-bills-jets-collide-at/" >	  		
+	  		NFL Thursday Night Football: Dry weather expected as Bills, Jets collide at MetLife Stadium <span class="type type-article"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-10-31T16:12:47Z">
+<meta itemprop="description" name="description" content="The Buffalo Bills and New York Jets will play for the second and final time this season as they meet at MetLife Stadium on Thursday night.">
+</li><!-- closing dv-item li -->        
+	</ul><!-- closing dv-encap ul -->
+	</div></div>
+		<div class="c-item  c-item-last">
+				<div class="c-foot">
+<p class="more"><a href="http://trending.foxnews.com">See all trends</a><span>&rsaquo;</span></p>
+<!-- <p class="advert-txt advert-txt-1">Sponsored By</p>  -->
+<div class="ad dc" id="trending-292x30"></div>
+</div></div>
+		</div>
+   </div><div><div class="c c-pad weather-blog t--1ms" >
+		<h2 class="title">Janice Dean Blog</h2>
+		<div class="c-item c-item-first">
+				<div class="dv-list m-3-1 m-l ov-16 t--1ms" >
+	<ul class="dv-encap" >
+	<li class="dv-item teaser-ct dv-item-first dv-item-last" >
+	        <h3 >
+	  <a title="Janice Dean" alt="Janice Dean" href="http://weather.blogs.foxnews.com/">Janice Dean</a></h3>   	
+<div class="m">
+	 	<a title="Janice Dean" alt="Janice Dean" href="http://weather.blogs.foxnews.com/"><img src="http://global.fncstatic.com/static/managed/img/Weather/janice_dean_blog_thumbnail_60x60.jpg" alt="Janice Dean is an FNC Meteorologist. Join her each day on her blog as she breaks down the latest weather news."></a></div>
+   <div class="summary">Janice Dean is an FNC Meteorologist. Join her each day on her blog as she breaks down the latest weather news.</div>
+</li><!-- closing dv-item li -->        
+	</ul><!-- closing dv-encap ul -->
+	</div></div>
+		<div class="c-item  c-item-last">
+				<div class="dv-feature t--1ms" >
+	<ul class="dv-encap"  itemscope itemtype="http://schema.org/ItemList">
+	<li class="dv-item  dv-item-first"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://weather.blogs.foxnews.com/2017/11/29/another-quiet-weather-week/"  rel="nofollow">	  		
+	  		Another quiet weather week!</a>
+	  </h3>   	
+<p class="date">
+		<span class="default-date">November 29, 2017</span>
+			</p>     
+	<p class="comment">
+     <a href="http://weather.blogs.foxnews.com/2017/11/29/another-quiet-weather-week/"><span class="result">0</span><span class="label">Comments</span></a>
+    </p>			
+  <meta itemprop="datePublished" content="2017-11-29T10:57:04Z">
+<meta itemprop="description" name="description" content="Good morning everyone!  Happy Wednesday.  We&#8217;ve got another quiet day ahead in weather with more snow and rain over the Northwest as another system approaches from the Pacific.A mix of light...">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item "  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://weather.blogs.foxnews.com/2017/11/27/a-fairly-quiet-start-to-the-workweek/"  rel="nofollow">	  		
+	  		A fairly quiet start to the workweek...</a>
+	  </h3>   	
+<p class="date">
+		<span class="default-date">November 27, 2017</span>
+			</p>     
+	<p class="comment">
+     <a href="http://weather.blogs.foxnews.com/2017/11/27/a-fairly-quiet-start-to-the-workweek/"><span class="result">0</span><span class="label">Comments</span></a>
+    </p>			
+  <meta itemprop="datePublished" content="2017-11-27T10:45:08Z">
+<meta itemprop="description" name="description" content="Good morning everyone.  Hope you had a great Thanksgiving. We&#8217;ve got a pretty quiet start to the week as people get back to work after a nice long weekend.Temperatures are 20-30 degrees...">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item  dv-item-last"  itemprop="itemListElement">
+	        <h3 >
+	  <a href="http://weather.blogs.foxnews.com/2017/11/17/travel-weather-this-weekend/"  rel="nofollow">	  		
+	  		Travel Weather this weekend</a>
+	  </h3>   	
+<p class="date">
+		<span class="default-date">November 17, 2017</span>
+			</p>     
+	<p class="comment">
+     <a href="http://weather.blogs.foxnews.com/2017/11/17/travel-weather-this-weekend/"><span class="result">1</span><span class="label">Comments</span></a>
+    </p>			
+  <meta itemprop="datePublished" content="2017-11-17T11:16:02Z">
+<meta itemprop="description" name="description" content="Good morning everyone!   Happy Friday.  We made it.We are getting into the busiest travel week of the year, so let&#8217;s take a look at the forecast over the next week:Heavier snow will fall...">
+</li><!-- closing dv-item li -->        
+	</ul><!-- closing dv-encap ul -->
+	</div></div>
+		</div>
+   </div><div><div class="c c-var-20 t--1ms" >
+		<h2 class="title">Latest Travel News</h2>
+		<div class="c-item c-item-first c-item-last">
+				<div class="dv-feature dv-feature-24 m-7 m-l ov-24 t--1ms" >
+	<ul class="dv-encap"  itemscope itemtype="http://schema.org/ItemList">
+	<li class="dv-item video-ct dv-item-first"  itemprop="itemListElement">
+	        <div class="m">
+	 	<a href="http://video.foxnews.com/v/5666193608001/" ><img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/12/03/156/88/694940094001_5666201198001_5666193608001-vs.jpg?pubId=694940094001?ve=1&tl=1" alt="Tips for booking flights, saving money and more on 'Fox  Friends.'"></a>
+	  	</div>
+   <h3 >
+	  <a href="http://video.foxnews.com/v/5666193608001/" >	  		
+	  		Holiday hacks for last minute travel <span class="type type-video"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-12-03T13:16:11Z">
+<meta itemprop="description" name="description" content="Tips for booking flights, saving money and more on 'Fox & Friends.'">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item video-ct"  itemprop="itemListElement">
+	        <div class="m">
+	 	<a href="http://video.foxnews.com/v/5663354449001/" ><img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/11/30/156/88/694940094001_5663364442001_5663354449001-vs.jpg?pubId=694940094001?ve=1&tl=1" alt="A computer glitch allowed too many pilots to take off during the holiday season."></a>
+	  	</div>
+   <h3 >
+	  <a href="http://video.foxnews.com/v/5663354449001/" >	  		
+	  		American Airlines may not have enough pilots during holidays <span class="type type-video"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-11-30T16:08:33Z">
+<meta itemprop="description" name="description" content="A computer glitch allowed too many pilots to take off during the holiday season.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item video-ct"  itemprop="itemListElement">
+	        <div class="m">
+	 	<a href="http://video.foxnews.com/v/5661080632001/" ><img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/11/28/156/88/694940094001_5661093096001_5661080632001-vs.jpg?pubId=694940094001?ve=1&tl=1" alt="Raw video: FAA investigating situation after aircraft collides with other aircraft while taxiing."></a>
+	  	</div>
+   <h3 >
+	  <a href="http://video.foxnews.com/v/5661080632001/" >	  		
+	  		Planes clip wings at JFK airport in New York City <span class="type type-video"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-11-28T14:31:24Z">
+<meta itemprop="description" name="description" content="Raw video: FAA investigating situation after aircraft collides with other aircraft while taxiing.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item video-ct"  itemprop="itemListElement">
+	        <div class="m">
+	 	<a href="http://video.foxnews.com/v/5659345842001/" ><img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/11/26/156/88/694940094001_5659351916001_5659345842001-vs.jpg?pubId=694940094001?ve=1&tl=1" alt="Travel blogger discusses new airline policies."></a>
+	  	</div>
+   <h3 >
+	  <a href="http://video.foxnews.com/v/5659345842001/" >	  		
+	  		British Airways to board passengers by ticket cost <span class="type type-video"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-11-26T21:46:33Z">
+<meta itemprop="description" name="description" content="Travel blogger discusses new airline policies.">
+</li><!-- closing dv-item li -->        
+	<li class="dv-item video-ct dv-item-last"  itemprop="itemListElement">
+	        <div class="m">
+	 	<a href="http://video.foxnews.com/v/5656234858001/" ><img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/11/23/156/88/694940094001_5656239447001_5656234858001-vs.jpg?pubId=694940094001?ve=1&tl=1" alt="Insight on 'America's Newsroom' as millions travel for Thanksgiving."></a>
+	  	</div>
+   <h3 >
+	  <a href="http://video.foxnews.com/v/5656234858001/" >	  		
+	  		Knowing your passenger rights during holiday travel <span class="type type-video"></span>
+ 				
+ 				</a>
+	  </h3>   	
+<meta itemprop="datePublished" content="2017-11-23T16:49:44Z">
+<meta itemprop="description" name="description" content="Insight on 'America's Newsroom' as millions travel for Thanksgiving.">
+</li><!-- closing dv-item li -->        
+	</ul><!-- closing dv-encap ul -->
+	</div></div>
+		</div>
+   </div><div><div class="c c-bdr-1">
+     <div class="c-item c-item-first">
+       <div class="advert">
+        <div class="ad qu" id="qu_channel_7">
+			   		<script>try {jQuery.ad.goog.adsense.embed({qid:"channel_7"}); } catch(err) { }</script>
+				   	</div>	   
+			   </div>
+     </div>
+    </div>
+        </div><div><div class="c c-bdr-1">
+     <div class="c-item c-item-first">
+       <div class="advert">
+        <div class="ad dc" id="frame2-300x100">
+			   		</div>	   
+			   <p class="advert-txt advert-txt-3">Advertisement</p></div>
+     </div>
+    </div>
+        </div></div></div>
+</div>
+<div class="g-41 section-featured g-last">
+	<div class="component"><div></div></div>
+	<div class="component"><div></div></div>
+	<div class="component"><div></div></div>
+</div></div>    	
+		<footer id="section-footer-1">
+	<div>
+		<div class="g-7">
+			<div class="c c-bdr-4">
+				<h2 class="title">Sections</h2>
+				<div class="c-item c-item-first c-item-last">
+					<div class="dv-list">
+						<ul class="dv-encap">
+							<li class="dv-item dv-item-first"><a href="//www.foxnews.com/">Home</a></li>
+							<li class="dv-item"><a href="//video.foxnews.com/playlist/featured-editors-picks/">Video</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/politics.html">Politics</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/us.html">U.S.</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/opinion.html">Opinion</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/entertainment.html">Entertainment</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/tech.html">Tech</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/science.html">Science</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/health.html">Health</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/travel.html">Travel</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/lifestyle.html">Lifestyle</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/world.html">World</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/sports.html">Sports</a></li>
+							<li class="dv-item dv-item-last"><a href="//www.foxnews.com/weather/">Weather</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- /c -->
+		</div>
+		<div class="g-7">
+			<div class="c c-bdr-4">
+				<h2 class="title">Shows</h2>
+				<div class="c-item c-item-first c-item-last">
+					<div class="dv-list">
+						<ul class="dv-encap">
+							<li class="dv-item dv-item-first"><a href="//www.foxnews.com/americasnewshq/">America's News HQ</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/americasnewsroom/">America's Newsroom</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/yourworld/">Cavuto</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/fox-files/">Fox Files</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/foxfriendsfirst">Fox &amp; Friends First</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/foxfriends/">Fox &amp; Friends</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/fox-friends-weekend/index.html?page=weekend">Fox &amp; Friends Weekend</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/shows/fox-news-at-night.html">Fox News @ Night</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/shows/fox-news-reporting.html">Fox News Reporting</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/fns/">Fox News Sunday</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/geraldo/">Geraldo Rivera Reports</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/hannity/">Hannity</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/happeningnow/">Happening Now</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/justice-jeanine/index.html">Justice with Judge Jeanine</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/shows/l-and-l">Legends &amp; Lies: The Patriots</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/media-buzz">#mediabuzz</a></li>
+							<li class="dv-item dv-item-last"><a href="//www.foxnews.com/on-air/outnumbered/">Outnumbered</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- /c -->
+		</div>
+		<div class="g-7">
+			<div class="c c-bdr-4">
+				<h2 class="title">&nbsp;</h2>
+				<div class="c-item c-item-first c-item-last">
+					<div class="dv-list">
+						<ul class="dv-encap">
+							<li class="dv-item dv-item-first"><a href="//www.foxnews.com/on-air/outnumbered-overtime/">Outnumbered Overtime with Harris Faulkner</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/shepard-smith/">Shepard Smith Reporting</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/special-report/">Special Report</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/shows/fox-news-specials.html">Specials</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/sunday-morning-futures/index.html">Sunday Morning Futures</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/costoffreedom/">The Cost of Freedom</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/the-daily-briefing/">The Daily Briefing with Dana Perino</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/the-five/index.html">The Five</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/the-fox-news-specialists/">The Fox News Specialists</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/shows/greg-gutfeld-show">The Greg Gutfeld Show</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/shows/the-ingraham-angle.html">The Ingraham Angle</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/journal-editorial-report/">The Journal Editorial Report</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/shows/the-property-man/">The Property Man</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/tucker-carlson-tonight/">Tucker Carlson Tonight</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/on-air/the-story-with-martha-maccallum/index.html">The Story with Martha MacCallum</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/warstories/">War Stories</a></li>
+							<li class="dv-item dv-item-last"><a href="//www.foxnews.com/on-air/watters-world/">Watters' World</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- /c -->
+		</div>
+		<div class="g-7">
+			<div class="c c-bdr-4">
+				<h2 class="title">Tools</h2>
+				<div class="c-item c-item-first c-item-last">
+					<div class="dv-list">
+						<ul class="dv-encap">
+							<li class="dv-item dv-item-first"><a href="//live.foxnews.com">Live Video</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/trending/">Trending</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/alerts/subscribe.html">Newsletters</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/newsletter-signup/alerts" target="_blank">Alerts</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/podcasts/">Podcasts</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/radio/">Radio</a></li>
+							<li class="dv-item dv-item-last"><a href="//www.foxnews.com/about/apps-downloads">Apps &amp; Products</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- /c -->
+		</div>
+		<div class="g-7">
+			<div class="c c-bdr-4">
+				<h2 class="title">About</h2>
+				<div class="c-item c-item-first c-item-last">
+					<div class="dv-list">
+						<ul class="dv-encap">
+							<li class="dv-item dv-item-first"><a href="//www.foxnews.com/on-air/personalities/">On Air Personalities</a></li>
+							<li class="dv-item"><a href="//careers.foxnews.com/">Careers</a></li>
+							<li class="dv-item"><a href="//careers.foxnews.com/students">College Students</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/foxaroundtheworld/">Fox Around the World</a></li>
+							<li class="dv-item"><a href="//advertise.foxnews.com" target="_blank">Advertise With Us</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/about/terms-of-use/">New Terms of Use</a> <a href="//www.foxnews.com/about/terms-new">(What's New)</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/about/privacy-policy/">New Privacy Policy</a></li>
+							<li class="dv-item"><a href="//www.foxnews.com/about/privacy-policy/#ad-choice">Ad Choices</a></li>
+							<li class="dv-item"><a href="//help.foxnews.com/index.html">Help</a></li>
+							<li class="dv-item"><a href="mailto:newsmanager@foxnews.com">Email Newsroom</a></li>
+							<li class="dv-item"><a href="//press.foxnews.com/">Media Relations</a></li>
+							<li class="dv-item dv-item-last"><a href="//www.foxnews.com/closed-captioning">Closed Captioning Policy</a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- /c -->
+		</div>
+		<div class="g-7 g-last">
+			<div class="c c-bdr-4">
+				<h2 class="title">Follow</h2>
+				<div class="c-item c-item-first c-item-last">
+					<div class="dv-list dv-list-3 dv-social-media">
+						<ul class="dv-encap">
+							<li class="dv-item dv-item-first">
+							<span class="one">&nbsp;</span> <strong><a href="//www.facebook.com/FoxNews">Facebook</a></strong>
+							</li>
+							<li class="dv-item">
+							<span class="two">&nbsp;</span> <strong><a href="//twitter.com/foxnews">Twitter</a></strong>
+							</li>
+							<li class="dv-item">
+							<span class="four">&nbsp;</span> <strong><a href="//www.google.com/+FoxNews">Google+</a></strong>
+							</li>
+							<li class="dv-item">
+							<span class="five">&nbsp;</span> <strong><a href="//www.instagram.com/foxnews/">Instagram</a></strong>
+							</li>
+							<li class="dv-item">
+							<span class="six">&nbsp;</span> <strong><a href="//www.foxnews.com/rss/index.html">RSS</a></strong>
+							</li>
+							<li class="dv-item">
+							<span class="seven">&nbsp;</span> <strong><a href="//www.foxnews.com/alerts/subscribe.html">Newsletters</a></strong>
+							</li>
+							<li class="dv-item dv-item-last"><a href="//www.foxnews.com"><div class="m"><img alt="Fox News" src="//global.fncstatic.com/static/v/all/img/logo-foxnews-1.gif"></div></a></li>
+						</ul>
+					</div>
+				</div>
+			</div><!-- /c -->
+		</div>
+		<div class="c">
+			<div class="c-item c-item-first">
+				<div class="dv-feature">
+					<ul class="dv-encap">
+						<li class="dv-item dv-item-first dv-item-last">
+							<p class="summary">This material may not be published, broadcast, rewritten, or redistributed.	&#169;2017 FOX News Network, LLC. All rights reserved. All market data delayed 20 minutes.</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div><!-- /c -->
+	</div>
+</footer><!-- /section-footer-1 -->
 
 <img src="//dbg52463.moatads.com?a=FoxNews" style="display:none;">
-<img src="//d5i9o0tpq9sa1.cloudfront.net?a=FoxNews" style="display:none;"><script type="text/javascript">
-	if (window.FOX && FOX.site && FOX.site.bottomInit) { FOX.site.bottomInit(); }
-	if (window.FOX_ContentSpotlight) { FOX_ContentSpotlight.pageReady(); } 
-
-	(function($){
-      $(window).load(function(){$.ad.init();});
-    }(jQuery));
-</script>
+<img src="//d5i9o0tpq9sa1.cloudfront.net?a=FoxNews" style="display:none;"><div itemscope itemtype="http://schema.org/Organization">
+	         <meta itemprop="name" content="2013 FOX News Network, LLC. All rights reserved.">
+	    	 <meta itemprop="email" content="newsmanager@foxnews.com">
+	     	 <meta itemprop="image" content="global.fncstatic.com/static/v/all/img/head/logo-foxnews.png"/>
+	</div>
+<script type="text/javascript"> jQuery.ad.pre(); FOX.site.bottomInit();</script>
+		<noscript>
+ <img src="http://metrics.foxnews.com/b/ss/foxnews/1/H22.1--NS/1512396887853?pageName=noscript:weather:subsection:article&g=http://www.foxnews.com/weather/your-weather/index.html" style="display:none;" width="0" height="0" border="0" alt="">
+ <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-801796h&amp;cg=0&amp;cc=1&amp;si=http://www.foxnews.com/weather/your-weather/index.html&amp;ts=noscript&amp;rnd=1512396887853" style="display:none;" width="0" height="0" border="0" alt="">
+ <img src="http://b.scorecardresearch.com/p?c1=2&c2=9013181&c3=&c4=http://www.foxnews.com/weather/your-weather/index.html&c5=&c6=&c15=&cv=2.2&cj=1" style="display:none;" width="0" height="0" border="0" alt="">
+</noscript> 	
 </div>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6d10dcb7c1","applicationID":"54596088","transactionName":"blVTZENSWUZYUUxdDlcfZEJYHFRaV0ZdWhUUQ0FfRV9eUlFGF1wVXV9SQx5aWVFcShZECUk=","queueTime":0,"applicationTime":53,"atts":"QhJQEgtISkg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+	</body>	
 </html>
