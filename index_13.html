@@ -1,517 +1,1146 @@
-<!DOCTYPE html>
-<html itemscope itemtype="http://schema.org/VideoObject">
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Fox Business Video</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="dc.source" content="Fox News Insider" />
+<meta name="dc.publisher" content="Fox News Insider" />
+<meta name="dc.format" scheme="dcterms.IMT" content="text/html" />
+<meta name="dc.title" content="Fox News Insider" />
+<meta name="dc.date" content="2017-12-04T10:14:30-05:00" />
+<meta name="dc.description" content="Fox News Insider is the place for all things Fox News Channel. We post highlights within minutes of airing and provide exclusive Fox Fan content you can't get anywhere else!" />
+<meta name="dcterms.abstract" content="Fox News Insider is the place for all things Fox News Channel. We post highlights within minutes of airing and provide exclusive Fox Fan content you can't get anywhere else!" />
+<meta name="description" content="Fox News Insider is the place for all things Fox News Channel. We post highlights within minutes of airing and provide exclusive Fox Fan content you can't get anywhere else!" />
+<meta name="keywords" content="Fox News,Fox News Channel,Fox News Insider,Official Blog,News,Headlines,Politics" />
+<meta name="dc.subject" content="Fox News,Fox News Channel,Fox News Insider,Official Blog,News,Headlines,Politics" />
 
-  <!--  dns-prefetch tags -->
-  <meta http-equiv="x-dns-prefetch-control" content="on">
-  <link rel="dns-prefetch" href="//a57.foxnews.com">
-  <link rel="dns-prefetch" href="//global.fncstatic.com">
-  <link rel="dns-prefetch" href="//images.outbrain.com">
-  <link rel="dns-prefetch" href="//widgets.outbrain.com">
-  <link rel="dns-prefetch" href="//widget-cdn.rpxnow.com">
-  <link rel="dns-prefetch" href="//pagead2.googlesyndication.com">
-  <link rel="dns-prefetch" href="//securepubads.g.doubleclick.net">
-  <link rel="dns-prefetch" href="//z.moatads.com">
-  <link rel="dns-prefetch" href="//hpr.outbrain.com">
-  <link rel="dns-prefetch" href="//metrics.foxnews.com">
-  <link rel="dns-prefetch" href="//cdn.tt.omtrdc.net">
-  <link rel="dns-prefetch" href="//foxnews.demdex.net">
-  <link rel="dns-prefetch" href="//static.chartbeat.com">
-  <link rel="dns-prefetch" href="//cdn.taboola.com">
-  <link rel="dns-prefetch" href="//assets.tapad.com">
-  <link rel="dns-prefetch" href="//www.googletagservices.com">
-  <link rel="dns-prefetch" href="//cdn.livefyre.com">
-  <link rel="dns-prefetch" href="//foxnews.tt.omtrdc.net">
-  <link rel="dns-prefetch" href="//log.outbrain.com">
-  <link rel="dns-prefetch" href="//cdn.optimizely.com">
-  <link rel="dns-prefetch" href="//b.scorecardresearch.com">
+<meta property="og:site_name" content="Fox News Insider" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://insider.foxnews.com/" />
+<meta property="og:title" content="Fox News Insider" />
+<meta property="og:description" content="Fox News Insider is the place for all things Fox News Channel. We post highlights within minutes of airing and provide exclusive Fox Fan content you can't get anywhere else!" />
+<meta property="og:image" content="http://insider.foxnews.com/sites/insider.foxnews.com/themes/insider_boot/img/generic-share.jpg" />
 
-  <link rel="schema.dc" href="http://purl.org/dc/elements/1.1/" />
-  <link rel="schema.dcterms" href="http://purl.org/dc/terms/" />
-  <link rel="schema.iptc" href="http://iptc.org/std/nar/2006-10-01/" />
-  <link rel="schema.prism" href="http://prismstandard.org/namespaces/basic/2.1/" />
-  <link rel="icon" href="//global.fncstatic.com/static/p/video/img/fb/favicon.png" type="image/png" />
-  <link rel="shortcut icon" href="//global.fncstatic.com/static/p/video/img/fb/favicon.ico" />
-  <link rel="canonical" href="http://video.foxbusiness.com/" />
-  <meta http-equiv="content-language" content="en">
-  <meta name="dc.description" content="Watch the latest politics, entertainment and breaking news videos at FoxBusiness.com" />
-  <meta name="dcterms.abstract" content="Watch the latest politics, entertainment and breaking news videos at FoxBusiness.com" />
-  <meta name="dc.title" lang="en" content="Fox Business Video" />
-  <meta name="dc.language" scheme="dcterms.RFC4646" content="en-US" />
-  <meta name="dc.format" scheme="dcterms.IMT" content="text/html" />
-  <meta name="dc.date" content="2017-12-04 10:08:22 AM" />
-  <meta name="dcterms.created" scheme="dcterms.ISO8601"  content="2017-12-04 10:08:22 AM" />
-  <meta name="dcterms.modified" scheme="dcterms.ISO8601" content="2017-12-04 10:08:22 AM" />
-  <meta name="dc.type" scheme="dcterms.DCMIType" content="Collection" />
-  <meta name="prism.genre" content="" />
-  <meta name="prism.aggregationType" content="article" />
-  <meta property="og:title" content="Fox Business Video" />
-  <meta property="og:description" content="Watch the latest politics, entertainment and breaking news videos at FoxBusiness.com" />
-  <meta property="og:url" content="http://video.foxbusiness.com/" />
-  <meta property="og:image" content="//video.foxbusiness.com/images/foxbusiness/thumb-placeholder.png" />
-  <meta property="og:type" content="article" />
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:url" content="http://video.foxbusiness.com/" />
-  <meta name="twitter:title" content="Fox Business Video" />
-  <meta name="twitter:description" content="Watch the latest politics, entertainment and breaking news videos at FoxBusiness.com" />
-  <meta name="twitter:image" content="https://video.foxbusiness.com/images/foxbusiness/thumb-placeholder.png" />
-  <meta name="twitter:site" content="@foxbusiness" />
-  <meta name="dc.publisher" content="Fox Business" />
-  <meta name="dc.subject" content="Fox Business, FoxBusiness.com, Fox Business Network, Video.FoxBusiness.com, Fox Business Video, FoxBusiness.com Video, video clips, business video, markets video, finance video" />
-  <meta property="og:site_name" content="Fox Business" />
-  <meta property="fb:app_id" content="116027085089150" />
-  <meta property="fb:pages" content="12795435237">
-  <meta itemprop="description" name="description" content="Watch the latest politics, entertainment and breaking news videos at FoxBusiness.com">
-  <meta name="prism.channel" content="fbn" />
-  <meta name="prism.section" content="video">
-  <meta name="prism.subsection1" content="on-demand" />
-  <meta name="prism.subsection2" content="" />
+<meta name="dcterms.created" scheme="dcterms.ISO8601" content="2017-12-04T10:14:30-05:00" /> 
+<meta name="dcterms.modified" scheme="dcterms.ISO8601" content="2017-12-04T10:14:30-05:00" />
 
-  <noscript>
-    <img src="//metrics.foxnews.com/b/ss/foxnewsbusinessprod/1/H22.1--NS/1512400102?pageName=noscript:fbn:video:collection&g=http://video.foxbusiness.com" style="display:none;" width="0" height="0" border="0" alt="" />
-     <img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=foxnewsbusinessprod&amp;cg=0&amp;cc=1&amp;si=http://video.foxbusiness.com&amp;ts=noscript&amp;rnd=1512400102" style="display:none;" width="0" height="0" border="0" alt="" />
-    <img src="//b.scorecardresearch.com/p?c1=2&c2=9013181&c3=&c4=http://video.foxbusiness.com&c5=&c6=&c15=&cv=2.2&cj=1" style="display:none;" width="0" height="0" border="0" alt="" />
-  </noscript>
+<meta name="prism.channel" content="fnc" />
+<meta name="prism.section" content="insider" />
+<meta name="prism.subsection1" content="" />
+<meta name="prism.subsection2" content="" />
+<meta name="prism.subsection3" content="" />
+<meta name="prism.subsection4" content="" />
 
 
-  <!-- Stylesheets -->
-<link href="//global.fncstatic.com/static/v/all/css/global.rs.css" rel="stylesheet" type="text/css" media="all"/>
-    <link href="//global.fncstatic.com/static/p/video/app/landing/css/style.css" rel="stylesheet" type="text/css" media="screen" />
-    <!--[if gte IE 8]><link href="//global.fncstatic.com/static/p/video/app/landing/css/ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
-    <!--[if gte IE 8]><link href="//global.fncstatic.com/static/p/video/app/landing/css/outbrain.ie.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
-    <!--[if gte IE 8]><link href="//global.fncstatic.com/static/v/fn2/site/css/ie.rs.css" rel="stylesheet" type="text/css" media="screen" /><![endif]-->
-    <!-- CDN - scripts and fonts -->
-    <!--[if lt IE 9]><script src="//global.fncstatic.com/static/v/all/js/html5shiv.js"></script><![endif]-->
-    <!--[if lt IE 9]><script src="//global.fncstatic.com/static/v/all/js/css3-mediaqueries.js"></script><![endif]-->
+<meta name="prism.aggregationType" content="root" />
+<meta name="dc.type" scheme="dcterms.DCMIType" content="Collection" />
+<meta name="prism.genre" content="homePage" />
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "Fox News Insider",
+  "url": "http://insider.foxnews.com/",
+  "logo": "http://insider.foxnews.com/sites/insider.foxnews.com/themes/insider_boot/img/FoxNewsInsider.png",
+  "sameAs": [
+	"http://facebook.com/foxnewsinsider",
+	"http://twitter.com/foxnewsinsider",
+	"http://plus.google.com/106258642361337191734",
+	"http://www.youtube.com/user/FoxNewsInsider"
+  ]
+}
+</script>
+<meta property="fb:app_id" content="349898035111803"/>
+<meta property="fb:pages" content="149658925128808" />
 
-  <link href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+<!-- Google Authorship and Publisher Markup -->
+<link rel="author" href="https://plus.google.com/+FoxnewsinsiderPlus/posts"/>
+<link rel="publisher" href="https://plus.google.com/+FoxnewsinsiderPlus"/>
+<!-- Bing Verification -->
+<!-- <meta name="msvalidate.01" content="38385524B123983AC856A0704AFA749E" /> --><meta name="msvalidate.01" content="8BB0E8331D9B26C16C12B4BB1ED99302" />
+<!-- twitter card -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@foxnewsinsider">
+<meta name="twitter:creator" content="@foxnewsinsider">
+<meta name="google-site-verification" content="EYeIKKciyrqySY-yLHUcPP38bOtbfLXIX3zkmCgBmb4" /><!-- new site -->
+<meta name="y_key" content="9ba66ba07c6abaa2" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://insider.foxnews.com/sites/insider.foxnews.com/themes/insider_boot/favicon.ico" type="image/vnd.microsoft.icon" />
 
-    <script>
+  <title>Fox News Insider | The official blog of Fox News Channel.</title>
+  <link type="text/css" rel="stylesheet" href="http://insider.foxnews.com/sites/insider.foxnews.com/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://insider.foxnews.com/sites/insider.foxnews.com/files/css/css_u9Cn6xFPfn6NvRqMGUV6k10stVTR4AGT7eontS75hX4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://insider.foxnews.com/sites/insider.foxnews.com/files/css/css_MnXiytJtb186Ydycnpwpw34cuUsHaKc80ey5LiQXhSY.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://insider.foxnews.com/sites/insider.foxnews.com/files/css/css_j6NwDfd320H8nsMtSwjh93K27r6u_GYHsB4ORRA1q4c.css" media="all" />
 
-      window.PAGE_VARS = {
-        site: "foxbusiness"
-                , title: ""
-        , url: "http://video.foxbusiness.com/v//?playlist_id=937116503001"
-      };
+  <link rel="apple-touch-icon" sizes="120x120" href="http://insider.foxnews.com/sites/insider.foxnews.com/themes/insider_boot/img/touch-icon-iphone-retina.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="http://insider.foxnews.com/sites/insider.foxnews.com/themes/insider_boot/img/touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="http://insider.foxnews.com/sites/insider.foxnews.com/themes/insider_boot/img/apple-touch-icon.png">
 
-    </script>
+  <!--[if lt IE 9]>
+    <script type="text/javascript" src="http://insider.foxnews.com/sites/insider.foxnews.com/themes/insider_boot/js/html5shiv.js"></script>
+    <script type="text/javascript" src="http://insider.foxnews.com/sites/insider.foxnews.com/themes/insider_boot/js/respond.min.js"></script>
+  <![endif]-->
 
-        <script src="//global.fncstatic.com/static/orion/scripts/core/ag.core.js"></script>
-    <script src="//global.fncstatic.com/static/isa/core.js"></script>
-    <script src="//global.fncstatic.com/static/orion/scripts/core/pages/video.landing/ag.app.js"></script>
-    
+  <link href='http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,700italic,900|Roboto+Condensed:400italic,700italic,400,700' rel='stylesheet' type='text/css'>
+
+  <script src="http://insider.foxnews.com/sites/insider.foxnews.com/files/js/js_sIEhOevNKIUkIYpk8eSqKctpRyhxbZQ5sCnz_oCyBYQ.js"></script>
+<script src="http://insider.foxnews.com/sites/insider.foxnews.com/files/js/js_aPmPAwI5YBqOPTy6jTz1PCunjjn8gdH766RJtQWmLw4.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"insider_boot","theme_token":"to4oYvsPnaNy9-UB6YyUPGb2dDiNtPpi-hTnJj2uaK8","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/insider.foxnews.com\/themes\/insider_boot\/js\/jquery-1.7.1.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/insider.foxnews.com\/themes\/insider_boot\/js\/bootstrap.min.js":1,"sites\/insider.foxnews.com\/themes\/insider_boot\/js\/plugins.js":1,"sites\/insider.foxnews.com\/themes\/insider_boot\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ckeditor\/css\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/insider.foxnews.com\/themes\/insider_boot\/css\/bootstrap.min.css":1,"sites\/insider.foxnews.com\/themes\/insider_boot\/css\/style.css":1}},"bootstrap":{"anchorsFix":1,"anchorsSmoothScrolling":1,"popoverEnabled":0,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":0,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+
+  
+            <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-16613902-1', 'auto');
+      ga('require', 'linkid', 'linkid.js');
+      ga('send', 'pageview');
+      var trackOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+      function () {
+      document.location = url;
+      }
+      });
+      }
+      </script>
+      	
+			
+            <script type="text/javascript" src="//global.fncstatic.com/static/isa/core.js"></script>
+
 </head>
-<body class="fb-video">
-<div>
-  <div id="drawer">
-	<form action="http://www.foxbusiness.com/search-results/search" method="get">
-		<fieldset class="search">
-			<legend>Search</legend>
-			<input type="text" value="Search foxbusiness.com" name="q" class="resp_site_search" onblur="" onfocus="" autocomplete="off">
-		</fieldset>
-	</form>
-	<div id="user-options"><div class="logged-out"><p>Sign in to comment!</p></div><a class="login" href="#">Login</a></div>
-	<nav data-track-zone="subnav">
-		<ul>
-			<li class="home"><a href="//www.foxbusiness.com">Fox Business Home</a></li>
-			<li class="watch"><a href="//video.foxbusiness.com/v/1251429410001/fox-business-network/#sp=watch-live">Watch Live</a></li>
-			<li class="trending"><a href="//www.foxbusiness.com/trending/">Fox Business Trending</a></li>
-			<li>
-				<a href="#">Video</a>
-				<ul>
-					<li><a href="//watch.foxbusiness.com">Watch Live</a></li>
-					<li><a href="//video.foxbusiness.com?#sp=show-clips">Show Clips</a></li>
-					<li><a href="//video.foxbusiness.com?#sp=news-clips">News Clips</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Markets</a>
-				<ul>
-					<li><a href="//www.foxbusiness.com/markets/index.html">Markets Home</a></li>
-					<li><a href="//www.foxbusiness.com/category/markets/earnings">Corporate Earnings</a></li>
-					<li><a href="//www.foxbusiness.com/category/markets/commodities">Commodities</a></li>
-					<li><a href="//www.foxbusiness.com/category/markets/currencies">Currencies</a></li>
-					<li><a href="//www.foxbusiness.com/category/investing/mutual-funds">Mutual Funds</a></li>
-					<li><a href="//www.foxbusiness.com/category/markets/etfs">ETFs</a></li>
-					<li><a href="//www.foxbusiness.com/category/markets/world-markets">World Markets</a></li>
-					<li><a href="//www.foxbusiness.com/markets/earnings-calendar/index.html">Earnings Calendar</a></li>
-					<li class="last"><a href="//www.foxbusiness.com/category/morning-outlook">Morning Outlook</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Industries</a>
-				<ul>
-					<li class="last"><a href="//www.foxbusiness.com/industries/index.html">Industries Home</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Economy &amp; Policy</a>
-				<ul>
-					<li><a href="//www.foxbusiness.com/economy-policy/index.html">Economy &amp; Policy Home</a></li>
-					<li><a href="//www.foxbusiness.com/economy-policy/pension-crisis/index.html">Pension Crisis</a></li>
-					<li><a href="//www.foxbusiness.com/category/government/government-spending">Government Spending</a></li>
-					<li><a href="//www.foxbusiness.com/category/government/regulation">Regulation</a></li>
-					<li><a href="//www.foxbusiness.com/category/government/the-fed">The Fed</a></li>
-					<li><a href="//www.foxbusiness.com/category/economy/jobs-reports">Jobs Report</a></li>
-					<li><a href="//www.foxbusiness.com/news/economy/private-company-indicator/index.html">Private Company Indicator</a></li>
-					<li class="last"><a href="//www.foxbusiness.com/category/emacs-bottom-line">EMac's Bottom Line</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Investing</a>
-				<ul>
-					<li><a href="//www.foxbusiness.com/investing/index.html">Investing Home</a></li>
-					<li><a href="//quote.foxbusiness.com/loggedout">My Portfolio &amp; Watchlist</a></li>
-					<li><a href="//quote.foxbusiness.com/alerts">Stock Alerts</a></li>
-					<li class="last"><a href="//www.foxbusiness.com/investing/stock-buzz/index.html">Stock Buzz</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Technology</a>
-				<ul>
-					<li><a href="//www.foxbusiness.com/technology/index.html">Technology Home</a></li>
-					<li><a href="//www.foxbusiness.com/category/technology/gadgets">Gadgets</a></li>
-					<li><a href="//www.foxbusiness.com/category/technology/cyber-security">Cyber Security</a></li>
-					<li><a href="//www.foxbusiness.com/category/technology/social-media">Social Media</a></li>
-					<li><a href="//www.foxbusiness.com/category/technology/mobile">Mobile</a></li>
-					<li class="last"><a href="//www.foxbusiness.com/category/next-in-tech">Next in Tech</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Personal Finance</a>
-				<ul>
-					<li><a href="//www.foxbusiness.com/personal-finance/index.html">Personal Finance Home</a></li>
-					<li><a href="//www.foxbusiness.com/personal-finance/home-mortgage/index.html">Home &amp; Mortgage</a></li>
-					<li><a href="//www.foxbusiness.com/personal-finance/career/index.html">Career</a></li>
-					<li><a href="//www.foxbusiness.com/personal-finance/college-planning/index.html">College Planning</a></li>
-					<li><a href="//www.foxbusiness.com/personal-finance/lifestyle-budget/index.html">Lifestyle &amp; Budget</a></li>
-					<li><a href="//www.foxbusiness.com/personal-finance/health-care/index.html">Health Care</a></li>
-					<li><a href="//www.foxbusiness.com/personal-finance/retirement/index.html">Retirement</a></li>
-					<li><a href="//www.foxbusiness.com/personal-finance/taxes/index.html">Taxes</a></li>
-					<li><a href="//www.foxbusiness.com/personal-finance/tools-calculators/index.html">Tools &amp; Calculator</a></li>
-					<li><a href="//jobs.foxbusiness.com/a/all-jobs/list">Job Search</a></li>
-					<li class="last"><a href="//www.foxbusiness.com/personal-finance/slideshows/index.html">Slideshows</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Business Leaders</a>
-				<ul>
-					<li><a href="//www.foxbusiness.com/business-leaders/index.html">Business Leaders Home</a></li>
-					<li><a href="//www.foxbusiness.com/business-leaders/c-level-events/index.html">C-Level Events</a></li>
-					<li><a href="//www.foxbusiness.com/category/business-leaders/conference-room">Conference Room</a></li>
-					<li class="last"><a href="//www.foxbusiness.com/category/business-leaders/critical-thinking">Critical Thinking</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">On Air</a>
-				<ul>
-					<li><a href="//www.foxbusiness.com/watch/show-schedule/index.html">On Air Home</a></li>
-					<li><a href="//www.foxbusiness.com/on-air/after-the-bell/index.html">After the Bell</a></li>
-					<li><a href="//www.foxbusiness.com/on-air/cavuto/index.html">Cavuto: Coast to Coast</a></li>
-					<li><a href="//www.foxbusiness.com/on-air/closing-bell/index.html">Countdown to Closing Bell</a></li>
-					<li><a href="//video.foxbusiness.com/playlist/on-air-fbn-am">FBN:am</a></li>
-					<li><a href="//www.foxbusiness.com/watch/anchors-reporters/trish-regan-bio">Intel Report w/ Trish Regan</a></li>
-					<li><a href="//www.foxbusiness.com/on-air/kennedy">Kennedy</a></li>
-					<li><a href="//www.foxbusiness.com/on-air/lou-dobbs-tonight/index.html">Lou Dobbs Tonight</a></li>
-					<li><a href="//www.foxbusiness.com/on-air/making-money/index.html">Making Money</a></li>
-					<li><a href="//www.foxbusiness.com/shows/opening-bell.html">Mornings with Maria</a></li>
-					<li><a href="//www.foxbusiness.com/on-air/risk-and-reward/index.html">Risk &amp; Reward w/ Deirdre Bolton</a></li>
-					<li><a href="//www.strangeinheritance.com">Strange Inheritance</a></li>
-					<li><a href="//www.foxbusiness.com/on-air/the-centsables">The Centsables</a></li>
-					<li><a href="//www.foxbusiness.com/on-air/varney-co/index.html">Varney &amp; Co.</a></li>
-					<li class="last"><a href="//www.foxnews.com/on-air/war-stories">War Stories</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">Small Business</a>
-				<ul>
-					<li><a href="//smallbusiness.foxbusiness.com/index.html">Small Business Home</a></li>
-					<li><a href="//smallbusiness.foxbusiness.com/starting-a-business/index.html">Starting a Business</a></li>
-					<li><a href="//smallbusiness.foxbusiness.com/marketing-sales/index.html">Marketing &amp; Sales</a></li>
-					<li><a href="//smallbusiness.foxbusiness.com/finance-accounting/index.html">Finance &amp; Accounting</a></li>
-					<li><a href="//smallbusiness.foxbusiness.com/legal-hr/index.html">Legal &amp; HR</a></li>
-					<li><a href="//smallbusiness.foxbusiness.com/technology-web/index.html">Technology &amp; Web</a></li>
-					<li><a href="//smallbusiness.foxbusiness.com/entrepreneurs/index.html">Entrepreneurs</a></li>
-					<li><a href="//smallbusiness.foxbusiness.com/home-office/index.html">Home Office</a></li>
-					<li class="last"><a href="//video.foxbusiness.com/playlist/small-business-latest-small-business/">Video</a></li>
-				</ul>
-			</li>
-			<li>
-				<a href="#">More from Fox News</a>
-				<ul>
-					<li><a href="//www.foxnews.com/">Fox News</a></li>
-					<li><a href="//www.foxbusiness.com">Fox Business</a></li>
-					<li><a href="//latino.foxnews.com">Fox News Latino</a></li>
-					<li><a href="//www.foxnewsgo.com">Fox Business Go</a></li>
-					<li><a href="//radio.foxnews.com">Fox News Radio</a></li>
-					<li><a href="//nation.foxnews.com">Fox Nation</a></li>
-					<li class="last"><a href="//foxnewsinsider.com">Fox News Insider</a></li>
-				</ul>
-			</li>
-		</ul>
-	</nav>
-</div><!-- /drawer --></div>
-<div id="wrapper" class="page">
-  <nav id="network">
-	<div>
-		<ul>
-			<li class="fn"><a href="//foxnews.com"><span><span>Fox News</span></span></a></li>
-			<li class="fb active"><a href="//foxbusiness.com"><span><span>Fox Business</span></span></a></li>
-			<li class="fb-go"><a href="//www.foxbusinessgo.com"><span><span>Fox Business Go</span></span></a></li>
-			<li class="fnr"><a href="//radio.foxnews.com"><span><span>Fox News Radio</span></span></a></li>
-			<li class="nat"><a href="//nation.foxnews.com"><span><span>Fox Nation</span></span></a></li>
-			<li class="fni"><a href="//foxnewsinsider.com/"><span><span>Fox News Insider</span></span></a></li>
-		</ul>
-		<div id="account"></div><!-- /account -->
-	</div>
-</nav><!-- /network -->    <header class="full">
-      <div class="wrap">
 
-        <header class="full">
-	<div class="wrap">
-		<div class="toolbars mobile-nav">
-			<nav>
-				<ul>
-					<li class="menu"><a class="drawer-open" href="#">Expand Menu</a></li>
-					<li class="user"><a href="#">Logout Provider</a></li>
-					<li class="logo"><a href="//www.foxbusiness.com">Fox Business</a></li>
-				</ul>
-			</nav>
-		</div>
-		<div class="toolbars desktop-nav">
-			<nav>
-				<ul>
-					<!-- <li class="menu"><a class="drawer-open" href="#">Expand Menu</a></li>-->
-					<li class="logo"><a href="//www.foxbusiness.com">Fox Business</a></li>
-					<li><a href="#watch-live">Watch Live</a></li>
-					<li><a href="#show-clips">Show Clips</a></li>
-					<li><a href="#news-clips">News Clips</a></li>
-				</ul>
-			</nav>
-			<ul class="user-search">
-				<li class="profile"></li>
-				<li class="user"><a href="#">Logout Provider</a></li>
-				<li class="search">
-					<div class="search-wrap">
-						<a href="#">Search</a>
-						<input size="50" type="text" placeholder="Search videos...">
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-</header>
+<!--[if lt IE 9]>   <body class="ie8 html front not-logged-in no-sidebars page-frontpage" "><![endif]-->
+<!--[if (gt IE 8)|!(IE)]><!--><body class="html front not-logged-in no-sidebars page-frontpage" ><!--<![endif]-->
 
-        <div class="video-container">
-
-          <div class="video-wrapper">
-
-            <div class="video-player">
-              <div class="viewport" style="height: 300px;"></div>
-              <div class="button popout hide"><a href="#" title="">Popout chat &rarr;</a></div>
-              <div class="button view"><a href="#" title="">Enlarge player &rarr;</a></div>
-            </div>
-
-            <div class="video-meta">
-
-              <span class="live-label">Live</span>
-              <h1>&nbsp;</h1>
-              <p></p>
-              <div class="sponsor"><span class="label">powered by</span></div>
-              <div class="social">
-                <ul>
-                  <li class="facebook"><a href="#" title="Facebook"><span></span></a></li>
-                  <li class="twitter"><a href="#" title="Twitter"><span></span></a></li>
-                </ul>
+    <script>dataLayer = [{'pageTitle': "fox news insider"}];</script>
+    
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PRKFKB"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PRKFKB');</script>
+ 
+  <!--[if lte IE 9]>   
+  <div class="modal fade ie8" id="browserModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="gtm-signup-close" aria-hidden="true">&times;</span></button>
+          <h2 class="modal-title">Your Browser is Unsupported</h2>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-xs-12">
+                <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a class="alert-link" href="http://browsehappy.com/">click here</a> to update your browser.</p>
               </div>
-             <div class="help">
-               <p>For video troubleshooting and help <a href="//help.foxnews.com/index.html" target="blank">click here</a>.</p>
-             </div>
-             <div class="fb-channel-finder">
-               <div class="content">
-               <div class="title">Fox Business Channel Finder</div>
-               <span>Find the Fox Business Network in your area.</span>
-               </div>
-               <div class="button show">
-               <a href="//www.foxbusiness.com/about/channel-finder/index.html">Find Now &rarr;</a>
-               </div>
-             </div>
-
-              
             </div>
-
-            
           </div>
-
-         <section class="chat-box">
-           <div class="box">
-
-             <div id="livefyre_comment_stream"></div>
-
-           </div>
-           <footer></footer>
-         </section>
-
         </div>
-
-
       </div>
-    </header>
-
-
-
-  <div class="main">
-
-    <div class="wrap interactive-content" data-sect-id="interactive-content">
-
-      <div class="box main-content">
-
-        <section class="cust-interactive">
-
-        </section>
-
-
-      </div>
-
-      <aside class="box sidebar">
-
-        <div class="module poll-mod">
-          <h2>Poll</h2>
-          <div class="widget"></div>
-        </div>
-
-      </aside>
-
-
     </div>
-
-    <div class="wrap news-clips" data-sect-id="news-clips">
-
-      <section class="subnav">
-        <nav class="secondary">
-          <ul>
-            <li><a href="#">&nbsp;</a></li>
-          </ul>
-        </nav>
-      </section>
-
-      <div class="feed-content">
-      </div>
-
-    </div>
-
-    <div class="wrap show-clips" data-sect-id="show-clips">
-
-      <section class="subnav">
-        <nav class="secondary">
-          <ul>
-            <li><a href="#">&nbsp;</a></li>
-          </ul>
-        </nav>
-      </section>
-
-      <div class="feed-content">
-      </div>
-
-    </div>
-
-
-    <div class="wrap watch-live" data-sect-id="watch-live">
-      <div class="wrap schedule show">
-      <!--
-        <section id="schedule">
-          <header>
-            <h2>Schedule</h2>
-            <h3><time datetime="">Wednesday, May 20, 2015</time></h3>
-            <a href="#" target="_blank">See Full Schedule</a>
-          </header>
-          <table cellspacing="0" cellpadding="0">
-            <thead>
-              <tr>
-                <td>&nbsp;</td>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td><img src="//global.fncstatic.com/static/p/video/app/landing/img/logo-fn.gif" alt="Fox News"></td>
-              </tr>
-              <tr>
-                <td><img src="//global.fncstatic.com/static/p/video/app/landing/img/logo-fb.gif" alt="Fox Business"></td>
-              </tr>
-              <tr>
-                <td><img src="//global.fncstatic.com/static/p/video/app/landing/img/logo-extra.gif" alt="Fox News Extra"></td>
-              </tr>
-              <tr>
-                <td colspan="7"><i>All times eastern</i></td>
-              </tr>
-            </tbody>
-          </table>
-        </section>
-      -->
-      </div>
-      <div class="feed-content">
-      </div>
-
-    </div>
-
-</div><!-- .main -->
-<footer class="footer">
-      <div class="wrap">
-        <div class="column footer-watch-live">
-          <h2>Watch Live</h2>
-          <ul>
-            <li><a href="#" title=""></a></li>
-          </ul>
-        </div>
-
-        <div class="column footer-show-clips">
-          <h2>Show Clips</h2>
-                    <ul>
-                        <li><a href="/playlist/on-air-after-the-bell/">After the Bell</a></li>
-                        <li><a href="/playlist/on-air-cavuto-coast-to-coast/">Cavuto: Coast to Coast</a></li>
-                        <li><a href="/playlist/on-air-countdown-to-closing-bell/">Countdown to Closing Bell</a></li>
-                        <li><a href="/playlist/on-air-fbn-am/">FBN:am</a></li>
-                        <li><a href="/playlist/on-air-the-intelligence-report-with-trish-regan/">Intel Report w/ Trish Regan</a></li>
-                        <li><a href="/playlist/on-air-kennedy/">Kennedy</a></li>
-                        <li><a href="/playlist/on-air-lou-dobbs-tonight/">Lou Dobbs Tonight</a></li>
-                        <li><a href="/playlist/on-air-making-money-with-charles-payne/">Making Money with Charles Payne</a></li>
-                      </ul>
-                    <ul>
-                        <li><a href="/playlist/on-air-mornings-with-maria/">Mornings with Maria</a></li>
-                        <li><a href="/playlist/on-air-risk-and-reward-with-deirdre-bolton/">Risk &amp; Reward with Deirdre Bolton</a></li>
-                        <li><a href="http://www.strangeinheritance.com/">Strange Inheritance<sup>&reg;</sup></a></li>
-                        <li><a href="/playlist/on-air-the-centsables/">The Centsables</a></li>
-                        <li><a href="/playlist/the-property-man/">The Property Man</a></li>
-                        <li><a href="/playlist/on-air-varney-and-co/">Varney &amp; Company</a></li>
-                        <li><a href="/playlist/wall-street-week/">Wall Street Week</a></li>
-                      </ul>
-                  </div>
-        <div class="column footer-news-clips">
-          <h2>News Clips</h2>
-          <ul>
-                        <li><a href="/playlist/latest-video-latest-video/">Latest</a></li>
-                        <li><a href="/playlist/on-air-latest-show-clips/">Shows</a></li>
-                        <li><a href="/playlist/hot-topics-editors-picks/">Hot Topics</a></li>
-                        <li><a href="/playlist/markets-latest-markets/">Markets</a></li>
-                        <li><a href="/playlist/economy-policy-latest-economy-policy/">Economy &amp; Policy</a></li>
-                        <li><a href="/playlist/investing-latest-investing/">Investing</a></li>
-                        <li><a href="/playlist/technology-latest-technology/">Technology</a></li>
-                        <li><a href="/playlist/personal-finance-latest-personal-finance/">Personal Finance</a></li>
-                        <li><a href="/playlist/business-leaders-latest-business-leaders/">Business Leaders</a></li>
-                        <li><a href="/playlist/small-business-latest-small-business/">Small Business</a></li>
-                      </ul>
-        </div>
-        <div class="legal">
-          <div class="logo"><a href="http://www.foxbusiness.com/">Fox Business</a></div>
-          <div class="back-to-top"><a href="#">Back to Top</a></div>
-          <div class="copyright">&copy;2017 FOX News Network, LLC. All rights reserved. This material may not be published, broadcast, rewritten, or redistributed. All market data delayed 20 minutes. <a href="http://www.foxbusiness.com/about/privacy-policy/">New Privacy Policy</a> - <a href="http://www.foxbusiness.com/about/terms-of-use/">New Terms of Use</a> <a href="http://www.foxbusiness.com/terms-new.html">(What's New)</a> - <a href="http://help.foxnews.com/index.html">FAQ</a></div>
-        </div>
-    </footer>
   </div>
-    <script> (function(FNC){ if (FNC.Loader) { FNC.Loader.init(); } }(window.FNC || {})); </script>
-  </body>
+  <![endif]-->
+    
+  <div class="fox-network-header">
+    <nav id="network">
+      <div class="container">
+        <ul>
+          <li class="fn"><a href="//foxnews.com"><span><span>Fox News</span></span></a></li>
+          <li class="fb"><a href="//foxbusiness.com"><span><span>Fox Business</span></span></a></li>
+          <li class="fn-go"><a href="//watch.foxnews.com"><span><span>Fox News Go</span></span></a></li>
+          <li class="fnr"><a href="//radio.foxnews.com"><span><span>Fox News Radio</span></span></a></li>
+          <li class="nat"><a href="//nation.foxnews.com"><span><span>Fox Nation</span></span></a></li>
+          <li class="fni"><a href="//foxnewsinsider.com/"><span><span>Fox News Insider</span></span></a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div id="site-wrapper">
+
+    
+    <header id="navbar-main" role="navigation" class="navbar navbar-static">
+  <ul class="navlinks container">
+    <div id="search-bkgd"></div>
+    <div class="toggle-nav btn-group"><button type="button" class="icon-button menu-btn btn"><span class="icon-bar icon1"></span><span class="icon-bar icon2"></span><span class="icon-bar icon3"></span><span class="icon-bar icon4"></span></button></div>
+    <li class="logo"><a class="fnc-logo" href="http://insider.foxnews.com"><span class="logo"></span></a></li><li class="section has-stories"><a class="nav-block-title" href="/latest">Latest</a><span class="icon caret-icon"></span><div class="nav-dropdown"><ul class="navblocks-stories container">      <li class="nav-column">		<div class="photo">
+		<a href="/2017/12/04/acting-ice-director-tom-homan-slams-sanctuary-city-policies-after-kate-steinle-verdict"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780/public/120417_homan.jpg?itok=_vaMEipi" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="439" alt="Thomas Homan, the acting director of Immigration and Customs Enforcement (ICE), says he was &quot;stunned&quot; and &quot;sickened&quot; by the not guilty verdict in the Kate Steinle murder trial." title="Thomas Homan, the acting director of Immigration and Customs Enforcement (ICE), says he was &quot;stunned&quot; and &quot;sickened&quot; by the not guilty verdict in the Kate Steinle murder trial." /></a>			</div> 
+		<div class="headline">
+		<h2>
+							<a href="http://insider.foxnews.com/2017/12/04/acting-ice-director-tom-homan-slams-sanctuary-city-policies-after-kate-steinle-verdict">'This Isn't the America I Grew Up In': Acting ICE Director Slams 'Ridiculous' Sanctuary City Policies</a>					</h2>
+	</div>
+
+
+</li>
+  <li class="nav-column">		<div class="photo">
+		<a href="/2017/12/04/alan-dershowitz-obstruction-justice-charges-against-trump-would-lead-constitutional"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780/public/120417_dersh.jpg?itok=8s4Wj7_D" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="439" alt="On &quot;Fox &amp; Friends&quot; this morning, Harvard Law School professor emeritus Alan Dershowitz disagreed with claims that there is a possible obstruction of justice case building against President Donald Trump." title="On &quot;Fox &amp; Friends&quot; this morning, Harvard Law School professor emeritus Alan Dershowitz disagreed with claims that there is a possible obstruction of justice case building against President Donald Trump." /></a>			</div> 
+		<div class="headline">
+		<h2>
+							<a href="http://insider.foxnews.com/2017/12/04/alan-dershowitz-obstruction-justice-charges-against-trump-would-lead-constitutional">'Hope Over Reality': Dershowitz Doesn't See Obstruction of Justice Case Against Trump</a>					</h2>
+	</div>
+
+
+</li>
+  <li class="nav-column">		<div class="photo">
+		<a href="/2017/12/03/greg-gutfeld-media-reaction-trump-calling-warren-pocahontas-navajo"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780/public/gutfeldpocahontas.jpg?itok=Z9eXn1W6" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="439" alt="Gutfeld Pocahontas Trump" title="Gutfeld Pocahontas Trump" /></a>			</div> 
+		<div class="headline">
+		<h2>
+							<a href="http://insider.foxnews.com/2017/12/03/greg-gutfeld-media-reaction-trump-calling-warren-pocahontas-navajo">Gutfeld on Media's Fiery Reaction to Trump's 'Pocahontas' Quip</a>					</h2>
+	</div>
+
+
+</li>
+  <li class="nav-column">		<div class="photo">
+		<a href="/2017/12/03/barack-obama-rips-donald-trump-paris-climate-accord-speech"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780/public/obama%20paris.jpg?itok=c82ufuMT" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="439" alt="Obama Paris" title="Obama Paris" /></a>			</div> 
+		<div class="headline">
+		<h2>
+							<a href="http://insider.foxnews.com/2017/12/03/barack-obama-rips-donald-trump-paris-climate-accord-speech">Obama Jabs Trump In Paris Climate Change Speech</a>					</h2>
+	</div>
+
+
+</li>
+  <li class="nav-column">		<div class="photo">
+		<a href="/2017/12/03/msnbc-does-not-cover-kate-steinle-murder-trial-verdict-against-illegal-immigrant"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780/public/steinle%20msnbc.jpg?itok=Zr-aIhX0" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="439" alt="Steinle MSNBC Coverage" title="Steinle MSNBC Coverage" /></a>			</div> 
+		<div class="headline">
+		<h2>
+							<a href="http://insider.foxnews.com/2017/12/03/msnbc-does-not-cover-kate-steinle-murder-trial-verdict-against-illegal-immigrant">'0 Minutes': MSNBC Ignores Kate Steinle Trial Verdict</a>					</h2>
+	</div>
+
+
+</li>
+</ul></div></li>
+<li class="section has-stories"><a class="nav-block-title" href="/trending">Trending</a><span class="icon caret-icon"></span><div class="nav-dropdown"><ul class="navblocks-stories container"><div class="fox-outbrain-nav-menu-block" data-fbk="foxInsiderTrending" data-src="http://insider.foxnews.com/" data-ob-template="FoxNewsInsider"></div></ul></div></li>
+<li class="section">
+		<a class="" href="http://insider.foxnews.com/5-things">5 Things </a>
+	</li><li class="section">
+		<a class="" href="http://insider.foxnews.com/tomi-lahren-final-thoughts">Tomi Lahren's Final Thoughts</a>
+	</li><li class="section">
+		<a class="" href="/people">People</a>
+	</li><li class="section">
+		<a class="" href="/shows">shows</a>
+	</li><li class="section">
+		<a class="" href="/mission">Mission</a>
+	</li><li class="more-sections has-stories"><a class="no-link">More</a><span class="icon caret-icon"></span><div class="more-dropdown more-sections"><ul class="container"></ul></div></li><li class="section follow-buttons"><div class="follow-mobile">Follow<span class="icon follow-mobile-icon"></span></div><div class="icon follow-icon"></div><div class="follow-dropdown"><div class="follow-buttons-content container"><span class="follow-text">Follow:</span><span class="fb-follow follow"><span class="follow-js"><div class="fb-like" data-href="https://www.facebook.com/FoxNewsInsider" data-layout="button" data-action="like" data-show-faces="false" data-share="false"></div></span></span>
+    <span class="tw-follow follow"><span class="follow-js"><div class="tw-button"><a class="twitter-follow-button" href="https://twitter.com/foxnewsinsider" data-show-screen-name="false" data-show-count="false">Follow</a></div></span></span>
+    <span class="yt-follow follow"><span class="follow-js"><div class="g-ytsubscribe" data-channel="FoxNewsInsider" data-count="hidden"></div></span></span></div></li><li id="search-box"><div class="icon expand-search-btn"></div><div class="gcse-searchbox-only" data-autoSearchOnLoad="false" data-queryParameterName="search" data-resultsUrl="/search" data-gaQueryParameter="search"></div></li>
+  </ul>
+</header>
+        
+            <div class="frontpage side-story">
+      <div class="front-upper">
+      <div class="container"><div class="big-top">
+  
+  
+  
+      
+    	
+<div class="featured-story">
+        <div class="headline">
+        <h2>
+                        <span class="title"><a href="http://insider.foxnews.com/2017/12/04/alan-dershowitz-obstruction-justice-charges-against-trump-would-lead-constitutional">
+                        'Hope Over Reality': Dershowitz Doesn't See Obstruction of Justice Case Against Trump                        </a> </span>
+        </h2>
+    </div>
+    <div class="photo">
+                <a href="http://insider.foxnews.com/2017/12/04/alan-dershowitz-obstruction-justice-charges-against-trump-would-lead-constitutional"><img typeof="foaf:Image" class="img-responsive no-lazy" src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/1280_crop/public/120417_dersh.jpg?itok=u9UUhb0E" width="1280" height="533" alt="On "Fox &amp; Friends" this morning, Harvard Law School professor emeritus Alan Dershowitz disagreed with claims that there is a possible obstruction of justice case building against President Donald Trump." title="On "Fox &amp; Friends" this morning, Harvard Law School professor emeritus Alan Dershowitz disagreed with claims that there is a possible obstruction of justice case building against President Donald Trump." ></a>
+    </div>            
+    </div>
+<div class="clearfix"></div>    
+  
+  
+  
+  
+  
+  <span class="clearfix"></span>
+</div> <div class="frontpage-middle">
+  
+  
+  
+      <div class="row">
+      <h2 class="block-title side-title">What's Hot</h2>
+      	<div class="col-xs-12 col-sm-4 pos-1">
+<div class="main-story">
+     
+    <div class="photo">
+                <a href="http://insider.foxnews.com/2017/12/03/judge-jeanine-pirro-opening-statement-kate-steinle-case-no-justice-after-jose-zarate"><div class="field-content"><img typeof="foaf:Image" class="img-responsive no-lazy" src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/judgejeanineopen.jpg?itok=6QqkXTSv" width="780" height="325" alt="Judge Jeanine Opening Statement" title="Judge Jeanine Opening Statement" ></div></a>
+    </div>
+    <span class="num"></span>
+    <div class="headline">
+        <h2>
+                        <span class="title"><a href="http://insider.foxnews.com/2017/12/03/judge-jeanine-pirro-opening-statement-kate-steinle-case-no-justice-after-jose-zarate">
+                        Judge Jeanine: Steinle Family Found Out Kate's Life 'Worth Nothing on Political Market'                        </a> </span>
+        </h2>
+    </div>
+    </div></div>
+	<div class="col-xs-12 col-sm-4 pos-2">
+<div class="main-story">
+     
+    <div class="photo">
+                <a href="http://insider.foxnews.com/2017/12/04/acting-ice-director-tom-homan-slams-sanctuary-city-policies-after-kate-steinle-verdict"><div class="field-content"><img typeof="foaf:Image" class="img-responsive no-lazy" src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/120417_homan.jpg?itok=59Bd4aZb" width="780" height="325" alt="Thomas Homan, the acting director of Immigration and Customs Enforcement (ICE), says he was "stunned" and "sickened" by the not guilty verdict in the Kate Steinle murder trial." title="Thomas Homan, the acting director of Immigration and Customs Enforcement (ICE), says he was "stunned" and "sickened" by the not guilty verdict in the Kate Steinle murder trial." ></div></a>
+    </div>
+    <span class="num"></span>
+    <div class="headline">
+        <h2>
+                        <span class="title"><a href="http://insider.foxnews.com/2017/12/04/acting-ice-director-tom-homan-slams-sanctuary-city-policies-after-kate-steinle-verdict">
+                        'This Isn't the America I Grew Up In': Acting ICE Director Slams 'Ridiculous' Sanctuary City Policies                        </a> </span>
+        </h2>
+    </div>
+    </div></div>
+	<div class="col-xs-12 col-sm-4 pos-3">
+<div class="main-story">
+     
+    <div class="photo">
+                <a href="http://insider.foxnews.com/2017/12/03/tomi-lahren-elizabeth-warren-claiming-cherokee-ancestry-trump-racial-slur"><div class="field-content"><img typeof="foaf:Image" class="img-responsive no-lazy" src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/TomiOnWatters_0.jpg?itok=QUTZIy3M" width="780" height="325" alt="Tomi Lahren" title="Tomi Lahren" ></div></a>
+    </div>
+    <span class="num"></span>
+    <div class="headline">
+        <h2>
+                        <span class="title"><a href="http://insider.foxnews.com/2017/12/03/tomi-lahren-elizabeth-warren-claiming-cherokee-ancestry-trump-racial-slur">
+                        'That's Exactly What She Did': Lahren Dismisses Warren's Claim Trump 'Exploited' Native Americans                        </a> </span>
+        </h2>
+    </div>
+    </div></div>
+    </div>
+  
+  
+  
+  
+  
+  <span class="clearfix"></span>
+</div> </div>
+    </div>
+  
+    <div class="container">
+    <div class="row front-lower">
+      <div class="headline-list col-xs-12 col-md-8">
+        	
+<div class="new front-story">
+<div class="headline no-image">
+	<h2>
+				
+		<span class="title"><a href="http://insider.foxnews.com/2017/12/03/barack-obama-rips-donald-trump-paris-climate-accord-speech">
+							Obama Jabs Trump In Paris Climate Change Speech			 </a>
+		</span>
+	</h2>
+</div>
+<div class="clearfix"></div>
+</div>
+
+ 
+	
+<div class="new front-story">
+<div class="headline no-image">
+	<h2>
+				
+		<span class="title"><a href="http://insider.foxnews.com/2017/12/03/donald-trump-honors-rosa-parks-62nd-anniversary-montgomery-bus-boycott">
+							WATCH: Trump Honors Rosa Parks on 62nd Anniversary of Bus Boycott			 </a>
+		</span>
+	</h2>
+</div>
+<div class="clearfix"></div>
+</div>
+
+ 
+	
+<div class="new front-story">
+<div class="headline no-image">
+	<h2>
+				
+		<span class="title"><a href="http://insider.foxnews.com/2017/12/02/pam-bondi-says-federal-charges-mean-kate-steinle-will-get-justice">
+							Pam Bondi: Federal Charges Mean &#039;We&#039;re Going to See Some Justice&#039; for Steinle Family			 </a>
+		</span>
+	</h2>
+</div>
+<div class="clearfix"></div>
+</div>
+
+ 
+	
+<div class="new front-story">
+<div class="headline no-image">
+	<h2>
+				
+		<span class="title"><a href="http://insider.foxnews.com/2017/12/03/greg-gutfeld-media-reaction-trump-calling-warren-pocahontas-navajo">
+							Gutfeld on Media&#039;s Fiery Reaction to Trump&#039;s &#039;Pocahontas&#039; Quip			 </a>
+		</span>
+	</h2>
+</div>
+<div class="clearfix"></div>
+</div>
+
+ 
+	
+<div class="new front-story">
+<div class="headline no-image">
+	<h2>
+				
+		<span class="title"><a href="http://insider.foxnews.com/2017/12/02/hawaii-tests-cold-war-sirens-after-north-korea-missile-test">
+							Hawaii Tests Cold-War Era Sirens After North Korean Missile Test			 </a>
+		</span>
+	</h2>
+</div>
+<div class="clearfix"></div>
+</div>
+
+ 
+	
+<div class="new front-story">
+<div class="headline no-image">
+	<h2>
+				
+		<span class="title"><a href="http://insider.foxnews.com/2017/12/02/school-lunch-rules-eased-trump-agriculture-department">
+							Trump&#039;s USDA Relaxes Obama-Era School Lunch Restrictions			 </a>
+		</span>
+	</h2>
+</div>
+<div class="clearfix"></div>
+</div>
+
+ 
+	
+<div class="new front-story">
+<div class="headline no-image">
+	<h2>
+				
+		<span class="title"><a href="http://insider.foxnews.com/2017/12/02/sheriff-clarke-kate-steinle-verdict-build-wall-keep-felons-out">
+							Sheriff Clarke: Build The Wall or Illegal Immigrant Felons &#039;Will Keep Coming Back&#039;			 </a>
+		</span>
+	</h2>
+</div>
+<div class="clearfix"></div>
+</div>
+
+ 
+      </div>
+      <div class="sidebar-front col-xs-12 col-md-4">
+        <div id="ad-content" class="sidebar-ad"><div class="ad gpt" id="desktop-300x250"></div></div>
+        <div id="outbrain"><div class="fox-outbrain-recommended" data-src="http://insider.foxnews.com" data-ob-template="FoxNewsInsider"></div></div>
+        <script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+        <script>
+        (function($) {  //outbrain tracking;
+            $(document).ready(function() {
+                OBR.extern.researchWidget();
+            });
+        });
+        </script>
+      </div>
+    </div>    
+  </div>
+  
+  
+  
+  
+  
+  <span class="clearfix"></span>
+</div>             
+    
+            <div id="page-container" class="container">
+            <div class="row">
+                
+                <div class="main-right col-xs-12">
+                                                                                                                                            
+                    
+                                               
+                </div>
+            </div>
+                                                                    <section id="block-views-latest-latest-block" class="block block-views clearfix">
+
+      
+  <div class="latest-block story-loop infinite-content">
+           
+      <h2 class="latest-news section-title">Latest <small>from</small> Fox News <span class="latest-channel">Channel</span></h2>
+    
+  
+  
+  
+      <div class="stories row">
+        <div class="story" class="views-row views-row-1 views-row-odd views-row-first">
+    	
+			
+		<div class="col-sm-4 col-xs-12 pull-right">
+			<div class="photo">
+				                                <a href="http://insider.foxnews.com/2017/12/04/acting-ice-director-tom-homan-slams-sanctuary-city-policies-after-kate-steinle-verdict">
+                                <img class="img-responsive lazy-load" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/120417_homan.jpg?itok=59Bd4aZb" data-loaded="false" width="780" height="325"/></a>
+                <div class="mobile-share hover-buttons">
+					<button type="button" class="btn btn-primary share-arrow" data-toggle="modal" data-target="#shareModal" data-sharesrc="hover" data-storyurl="http://insider.foxnews.com/2017/12/04/acting-ice-director-tom-homan-slams-sanctuary-city-policies-after-kate-steinle-verdict" data-headline="'This Isn't the America I Grew Up In': Acting ICE Director Slams 'Ridiculous' Sanctuary City Policies"><span class="text">Share</span><span class="icon"></span></button>
+				</div>
+			</div>
+		</div>		<div class="col-sm-8 col-xs-12 pull-left">
+			<div class="headline">
+				<h2>
+					<span class="title">
+																																<a href="http://insider.foxnews.com/2017/12/04/acting-ice-director-tom-homan-slams-sanctuary-city-policies-after-kate-steinle-verdict">'This Isn't the America I Grew Up In': Acting ICE Director Slams 'Ridiculous' Sanctuary City Policies</a>												
+					</span>
+				</h2>
+			</div>
+			<div class="summary">
+				<h4 class="hidden-xs">
+										<p>Tom Homan, the acting director of Immigration and Customs Enforcement (ICE), says he was "stunned" and "sickened" by the not guilty verdict in the Kate Steinle murder trial.</p>
+									</h4>
+			</div>
+		</div>	 
+		
+	
+	<div class="border-container col-xs-12">
+		<div class="desktop-share hover-buttons">
+			<button type="button" class="btn btn-primary share-arrow" data-toggle="modal" data-target="#shareModal" data-sharesrc="hover" data-storyurl="http://insider.foxnews.com/2017/12/04/acting-ice-director-tom-homan-slams-sanctuary-city-policies-after-kate-steinle-verdict" data-headline="'This Isn't the America I Grew Up In': Acting ICE Director Slams 'Ridiculous' Sanctuary City Policies"><span class="text">Share</span><span class="icon"></span></button>
+		</div>
+		<span class="border"></span>
+	</div>
+	<div class="clearfix"></div>
+
+
+  </div>
+  <div class="story" class="views-row views-row-2 views-row-even">
+    	
+			
+		<div class="col-sm-4 col-xs-12 pull-right">
+			<div class="photo">
+				                                <a href="http://insider.foxnews.com/2017/12/04/alan-dershowitz-obstruction-justice-charges-against-trump-would-lead-constitutional">
+                                <img class="img-responsive lazy-load" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/120417_dersh.jpg?itok=xk82iwgo" data-loaded="false" width="780" height="325"/></a>
+                <div class="mobile-share hover-buttons">
+					<button type="button" class="btn btn-primary share-arrow" data-toggle="modal" data-target="#shareModal" data-sharesrc="hover" data-storyurl="http://insider.foxnews.com/2017/12/04/alan-dershowitz-obstruction-justice-charges-against-trump-would-lead-constitutional" data-headline="'Hope Over Reality': Dershowitz Doesn't See Obstruction of Justice Case Against Trump"><span class="text">Share</span><span class="icon"></span></button>
+				</div>
+			</div>
+		</div>		<div class="col-sm-8 col-xs-12 pull-left">
+			<div class="headline">
+				<h2>
+					<span class="title">
+																																<a href="http://insider.foxnews.com/2017/12/04/alan-dershowitz-obstruction-justice-charges-against-trump-would-lead-constitutional">'Hope Over Reality': Dershowitz Doesn't See Obstruction of Justice Case Against Trump</a>												
+					</span>
+				</h2>
+			</div>
+			<div class="summary">
+				<h4 class="hidden-xs">
+										<p>Alan Dershowitz disagreed with claims that there is a possible obstruction of justice case building against President Donald Trump.</p>
+									</h4>
+			</div>
+		</div>	 
+		
+	
+	<div class="border-container col-xs-12">
+		<div class="desktop-share hover-buttons">
+			<button type="button" class="btn btn-primary share-arrow" data-toggle="modal" data-target="#shareModal" data-sharesrc="hover" data-storyurl="http://insider.foxnews.com/2017/12/04/alan-dershowitz-obstruction-justice-charges-against-trump-would-lead-constitutional" data-headline="'Hope Over Reality': Dershowitz Doesn't See Obstruction of Justice Case Against Trump"><span class="text">Share</span><span class="icon"></span></button>
+		</div>
+		<span class="border"></span>
+	</div>
+	<div class="clearfix"></div>
+
+
+  </div>
+  <div class="story" class="views-row views-row-3 views-row-odd">
+    	
+			
+		<div class="col-sm-4 col-xs-12 pull-right">
+			<div class="photo">
+				                                <a href="http://insider.foxnews.com/2017/12/03/greg-gutfeld-media-reaction-trump-calling-warren-pocahontas-navajo">
+                                <img class="img-responsive lazy-load" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/gutfeldpocahontas.jpg?itok=3IHKI-P7" data-loaded="false" width="780" height="325"/></a>
+                <div class="mobile-share hover-buttons">
+					<button type="button" class="btn btn-primary share-arrow" data-toggle="modal" data-target="#shareModal" data-sharesrc="hover" data-storyurl="http://insider.foxnews.com/2017/12/03/greg-gutfeld-media-reaction-trump-calling-warren-pocahontas-navajo" data-headline="Gutfeld on Media's Fiery Reaction to Trump's 'Pocahontas' Quip"><span class="text">Share</span><span class="icon"></span></button>
+				</div>
+			</div>
+		</div>		<div class="col-sm-8 col-xs-12 pull-left">
+			<div class="headline">
+				<h2>
+					<span class="title">
+																																<a href="http://insider.foxnews.com/2017/12/03/greg-gutfeld-media-reaction-trump-calling-warren-pocahontas-navajo">Gutfeld on Media's Fiery Reaction to Trump's 'Pocahontas' Quip</a>												
+					</span>
+				</h2>
+			</div>
+			<div class="summary">
+				<h4 class="hidden-xs">
+										<p>Greg Gutfeld reacted to the media's outrage at President Trump for calling Sen. Elizabeth Warren (D-Mass.) "Pocahontas."</p>
+									</h4>
+			</div>
+		</div>	 
+		
+	
+	<div class="border-container col-xs-12">
+		<div class="desktop-share hover-buttons">
+			<button type="button" class="btn btn-primary share-arrow" data-toggle="modal" data-target="#shareModal" data-sharesrc="hover" data-storyurl="http://insider.foxnews.com/2017/12/03/greg-gutfeld-media-reaction-trump-calling-warren-pocahontas-navajo" data-headline="Gutfeld on Media's Fiery Reaction to Trump's 'Pocahontas' Quip"><span class="text">Share</span><span class="icon"></span></button>
+		</div>
+		<span class="border"></span>
+	</div>
+	<div class="clearfix"></div>
+
+
+  </div>
+  <div class="story" class="views-row views-row-4 views-row-even views-row-last">
+    	
+			
+		<div class="col-sm-4 col-xs-12 pull-right">
+			<div class="photo">
+				                                <a href="http://insider.foxnews.com/2017/12/03/barack-obama-rips-donald-trump-paris-climate-accord-speech">
+                                <img class="img-responsive lazy-load" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/obama%20paris.jpg?itok=-gZEkDQM" data-loaded="false" width="780" height="325"/></a>
+                <div class="mobile-share hover-buttons">
+					<button type="button" class="btn btn-primary share-arrow" data-toggle="modal" data-target="#shareModal" data-sharesrc="hover" data-storyurl="http://insider.foxnews.com/2017/12/03/barack-obama-rips-donald-trump-paris-climate-accord-speech" data-headline="Obama Jabs Trump In Paris Climate Change Speech"><span class="text">Share</span><span class="icon"></span></button>
+				</div>
+			</div>
+		</div>		<div class="col-sm-8 col-xs-12 pull-left">
+			<div class="headline">
+				<h2>
+					<span class="title">
+																																<a href="http://insider.foxnews.com/2017/12/03/barack-obama-rips-donald-trump-paris-climate-accord-speech">Obama Jabs Trump In Paris Climate Change Speech</a>												
+					</span>
+				</h2>
+			</div>
+			<div class="summary">
+				<h4 class="hidden-xs">
+										<p>While speaking at a gala in Paris, former President Barack Obama criticized President Donald Trump's handling of the climate change issue.</p>
+									</h4>
+			</div>
+		</div>	 
+		
+	
+	<div class="border-container col-xs-12">
+		<div class="desktop-share hover-buttons">
+			<button type="button" class="btn btn-primary share-arrow" data-toggle="modal" data-target="#shareModal" data-sharesrc="hover" data-storyurl="http://insider.foxnews.com/2017/12/03/barack-obama-rips-donald-trump-paris-climate-accord-speech" data-headline="Obama Jabs Trump In Paris Climate Change Speech"><span class="text">Share</span><span class="icon"></span></button>
+		</div>
+		<span class="border"></span>
+	</div>
+	<div class="clearfix"></div>
+
+
+  </div>
+    </div>
+    <div class="modal fade share" id="shareModal">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="gtm-signup-close" aria-hidden="true">&times;</span></button>
+            <div class="share-box"><div class="social-node-2"><ul class="list-inline"></ul></div></div>
+          </div>              
+        </div>
+      </div>
+    </div>
+  
+      <div class="col-xs-12">
+      <div class="text-center"><ul class="pagination"><li class="active first"><a href="#">1</a></li>
+<li><a title="Go to page 2" href="/frontpage?page=1">2</a></li>
+<li><a title="Go to page 3" href="/frontpage?page=2">3</a></li>
+<li class="pager-ellipsis disabled"><span>…</span></li>
+<li class="next last"><a title="Go to next page" href="/frontpage?page=1">next ›</a></li>
+</ul></div>      <a class="btn btn-primary more-btn load-more" href="#">Load More</a>
+    </div>
+  
+  
+
+  
+  
+  
+  
+</div>
+</section> <!-- /.block -->
+                    </div>
+
+                <div id="console-section">
+            <div class="container">
+            
+<section id="block-views-fnc-console-console-block" class="console-block clearfix">
+
+        <h2 id="whatson" class="block-title"><a href="/shows">What's on Fox News Channel</a></h2>
+    
+  	<div class="airings unseen swipe-outer">
+    <div class="scroll-arrow"><span class="icon arrow-right"></span></div>
+<ul class="swipe-inner unseen list-inline">
+    
+
+
+<li>
+     <div class="time">
+          <span class="hour">7</span> 
+                    <span class="am-pm">P</span>
+     </div>
+          <h3><a href="/show/story-martha-maccallum">The Story with Martha MacCallum</a></h3>
+          <p>The Baltimore Six back on the job. After being acquitted of all charges in the Freddie Gray case, one officer’s father speaks out.</p>
+</li>
+
+<li>
+     <div class="time">
+          <span class="hour">8</span> 
+                    <span class="am-pm">P</span>
+     </div>          
+          <h3><a href="/show/tucker-carlson-tonight">Tucker Carlson Tonight</a></h3>
+          <p>Rural Americans a threat to democracy? Inside the liberal warning – and how it could impact our nation’s voting policies.</p>
+</li>
+
+<li>
+     <div class="time">
+          <span class="hour">9</span> 
+                           
+          <span class="am-pm">P</span>
+     </div>          
+          <h3><a href="/show/hannity">Hannity</a></h3>
+          <p>Newt Gingrich on the FBI bombshell. Inside an anti-Trump agent’s role in the Clinton and Russia investigations.</p>
+</li>
+
+<li>
+     <div class="time">
+          <span class="hour">10</span> 
+                     
+          <span class="am-pm">P</span>
+     </div>          
+          <h3><a href="/show/ingraham-angle">The Ingraham Angle</a></h3>
+          <p>Laura Ingraham is not backing down: tough talk, powerful conversations and fierce debate you need to see.</p>
+</li>
+
+
+ 
+</ul>	</div>
+
+</section> <!-- /.block -->
+            </div>
+        </div>
+                
+        
+                        <div id="outbrain" class="popular"><div class="fox-outbrain-sidebar" data-src="http://insider.foxnews.com" data-ob-template="FoxNewsInsider" ></div></div>
+        <script type="text/javascript" src="http://widgets.outbrain.com/outbrain.js"></script>
+        <script>
+        (function($) {  //outbrain tracking;
+            $(document).ready(function() {
+                OBR.extern.researchWidget();
+            });
+        });
+        </script>
+        
+        <div id="primetime-shows">            
+            <div class="container">
+                	  	<span class="line-border"><span class="icon border-icon"></span></span><h2 class="block-title"><a href="http://insider.foxnews.com/show/the-five">The Five</a></h2>
+  	<div class="article-blocks block_4">
+  
+  
+  
+  
+  
+      <div class="stories-wrap swipe-outer unseen">
+      <div class="scroll-arrow"><span class="icon arrow-right"></span></div>
+      <div class="stories swipe-inner unseen">
+          <div class="story story-1">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/29/jesse-watters-reads-mom-texts-during-five"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/watters%20mother.jpg?itok=CRXFmXGT" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Watters Mom Texts" title="Watters Mom Texts" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/29/jesse-watters-reads-mom-texts-during-five">&#039;Mom Texts&#039;: Watters Reads Messages from Mother During &#039;Five&#039;</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-2">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/29/greg-gutfeld-texas-state-university-story-white-dna-abomination"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/gutfeldtxst.jpg?itok=t-9EEtgE" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Greg Gutfeld Texas State" title="Greg Gutfeld Texas State" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/29/greg-gutfeld-texas-state-university-story-white-dna-abomination">Gutfeld Reacts to Texas State U Student Praying for White Death</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-3">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/28/greg-gutfeld-monologue-keith-olbermann-retiring-commentary-about-trump"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/olbermann.jpg?itok=hggLVLMr" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Olbermann Gutfeld" title="Olbermann Gutfeld" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/28/greg-gutfeld-monologue-keith-olbermann-retiring-commentary-about-trump">Gutfeld on Olbermann &#039;Retirement&#039;: &#039;He Came, He Screamed, He Left&#039;</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>                <div class="clearfix"></div>                
+            </div>
+            <div class="container">
+                	  	<span class="line-border"><span class="icon border-icon"></span></span><h2 class="block-title"><a href="http://insider.foxnews.com/show/story-martha-maccallum">The Story <small>with</small> Martha MacCallum</a></h2>
+  	<div class="article-blocks block_5">
+  
+  
+  
+  
+  
+      <div class="stories-wrap swipe-outer unseen">
+      <div class="stories swipe-inner unseen">
+          <div class="story story-1">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/12/01/rep-steve-king-kate-steinle-verdict-sanctuary-city-policies-amnesty"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/120117_king.jpg?itok=e4W4ncI-" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Following the not guilty verdict in the Kate Steinle murder trial, Rep. Steve King (R-Iowa) pledged to spare no effort in blocking &quot;every form&quot; of amnesty for illegal immigrants." title="Following the not guilty verdict in the Kate Steinle murder trial, Rep. Steve King (R-Iowa) pledged to spare no effort in blocking &quot;every form&quot; of amnesty for illegal immigrants." /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/12/01/rep-steve-king-kate-steinle-verdict-sanctuary-city-policies-amnesty">Rep. King &#039;Sickened&#039; by Steinle Verdict, Pledges to Fight &#039;Every Form&#039; of Amnesty</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-2">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/30/kate-steinle-shooting-illegal-immigrant-jose-zarate-found-not-guilty"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/113017_notguilty.jpg?itok=dzqFrFxf" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Kate Steinle Shooting: Illegal Immigrant Jose Zarate Found Not Guilty" title="Kate Steinle Shooting: Illegal Immigrant Jose Zarate Found Not Guilty" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/30/kate-steinle-shooting-illegal-immigrant-jose-zarate-found-not-guilty">Kate Steinle&#039;s Accused Killer Found Not Guilty of Murder</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-3">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/29/benghazi-verdict-reaction-jason-chaffetz-us-government-let-victim-family-down"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/chaffetz_8.jpg?itok=ro52axXe" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Jason Chaffetz on Benghazi Verdict" title="Jason Chaffetz on Benghazi Verdict" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/29/benghazi-verdict-reaction-jason-chaffetz-us-government-let-victim-family-down">Chaffetz Rips Benghazi Verdict: &#039;The Country Let Victims Families Down&#039;</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>                <div class="clearfix"></div>
+            </div>        
+            <div class="container"> 
+                	  	<span class="line-border"><span class="icon border-icon"></span></span><h2 class="block-title"><a href="http://insider.foxnews.com/show/tucker-carlson-tonight">Tucker Carlson Tonight</a></h2>
+  	<div class="article-blocks block_3">
+  
+  
+  
+  
+  
+      <div class="stories-wrap swipe-outer unseen">
+      <div class="stories swipe-inner unseen">
+          <div class="story story-1">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/12/01/jeff-sessions-sanctuary-city-policies-after-kate-steinle-not-guilty-verdict"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/120117_sessions.jpg?itok=PKJq1UKu" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Jeff Sessions on Sanctuary City Policies After Kate Steinle Not Guilty Verdict" title="Jeff Sessions on Sanctuary City Policies After Kate Steinle Not Guilty Verdict" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/12/01/jeff-sessions-sanctuary-city-policies-after-kate-steinle-not-guilty-verdict">Sessions: Trump, DOJ Doing Everything Possible to Reverse Sanctuary City Policies</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-2">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/12/01/tucker-carlson-michael-flynn-guilty-plea-doesnt-prove-collusion"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/120117_tucker.jpg?itok=oqs0IeC2" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="On his program tonight, Tucker Carlson said former National Security Adviser Michael Flynn pleading guilty to making false statements to the FBI is a major development, but it doesn&#039;t prove collusion between the Trump campaign and Russia." title="On his program tonight, Tucker Carlson said former National Security Adviser Michael Flynn pleading guilty to making false statements to the FBI is a major development, but it doesn&#039;t prove collusion between the Trump campaign and Russia." /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/12/01/tucker-carlson-michael-flynn-guilty-plea-doesnt-prove-collusion">Tucker: Flynn&#039;s Guilty Plea Doesn&#039;t Prove Collusion</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-3">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/12/01/francis-sexual-misconduct-problem-worldwide-not-about-one-network-or-party"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/MFTucker.jpg?itok=0AJqhueh" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Melissa Francis warned about hypocritical network predators" title="Melissa Francis warned about hypocritical network predators" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/12/01/francis-sexual-misconduct-problem-worldwide-not-about-one-network-or-party">Francis: Sexual Misconduct Problem Is Worldwide, Not About One Network or Party</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>                <div class="clearfix"></div>
+            </div>
+            <div class="container">
+                	  	<span class="line-border"><span class="icon border-icon"></span></span><h2 class="block-title"><a href="http://insider.foxnews.com/show/hannity">Hannity</a></h2>
+  	<div class="article-blocks block_6">
+  
+  
+  
+  
+  
+      <div class="stories-wrap swipe-outer unseen">
+      <div class="stories swipe-inner unseen">
+          <div class="story story-1">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/30/hannity-san-francisco-sanctuary-city-laws-policies-killed-kate-steinle"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/113017_hannity.jpg?itok=mZ-LEqPB" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="In his opening monologue tonight, Sean Hannity said sanctuary city laws and policies killed Kate Steinle." title="In his opening monologue tonight, Sean Hannity said sanctuary city laws and policies killed Kate Steinle." /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/30/hannity-san-francisco-sanctuary-city-laws-policies-killed-kate-steinle">Hannity: &#039;It Was San Francisco&#039;s Sanctuary City Policies That Killed Kate Steinle&#039;</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-2">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/29/sean-spicer-white-house-christmas-party-boycott-cnn-against-trump"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/spicer_4.jpg?itok=0BAqLu_7" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Sean Spicer White House Christmas CNN" title="Sean Spicer White House Christmas CNN" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/29/sean-spicer-white-house-christmas-party-boycott-cnn-against-trump">Spicer: CNN&#039;s WH Christmas Boycott Is a &#039;Disservice&#039; to Trump&#039;s &#039;Gracious&#039; Invitation</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-3">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/28/kellyanne-conway-slams-pelosi-schumer-democrat-obstruction-trump-tax-meeting"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/conway_13.jpg?itok=fJaI3QeU" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Kellyanne Conway Sean Hannity" title="Kellyanne Conway Sean Hannity" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/28/kellyanne-conway-slams-pelosi-schumer-democrat-obstruction-trump-tax-meeting">Conway on Pelosi &amp; Schumer No-Show: &#039;Democrat Party Reduced to Carrying a Stop Sign&#039;</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>                <div class="clearfix"></div>
+            </div>
+            <div class="container">
+                	  	<span class="line-border"><span class="icon border-icon"></span></span><h2 class="block-title"><a href="http://insider.foxnews.com/show/ingraham-angle">The Ingraham Angle</a></h2>
+  	<div class="article-blocks block_7">
+  
+  
+  
+  
+  
+      <div class="stories-wrap swipe-outer unseen">
+      <div class="stories swipe-inner unseen">
+          <div class="story story-1">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/29/marco-rubio-defends-child-tax-credit-senate-gop-tax-reform-bill"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/rubio1_1.jpg?itok=AWCp-s7G" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Marco Rubio Tax Reform" title="Marco Rubio Tax Reform" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/29/marco-rubio-defends-child-tax-credit-senate-gop-tax-reform-bill">Rubio: My Child Tax Credit in Senate Tax Bill Will Help Working Families</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-2">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/28/laura-ingraham-slams-melania-trump-bashing-double-standard-media-michelle-obama"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/melania1.jpg?itok=ZB_l5-ap" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Melania Trump" title="Melania Trump" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/28/laura-ingraham-slams-melania-trump-bashing-double-standard-media-michelle-obama">Ingraham Slams &#039;Double Standard&#039; Between Coverage of Melania Trump, Michelle Obama</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+  <div class="story story-3">
+    	
+		
+	 
+		<div class="pic">
+			<a href="/2017/11/28/laura-ingraham-blasts-vanity-fair-hit-piece-first-lady-melania-trump"><img typeof="foaf:Image" class="img-responsive lazy-load" data-loaded="false" data-src="http://insider.foxnews.com/sites/insider.foxnews.com/files/styles/780_crop/public/112817_ingraham.jpg?itok=OdaTtMRd" src="/sites/insider.foxnews.com/themes/insider_boot/img/0.gif" width="780" height="325" alt="Ingraham Blasts &#039;Vanity Fair&#039; &#039;Hit Piece&#039; on First Lady Melania Trump" title="Ingraham Blasts &#039;Vanity Fair&#039; &#039;Hit Piece&#039; on First Lady Melania Trump" /></a>		</div>
+		<div class="dek">
+			<h2>
+								<span class="title">
+											<a href="/2017/11/28/laura-ingraham-blasts-vanity-fair-hit-piece-first-lady-melania-trump">Laura Ingraham Blasts Vanity Fair &#039;Hit Piece&#039; on Melania Trump</a>									</span>
+			</h2>
+		</div>
+	
+
+
+  </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>                <div class="clearfix"></div>
+            </div>
+            <div class="container shows-btn">
+                <a class="more-shows btn btn-primary more-btn" href="/shows"><span class="more-text">More Shows</span><span class="icon"></span></a>
+            </div>            
+        </div>
+                
+
+        <footer class="footer">
+            <div class="container">
+                <div id="follow-us-footer" class="row">
+                    <div class="col-xs-12 col-sm-6 follow-left">
+                        <h2 class="connect block-title">Connect <span>with Fox News</span></h2>
+                        <h4 class="follow-copy">Don't want to keep checking back here for the latest from Fox News? That's cool. We'll come to you ...</h4>
+                        <div class="social-node-2">
+                            <ul class="list-inline">
+                            <a href="http://facebook.com/foxnewsinsider" target="_blank"><li class="fb"><span class="icon fb-icon"></span></li></a>
+                            <a href="http://twitter.com/foxnewsinsider" target="_blank"><li class="tw"><span class="icon tw-icon"></span></li></a>
+                            <a href="http://plus.google.com/106258642361337191734/" target="_blank"><li class="gp"><span class="icon gp-icon"></span></li></a>
+                                                        <a href="https://www.youtube.com/user/FoxNewsInsider" target="_blank"><li class="yt"><span class="icon yt-icon"></span></li></a> 
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 follow-right">
+                        <div class="clearfix newsletter-form newsletter-container">
+                            <h2 class="connect block-title">Subscribe</h2>
+                            <p>Stay connected with the most-watched, most-trusted name in news.</p>
+<p class="agree">Send me email updates from Fox News. I can opt out at any time. By signing up below, I agree to the Fox News <a href="/privacy-policy">Privacy Policy</a> and <a href="/terms-of-use">Terms of Use</a>. Questions? <a href="http://help.foxnews.com" target="_blank">Contact Fox News</a>.</p>
+<form id="newsletter-follow-sidebar" class="form-subscribe" class="form-inline" role="form">
+	<input class="form-control input-email" name="email" placeholder="Your Email Here" required type="email" />
+	<button class="btn btn-primary signUp">Submit</button>
+</form>                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+                <div class="footer-menus">
+                    <div id="menu-footer" class="col-xs-4 col-sm-2 col-md-offset-1 col-md-2">
+                        <ul>
+                            <li>
+                                <a href="/">Home</a>
+                            </li>
+                            <li>
+                                <a href="/latest">Latest</a>
+                            </li>
+                            <li>
+                                <a href="/trending">Trending</a>
+                            </li>
+                            <li>
+                                <a href="/people">People</a>
+                            </li>
+                            <li>
+                                <a href="/shows">Shows</a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="http://www.foxnews.com/schedule">Schedule</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="misc-footer col-xs-8 col-sm-4">
+                    <nav class="navbar navbar-default" role="navigation"><ul class="nav nav-justified"><li class="first leaf"><a href="/mission" title="">Mission</a></li>
+<li class="leaf"><a href="/contact-us" title="">Contact Us</a></li>
+<li class="leaf"><a href="/privacy-policy" title="">NEW Privacy Policy</a></li>
+<li class="leaf"><a href="/terms-of-use" title="">NEW TERMS OF USE</a></li>
+<li class="leaf"><a href="/terms-new" title="">What&#039;s New With Terms of Use</a></li>
+<li class="leaf"><a href="http://insider.foxnews.com/privacy-policy/#ad-choice" title="Ad Choices">Ad Choices</a></li>
+<li class="last leaf"><a href="/feed" title="">RSS</a></li>
+</ul></nav>                    </div>
+                    <div class="footer-logo col-xs-12 col-sm-6 col-md-5">
+                    <a href="/" alt="Fox News Insider"><span class="icon"></span></a>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>            
+                <p class="text-center copyright">
+                <small>
+                This material may not be published, broadcast, rewritten, or redistributed. ©2017 FOX News Network, LLC. All rights reserved.
+                </small>
+                </p>
+            </div>
+        </footer>
+  <script src="http://insider.foxnews.com/sites/insider.foxnews.com/files/js/js_B2uv6dkjoYobfQVyuXdchgrpnnx4oM0TkP_bDVf8Qrg.js"></script>
+  <script type="text/javascript">
+(function($, ISA){ if (!ISA) { return false; } ISA.pre(); $(document).ready(function(){ ISA.init(); });}(jQuery, (window.FNC && window.FNC.ISA) ? window.FNC.ISA : null));
+</script>  </div>
+</body>
 </html>

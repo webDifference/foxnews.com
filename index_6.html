@@ -1,987 +1,609 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8"><script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={xpid:"XQMGVlJACwEEUVRbBwg="};window.NREUM||(NREUM={}),__nr_require=function(t,n,e){function r(e){if(!n[e]){var o=n[e]={exports:{}};t[e][0].call(o.exports,function(n){var o=t[e][1][n];return r(o||n)},o,o.exports)}return n[e].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<e.length;o++)r(e[o]);return r}({1:[function(t,n,e){function r(t){try{s.console&&console.log(t)}catch(n){}}var o,i=t("ee"),a=t(15),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,n,e){r(e.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,n){return t}).join(", ")))},{}],2:[function(t,n,e){function r(t,n,e,r,o){try{d?d-=1:i("err",[o||new UncaughtException(t,n,e)])}catch(s){try{i("ierr",[s,c.now(),!0])}catch(u){}}return"function"==typeof f&&f.apply(this,a(arguments))}function UncaughtException(t,n,e){this.message=t||"Uncaught error with no additional information",this.sourceURL=n,this.line=e}function o(t){i("err",[t,c.now()])}var i=t("handle"),a=t(16),s=t("ee"),c=t("loader"),f=window.onerror,u=!1,d=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(l){"stack"in l&&(t(8),t(7),"addEventListener"in window&&t(5),c.xhrWrappable&&t(9),u=!0)}s.on("fn-start",function(t,n,e){u&&(d+=1)}),s.on("fn-err",function(t,n,e){u&&(this.thrown=!0,o(e))}),s.on("fn-end",function(){u&&!this.thrown&&d>0&&(d-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})},{}],3:[function(t,n,e){t("loader").features.ins=!0},{}],4:[function(t,n,e){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(8),s=t(7),c="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",l="resource",p="-start",h="-end",m="fn"+p,w="fn"+h,v="bstTimer",y="pushState",g=t("loader");g.features.stn=!0,t(6);var b=NREUM.o.EV;o.on(m,function(t,n){var e=t[0];e instanceof b&&(this.bstStart=g.now())}),o.on(w,function(t,n){var e=t[0];e instanceof b&&i("bst",[e,n,this.bstStart,g.now()])}),a.on(m,function(t,n,e){this.bstStart=g.now(),this.bstType=e}),a.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),this.bstType])}),s.on(m,function(){this.bstStart=g.now()}),s.on(w,function(t,n){i(v,[n,this.bstStart,g.now(),"requestAnimationFrame"])}),o.on(y+p,function(t){this.time=g.now(),this.startPath=location.pathname+location.hash}),o.on(y+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+c]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["c"+c]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(l)]),window.performance["webkitC"+c]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],5:[function(t,n,e){function r(t){for(var n=t;n&&!n.hasOwnProperty(u);)n=Object.getPrototypeOf(n);n&&o(n)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,n){return t[1]}var a=t("ee").get("events"),s=t(18)(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";n.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,n){var e=t[1],r=c(e,"nr@wrapped",function(){function t(){if("function"==typeof e.handleEvent)return e.handleEvent.apply(e,arguments)}var n={object:t,"function":e}[typeof e];return n?s(n,"fn-",null,n.name||"anonymous"):e});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],6:[function(t,n,e){var r=t("ee").get("history"),o=t(18)(r);n.exports=r,o.inPlace(window.history,["pushState","replaceState"],"-")},{}],7:[function(t,n,e){var r=t("ee").get("raf"),o=t(18)(r),i="equestAnimationFrame";n.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],8:[function(t,n,e){function r(t,n,e){t[0]=a(t[0],"fn-",null,e)}function o(t,n,e){this.method=e,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,e)}var i=t("ee").get("timer"),a=t(18)(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";n.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],9:[function(t,n,e){function r(t,n){d.inPlace(n,["onreadystatechange"],"fn-",s)}function o(){var t=this,n=u.context(t);t.readyState>3&&!n.resolved&&(n.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){g.push(t),h&&(x?x.then(a):w?w(a):(E=-E,O.data=E))}function a(){for(var t=0;t<g.length;t++)r([],g[t]);g.length&&(g=[])}function s(t,n){return n}function c(t,n){for(var e in t)n[e]=t[e];return n}t(5);var f=t("ee"),u=f.get("xhr"),d=t(18)(u),l=NREUM.o,p=l.XHR,h=l.MO,m=l.PR,w=l.SI,v="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],g=[];n.exports=u;var b=window.XMLHttpRequest=function(t){var n=new p(t);try{u.emit("new-xhr",[n],n),n.addEventListener(v,o,!1)}catch(e){try{u.emit("internal-error",[e])}catch(r){}}return n};if(c(p,b),b.prototype=p.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,n){r(t,n),i(n)}),u.on("open-xhr-start",r),h){var x=m&&m.resolve();if(!w&&!m){var E=1,O=document.createTextNode(E);new h(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===v||a()})},{}],10:[function(t,n,e){function r(t){var n=this.params,e=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<d;r++)t.removeEventListener(u[r],this.listener,!1);if(!n.aborted){if(e.duration=a.now()-this.startTime,4===t.readyState){n.status=t.status;var i=o(t,this.lastSize);if(i&&(e.rxSize=i),this.sameOrigin){var c=t.getResponseHeader("X-NewRelic-App-Data");c&&(n.cat=c.split(", ").pop())}}else n.status=0;e.cbTime=this.cbTime,f.emit("xhr-done",[t],t),s("xhr",[n,e,this.startTime])}}}function o(t,n){var e=t.responseType;if("json"===e&&null!==n)return n;var r="arraybuffer"===e||"blob"===e||"json"===e?t.response:t.responseText;return h(r)}function i(t,n){var e=c(n),r=t.params;r.host=e.hostname+":"+e.port,r.pathname=e.pathname,t.sameOrigin=e.sameOrigin}var a=t("loader");if(a.xhrWrappable){var s=t("handle"),c=t(11),f=t("ee"),u=["load","error","abort","timeout"],d=u.length,l=t("id"),p=t(14),h=t(13),m=window.XMLHttpRequest;a.features.xhr=!0,t(9),f.on("new-xhr",function(t){var n=this;n.totalCbs=0,n.called=0,n.cbTime=0,n.end=r,n.ended=!1,n.xhrGuids={},n.lastSize=null,p&&(p>34||p<10)||window.opera||t.addEventListener("progress",function(t){n.lastSize=t.loaded},!1)}),f.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),f.on("open-xhr-end",function(t,n){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&n.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid)}),f.on("send-xhr-start",function(t,n){var e=this.metrics,r=t[0],o=this;if(e&&r){var i=h(r);i&&(e.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"===t.type&&(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof n.onload))&&o.end(n)}catch(e){try{f.emit("internal-error",[e])}catch(r){}}};for(var s=0;s<d;s++)n.addEventListener(u[s],this.listener,!1)}),f.on("xhr-cb-time",function(t,n,e){this.cbTime+=t,n?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof e.onload||this.end(e)}),f.on("xhr-load-added",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&!this.xhrGuids[e]&&(this.xhrGuids[e]=!0,this.totalCbs+=1)}),f.on("xhr-load-removed",function(t,n){var e=""+l(t)+!!n;this.xhrGuids&&this.xhrGuids[e]&&(delete this.xhrGuids[e],this.totalCbs-=1)}),f.on("addEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-added",[t[1],t[2]],n)}),f.on("removeEventListener-end",function(t,n){n instanceof m&&"load"===t[0]&&f.emit("xhr-load-removed",[t[1],t[2]],n)}),f.on("fn-start",function(t,n,e){n instanceof m&&("onload"===e&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),f.on("fn-end",function(t,n){this.xhrCbStart&&f.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,n],n)})}},{}],11:[function(t,n,e){n.exports=function(t){var n=document.createElement("a"),e=window.location,r={};n.href=t,r.port=n.port;var o=n.href.split("://");!r.port&&o[1]&&(r.port=o[1].split("/")[0].split("@").pop().split(":")[1]),r.port&&"0"!==r.port||(r.port="https"===o[0]?"443":"80"),r.hostname=n.hostname||e.hostname,r.pathname=n.pathname,r.protocol=o[0],"/"!==r.pathname.charAt(0)&&(r.pathname="/"+r.pathname);var i=!n.protocol||":"===n.protocol||n.protocol===e.protocol,a=n.hostname===document.domain&&n.port===e.port;return r.sameOrigin=i&&(!n.hostname||a),r}},{}],12:[function(t,n,e){function r(){}function o(t,n,e){return function(){return i(t,[f.now()].concat(s(arguments)),n?null:this,e),n?void 0:this}}var i=t("handle"),a=t(15),s=t(16),c=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",p=l+"ixn-";a(d,function(t,n){u[n]=o(l+n,!0,"api")}),u.addPageAction=o(l+"addPageAction",!0),u.setCurrentRouteName=o(l+"routeName",!0),n.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,n){var e={},r=this,o="function"==typeof n;return i(p+"tracer",[f.now(),t,e],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],e),o)try{return n.apply(this,arguments)}finally{c.emit("fn-end",[f.now()],e)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,n){h[n]=o(p+n)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now()])}},{}],13:[function(t,n,e){n.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(n){return}}}},{}],14:[function(t,n,e){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),n.exports=r},{}],15:[function(t,n,e){function r(t,n){var e=[],r="",i=0;for(r in t)o.call(t,r)&&(e[i]=n(r,t[r]),i+=1);return e}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],16:[function(t,n,e){function r(t,n,e){n||(n=0),"undefined"==typeof e&&(e=t?t.length:0);for(var r=-1,o=e-n||0,i=Array(o<0?0:o);++r<o;)i[r]=t[n+r];return i}n.exports=r},{}],17:[function(t,n,e){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],18:[function(t,n,e){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(16),a="nr@original",s=Object.prototype.hasOwnProperty,c=!1;n.exports=function(t,n){function e(t,n,e,o){function nrWrapper(){var r,a,s,c;try{a=this,r=i(arguments),s="function"==typeof e?e(r,a):e||{}}catch(f){l([f,"",[r,a,o],s])}u(n+"start",[r,a,o],s);try{return c=t.apply(a,r)}catch(d){throw u(n+"err",[r,a,d],s),d}finally{u(n+"end",[r,a,c],s)}}return r(t)?t:(n||(n=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,n,o,i){o||(o="");var a,s,c,f="-"===o.charAt(0);for(c=0;c<n.length;c++)s=n[c],a=t[s],r(a)||(t[s]=e(a,f?s+o:o,i,s))}function u(e,r,o){if(!c||n){var i=c;c=!0;try{t.emit(e,r,o,n)}catch(a){l([a,e,r,o])}c=i}}function d(t,n){if(Object.defineProperty&&Object.keys)try{var e=Object.keys(t);return e.forEach(function(e){Object.defineProperty(n,e,{get:function(){return t[e]},set:function(n){return t[e]=n,n}})}),n}catch(r){l([r])}for(var o in t)s.call(t,o)&&(n[o]=t[o]);return n}function l(n){try{t.emit("internal-error",n)}catch(e){}}return t||(t=o),e.inPlace=f,e.flag=a,e}},{}],ee:[function(t,n,e){function r(){}function o(t){function n(t){return t&&t instanceof r?t:t?c(t,s,i):i()}function e(e,r,o,i){if(!l.aborted||i){t&&t(e,r,o);for(var a=n(o),s=h(e),c=s.length,f=0;f<c;f++)s[f].apply(a,r);var d=u[y[e]];return d&&d.push([g,e,r,a]),a}}function p(t,n){v[t]=h(t).concat(n)}function h(t){return v[t]||[]}function m(t){return d[t]=d[t]||o(e)}function w(t,n){f(t,function(t,e){n=n||"feature",y[e]=n,n in u||(u[n]=[])})}var v={},y={},g={on:p,emit:e,get:m,listeners:h,context:n,buffer:w,abort:a,aborted:!1};return g}function i(){return new r}function a(){(u.api||u.feature)&&(l.aborted=!0,u=l.backlog={})}var s="nr@context",c=t("gos"),f=t(15),u={},d={},l=n.exports=o();l.backlog=u},{}],gos:[function(t,n,e){function r(t,n,e){if(o.call(t,n))return t[n];var r=e();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(t,n,e){function r(t,n,e,r){o.buffer([t],r),o.emit(t,n,e)}var o=t("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(t,n,e){function r(t){var n=typeof t;return!t||"object"!==n&&"function"!==n?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");n.exports=r},{}],loader:[function(t,n,e){function r(){if(!x++){var t=b.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&n))return u.abort();f(y,function(n,e){t[n]||(t[n]=e)}),c("mark",["onload",a()+b.offset],null,"api");var e=l.createElement("script");e.src="https://"+t.agent,n.parentNode.insertBefore(e,n)}}function o(){"complete"===l.readyState&&i()}function i(){c("mark",["domContent",a()+b.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(s=Math.max((new Date).getTime(),s))-b.offset}var s=(new Date).getTime(),c=t("handle"),f=t(15),u=t("ee"),d=window,l=d.document,p="addEventListener",h="attachEvent",m=d.XMLHttpRequest,w=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1044.min.js"},g=m&&w&&w[p]&&!/CriOS/.test(navigator.userAgent),b=n.exports={offset:s,now:a,origin:v,features:{},xhrWrappable:g};t(12),l[p]?(l[p]("DOMContentLoaded",i,!1),d[p]("load",r,!1)):(l[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",s],null,"api");var x=0,E=t(17)},{}]},{},["loader",2,10,4,3]);</script>
-	<link rel="schema.dc" href="//purl.org/dc/elements/1.1/">
-	<link rel="schema.dcterms" href="//purl.org/dc/terms/">
-	<link rel="schema.prism" href="//prismstandard.org/namespaces/basic/2.1/">
-	<link rel="schema.iptc" href="//iptc.org/std/nar/2006-10-01/">
-	<meta http-equiv="content-language" content="en">
-	<meta name="dc.language" scheme="dcterms.RFC4646" content="en-US">
-	<meta name="dc.publisher" content="Fox News">
-    <meta name="dc.date" content="2013-05-23">
-    <meta name="dcterms.created" scheme="dcterms.ISO8601" content="2013-05-23T13:27:39-04:00">
-    <meta name="dcterms.modified" scheme="dcterms.ISO8601" content="2017-09-13T12:03:53-04:00">
-	<meta name="dc.format" scheme="dcterms.IMT" content="text/html">
-	<meta name="dc.identifier" scheme="dcterms.URI" content="urn:uri:base64:cGFnZTE=">
-	<title>Fox &amp; Friends | Fox News</title>
-	<link rel="icon" href="//global.fncstatic.com/static/v/fn2/img/favicon.png" type="image/png">
-	<link rel="shortcut icon" href="//global.fncstatic.com/static/v/fn2/img/favicon.ico">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML+RDFa 1.0//EN"
+  "http://www.w3.org/MarkUp/DTD/xhtml-rdfa-1.dtd">
+<html lang="en" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+  xmlns:schema="http://schema.org/">
 	
-    <!--  dns-prefetch tags -->
-    <meta http-equiv="x-dns-prefetch-control" content="on"> 
-    <link rel="dns-prefetch" href="//a57.foxnews.com"> 
-    <link rel="dns-prefetch" href="//global.fncstatic.com"> 
-    <link rel="dns-prefetch" href="//images.outbrain.com"> 
-    <link rel="dns-prefetch" href="//widgets.outbrain.com"> 
-    <link rel="dns-prefetch" href="//widget-cdn.rpxnow.com"> 
-    <link rel="dns-prefetch" href="//pagead2.googlesyndication.com"> 
-    <link rel="dns-prefetch" href="//securepubads.g.doubleclick.net"> 
-    <link rel="dns-prefetch" href="//z.moatads.com"> 
-    <link rel="dns-prefetch" href="//hpr.outbrain.com"> 
-    <link rel="dns-prefetch" href="//metrics.foxnews.com"> 
-    <link rel="dns-prefetch" href="//cdn.tt.omtrdc.net"> 
-    <link rel="dns-prefetch" href="//foxnews.demdex.net"> 
-    <link rel="dns-prefetch" href="//static.chartbeat.com"> 
-    <link rel="dns-prefetch" href="//cdn.taboola.com"> 
-    <link rel="dns-prefetch" href="//assets.tapad.com"> 
-    <link rel="dns-prefetch" href="//www.googletagservices.com"> 
-    <link rel="dns-prefetch" href="//cdn.livefyre.com"> 
-    <link rel="dns-prefetch" href="//foxnews.tt.omtrdc.net"> 
-    <link rel="dns-prefetch" href="//log.outbrain.com"> 
-    <link rel="dns-prefetch" href="//cdn.optimizely.com"> 
-    <link rel="dns-prefetch" href="//b.scorecardresearch.com">
-	
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="canonical" href="http://www.foxnews.com/on-air/fox-and-friends/index.html">
-<meta name="dc.type" scheme="dcterms.DCMIType" content="Collection">
-<meta name="dc.title" content="Fox &amp; Friends | Fox News" lang="en">
-<meta name="description" content="Fox &amp; Friends on Fox News Channel daily from 6AM to 9AM ET. Ainsley Earhardt, Steve Doocy &amp; Brian Kilmeade report on famous faces, health, politics &amp; news you can use.">
-<meta name="dcterms.abstract" content="Fox &amp; Friends on Fox News Channel daily from 6AM to 9AM ET. Ainsley Earhardt, Steve Doocy &amp; Brian Kilmeade report on famous faces, health, politics &amp; news you can use.">
-<meta name="keywords" content="Fox and Friends, Fox and Friends Weekend, famous faces, Ainsley Earhardt, Brian Kilmeade, Steve Doocy, Alisyn Camerota, Clayton Morris, Tucker Carlson, All American Concert Series, morning shows, Behind the Scenes, Fox News Channel, FoxNews.com">
-<meta name="dc.subject" content="show, Fox &amp; Friends">
-<meta name="prism.genre" content="homePage">
-<meta property="og:description" content="Fox &amp; Friends on Fox News Channel daily from 6AM to 9AM ET. Ainsley Earhardt, Steve Doocy &amp; Brian Kilmeade report on famous faces, health, politics &amp; news you can use.">
-<meta name="pagetype" content="section-front">
-<meta name="prism.aggregationType" content="front">
-<meta name="prism.channel" content="fnc">
-<meta name="prism.section" content="shows">
-<meta name="prism.subsection1" content="foxfriends">
-<meta name="prism.subsection2" content="">
-<meta name="prism.subsection3" content="">
-<meta name="prism.subsection4" content="">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Fox &amp; Friends">
-<meta name="dc.description" content="Fox &amp; Friends on Fox News Channel daily from 6AM to 9AM ET. Ainsley Earhardt, Steve Doocy &amp; Brian Kilmeade report on famous faces, health, politics &amp; news you can use.">
-<meta property="og:image" content="http://global.fncstatic.com/static/p/show-page/all/img/ff-avatar.jpg">
-<meta property="og:site_name" content="Fox News">
-<meta property="og:url" content="http://www.foxnews.com/on-air/fox-and-friends">
-<meta property="fb:app_id" content="113186182048399">
-<meta property="fb:admins" content="100000924384522">
-        	<link href="//fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" rel="stylesheet" type="text/css">
-	<style type="text/css" media="all">@import url("/on-air/fox-and-friends/sites/all/modules/modules-contrib/views/css/views.css?o94zw5");</style>
-<style type="text/css" media="all">@import url("/on-air/fox-and-friends/sites/all/modules/modules-contrib/ctools/css/ctools.css?o94zw5");
-@import url("/on-air/fox-and-friends/sites/all/modules/modules-contrib/date/date_popup/themes/datepicker.1.7.css?o94zw5");
-@import url("/on-air/fox-and-friends/sites/all/modules/modules-fox/foxnews_general/css/foxnews_general.css?o94zw5");
-@import url("/on-air/fox-and-friends/sites/all/modules/modules-contrib/video/css/video.css?o94zw5");
-@import url("/on-air/fox-and-friends/sites/all/modules/modules-contrib/field_group/field_group.css?o94zw5");
-@import url("/on-air/fox-and-friends/sites/all/modules/modules-fox/fox_email_overlay/css/fox_email_overlay.css?o94zw5");
-@import url("/on-air/fox-and-friends/sites/all/modules/modules-contrib/date/date_api/date.css?o94zw5");</style>
-<!-- DO NOT MERGE TO PRODUCTION WITH QA URLS -->
-<link rel="stylesheet" href="//global.fncstatic.com/static/p/show-page/fn/css/ag.base.css" type="text/css" media="screen, projection">
-<!--[if lt IE 9]>
- <link rel="stylesheet" href="//global.fncstatic.com/static/p/show-page/all/css/ie.css" type="text/css" media="screen, projection">
- <script src="//global.fncstatic.com/static/v/all/js/html5shiv.js"></script>
-<![endif]-->		<link rel="stylesheet" href="http://global.fncstatic.com/static/p/show-page/fn/css/fox-friends.css" type="text/css" media="screen, projection">
-	<!--[if lt IE 9]>
-	<script src="http://global.fncstatic.com/static/v/all/js/html5shiv.js"></script>
-	<link rel="stylesheet" href="http://global.fncstatic.com/static/p/show-page/fn/css/fox-friends-ie.css" type="text/css" media="screen, projection">
-	<![endif]-->
-	    <script type="text/javascript" src="//global.fncstatic.com/static/v/all/js/ag.jquery.js"></script>
-    	<script type="text/javascript" src="/on-air/fox-and-friends/misc/jquery.once.js?v=1.2"></script>
-<script type="text/javascript" src="/on-air/fox-and-friends/misc/drupal.js?o94zw5"></script>
-<script type="text/javascript" src="/on-air/fox-and-friends/sites/all/modules/modules-contrib/video/js/video.js?o94zw5"></script>
-<script type="text/javascript" src="/on-air/fox-and-friends/sites/all/modules/modules-contrib/field_group/field_group.js?o94zw5"></script>
-<script type="text/javascript" src="/on-air/fox-and-friends/sites/all/modules/modules-fox/fox_email_overlay/js/fox_email_overlay.js?o94zw5"></script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, {"basePath":"\u002Fon-air\u002Ffox-and-friends\u002F", "pathPrefix":"", "ajaxPageState":{"theme":"foxandfriends", "theme_token":"3A6A2Pwz85Z23v29vgd24o1OI_ficcP8Fdoza50PKZ0", "js":{"misc\u002Fjquery.once.js":1, "misc\u002Fdrupal.js":1, "sites\u002Fall\u002Fmodules\u002Fmodules-contrib\u002Fvideo\u002Fjs\u002Fvideo.js":1, "sites\u002Fall\u002Fmodules\u002Fmodules-contrib\u002Ffield_group\u002Ffield_group.js":1, "sites\u002Fall\u002Fmodules\u002Fmodules-fox\u002Ffox_email_overlay\u002Fjs\u002Ffox_email_overlay.js":1}, "css":{"sites\u002Fall\u002Fmodules\u002Fmodules-contrib\u002Fviews\u002Fcss\u002Fviews.css":1, "sites\u002Fall\u002Fmodules\u002Fmodules-contrib\u002Fctools\u002Fcss\u002Fctools.css":1, "sites\u002Fall\u002Fmodules\u002Fmodules-contrib\u002Fdate\u002Fdate_popup\u002Fthemes\u002Fdatepicker.1.7.css":1, "sites\u002Fall\u002Fmodules\u002Fmodules-fox\u002Ffoxnews_general\u002Fcss\u002Ffoxnews_general.css":1, "sites\u002Fall\u002Fmodules\u002Fmodules-contrib\u002Fvideo\u002Fcss\u002Fvideo.css":1, "sites\u002Fall\u002Fmodules\u002Fmodules-contrib\u002Ffield_group\u002Ffield_group.css":1, "sites\u002Fall\u002Fmodules\u002Fmodules-fox\u002Ffox_email_overlay\u002Fcss\u002Ffox_email_overlay.css":1, "sites\u002Fall\u002Fmodules\u002Fmodules-contrib\u002Fdate\u002Fdate_api\u002Fdate.css":1, "sites\u002Ffoxnews.com.on-air.fox-and-friends\u002Fthemes\u002Ffoxandfriends\u002Fff-admin.css":1}}});
-//--><!]]>
-</script>
-<!-- DO NOT DEPLOY QA URLS TO PROD -->
-<script src="//global.fncstatic.com/static/v/all/js/ag.head-ext.js" type="text/javascript"></script>
-<script src="//global.fncstatic.com/static/p/show-page/fn/js/ag.base.js" type="text/javascript"></script>		<script type="text/javascript" src="//global.fncstatic.com/static/isa/core.js"></script>
-		<script type="text/javascript" src="http://global.fncstatic.com/static/v/all/js/ag.jquery.plugins.js"></script>
-	<script type="text/javascript" src="http://global.fncstatic.com/static/p/show-page/fn/js/fox-friends.js"></script>
-</head>
-<body class="html front not-logged-in no-sidebars page-node page-node- page-node-29 node-type-page home" >
-  
-    <div id="block-foxnews-general-6" class="block block-foxnews-general">
-      <div id="util">
-	<div>
-		<div class="branding"><a href="//www.foxnews.com"><img width="81" height="13" alt="Fox News" src="//global.fncstatic.com/static/p/show-page/all/img/logo-fn.gif"></a></div>
-		<ul>
-			<li class="shows">
-				<a href="#">Shows</a>
-				<div>
-					<ul>
-						<li><a href="//www.foxnews.com/on-air/americas-news-hq/">America's News HQ</a></li>
-						<li><a href="//www.foxnews.com/on-air/americas-newsroom/">America's Newsroom</a></li>
-						<li><a href="//www.foxnews.com/on-air/your-world-cavuto/">Cavuto</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-files/">Fox Files</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-friends/first">Fox &amp; Friends First</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-friends/">Fox &amp; Friends</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-and-friends/index.html?page=weekend">Fox &amp; Friends Weekend</a></li>
-						<li><a href="//www.foxnews.com/shows/fox-news-at-night.html">Fox News @ Night</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-news-sunday/">Fox News Sunday</a></li>
-						<li><a href="//www.foxnews.com/on-air/geraldo/">Geraldo Rivera Reports</a></li>
-						<li><a href="//www.foxnews.com/on-air/hannity/">Hannity</a></li>
-						<li><a href="//www.foxnews.com/on-air/happening-now/">Happening Now</a></li>
-						<li><a href="//www.foxnews.com/on-air/justice-jeanine/">Justice with Judge Jeanine</a></li>
-						<li><a href="//www.foxnews.com/shows/l-and-l">Legends &amp; Lies: The Patriots</a></li>
-						<li><a href="//www.foxnews.com/on-air/media-buzz/">#mediabuzz</a></li>
-						<li><a href="//www.foxnews.com/on-air/outnumbered/">Outnumbered</a></li>
-						<li><a href="//www.foxnews.com/on-air/outnumbered-overtime/">Outnumbered Overtime with Harris Faulkner</a></li>
-					</ul>
-					<ul>
-						<li><a href="//www.foxnews.com/on-air/shepard-smith/">Shepard Smith Reporting</a></li>
-						<li><a href="//www.foxnews.com/on-air/special-report/">Special Report</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-news-reporting/">Specials</a></li>
-						<li><a href="//www.foxnews.com/on-air/sunday-morning-futures/index.html">Sunday Morning Futures with Maria Bartiromo</a></li>
-						<li><a href="//www.foxnews.com/on-air/cost-of-freedom/">The Cost of Freedom</a></li>
-						<li><a href="//www.foxnews.com/on-air/the-daily-briefing/">The Daily Briefing with Dana Perino</a></li>
-						<li><a href="//www.foxnews.com/on-air/the-five/">The Five</a></li>
-						<li><a href="//www.foxnews.com/shows/greg-gutfeld-show">The Greg Gutfeld Show</a></li>
-						<li><a href="//www.foxnews.com/shows/the-ingraham-angle.html">The Ingraham Angle</a></li>
-						<li><a href="//www.foxnews.com/on-air/journal-editorial-report/">The Journal Editorial Report</a></li>
-						<li><a href="//www.foxnews.com/on-air/the-next-revolution-with-steve-hilton/index.html">The Next Revolution with Steve Hilton</a></li>
-						<li><a href="//www.foxnews.com/shows/the-property-man/">The Property Man</a></li>
-						<li><a href="//www.foxnews.com/on-air/the-story-with-martha-maccallum/index.html">The Story with Martha MacCallum</a></li>
-						<li><a href="//www.foxnews.com/on-air/tucker-carlson-tonight/">Tucker Carlson Tonight</a></li>
-						<li><a href="//www.foxnews.com/on-air/war-stories/">War Stories</a></li>
-						<li><a href="//www.foxnews.com/on-air/watters-world/index.html">Watters' World</a></li>
-					</ul>
-				</div>
-			</li>
-			<li class="watch-now"><a href="//www.foxnews.com/fnctv/index.html">Watch Now</a>
-				<div>
-					<h1 id="day-of-week">&nbsp;</h1>
-					<span>All times eastern</span>
-					<ul>
-						<li id="watch-now-web"><h2>Web Shows</h2></li>
-						<li id="watch-now-fn"><h2>Fox News channel</h2></li>
-						<li id="watch-now-fb"><h2>Fox Business Network</h2></li>
-					</ul>
-				</div>
-			</li>
-			<li>
-				<div id="account" class="alt-style">
-					<ul id="authentication">
-						<li><a href="#">Login</a></li>
-					</ul>
-					<div class="username">
-						<div class="user encapsulate">
-							<p>Welcome, <strong>&nbsp;</strong></p>
-						</div>
-						<div class="user-options">
-							<ul>
-								<li><a href="#">Profile</a></li>
-								<li><a href="#">Logout</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</li>
-		</ul>
-	</div>
-</div>
-</div>
-<div id="doc">
-	<div>
-		<header id="main">
-			<div>
-				<div class="branding"><a href="/on-air/fox-and-friends/index.html"><img src="http://global.fncstatic.com/static/p/show-page/fn/img/fox-friends/logo.gif" alt="Fox &amp; Friends"></a></div>
-				    <div id="block-multiblock-3" class="block block-multiblock">
-      <nav>
-	<ul>
-	 
-		<li class="active"><a href="/on-air/fox-and-friends/index.html" class="active">Home</a></li>
-		 
-		<li><a href="http://video.foxnews.com/playlist/on-air-fox-friends/">Videos</a></li>
-		 
-		<li><a href="/on-air/fox-and-friends/blog">Blog</a></li>
-		 
-		<li><a href="/on-air/fox-and-friends/all-american-summer-concert-series">Concert Series</a></li>
-		 
-		<li><a href="/on-air/fox-and-friends/as-seen-on">As Seen On</a></li>
-			<li><a href="#">After the Show Show</a></li>
-	</ul>
-</nav>
-</div>
-				
-			</div>
-		</header><!-- /main header -->
-		<div id="masthead">
-			<div class="sponsor"></div>
-			<h1>All-American Summer Concert Series</h1>
-		</div><!-- /masthead -->
-		<div id="content">
-  		    <div id="block-fox-and-friends-homepage-headline-list-block" class="block block-fox-and-friends">
-      
+	<head profile="http://www.w3.org/1999/xhtml/vocab">
 
-<section id="today" class="mod">
-	<header>
-		<h2>DON'T MISS</h2>
-		<h2>Today's Weather</h2>
-	</header>
-	<div>
-				<div class="w-14 h" data-article-url="">
-			<div class="w-6 b-3 t">
-				<p><a href="#">Rep. Scalise on tax reform items House wants to deliver</a></p>			</div>
-			<div class="m"><a href="#"><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="258" height="240" alt=""><span></span><div class="play" data-video-id="5666202312001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>		</div>
-				
-				<div class="w-3 h" data-article-url="">
-			<div class="m"><a href="#" target=_blank><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="162" height="101" alt=""><span></span><div class="play" data-video-id="5666230234001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>			<div class="b-5 t">
-				<p><a href="#" target=_blank>'Fox & Friends' hosts face the 'Christmas Cookie Challenge'</a></p>			</div>
-		</div>
-				
+		<link href='http://fonts.googleapis.com/css?family=News+Cycle:400,700' rel='stylesheet' type='text/css'>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="alternate" type="application/rss+xml" title="Fox News Careers RSS" href="http://careers.foxnews.com/rss.xml" />
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta property="fb:app_id" content="403229876401166" />
+
+		<!-- OG Tags -->
+		<meta property="og:site_name" content="Fox News Careers" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="http://careers.foxnews.com" />
+		<meta property="og:title" content="Fox News Careers" />
+		<meta property="og:description" content="Look for jobs and internships across Fox News properties, including Fox News, Fox Business, Fox News Radio, and Fox News Digital." />
+		<meta property="og:image" content="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/fn-careers-social-logo.png" />
+
+		<title>Fox News Careers | Look for jobs and internships across Fox News properties, including Fox News, Fox Business, Fox News Radio, and Fox News Digital</title>
+		<link type="text/css" rel="stylesheet" href="http://careers.foxnews.com/sites/careers.foxnews.com/files/css/css_lQaZfjVpwP_oGNqdtWCSpJT1EMqXdMiU84ekLLxQnc4.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://careers.foxnews.com/sites/careers.foxnews.com/files/css/css_9JYxT7bsU5XOgdrg1leP7bWvDSYLudm1DjjIoD--X1g.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://careers.foxnews.com/sites/careers.foxnews.com/files/css/css_u8qTZdKW7Rm0mvCuvsDYjRHboV5_2oZ6vHslJTGAAlU.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://careers.foxnews.com/sites/careers.foxnews.com/files/css/css_zaolPapk2uJoAHmIFLeTSxvTjSCKTYxf5H2FYR69sw0.css" media="all" />
+
+		<link rel="apple-touch-icon" sizes="120x120" href="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/touch-icon-ipad-retina.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/apple-touch-icon.png">
+		<link rel="shortcut icon" href="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/favicon.ico" type="image/vnd.microsoft.icon" />
+		<!--[if lt IE 9]>
+			<script type="text/javascript" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/js/html5shiv.js"></script>
+			<script type="text/javascript" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/js/respond.min.js"></script>
+			<link rel="stylesheet" href="http://global.fncstatic.com/static/v/fn2/site/css/ie.rs.css" type="text/css">
+		<![endif]-->
+
+		<script src="http://careers.foxnews.com/sites/careers.foxnews.com/files/js/js_sIEhOevNKIUkIYpk8eSqKctpRyhxbZQ5sCnz_oCyBYQ.js"></script>
+<script src="http://careers.foxnews.com/sites/careers.foxnews.com/files/js/js_guFGDuPO9xwrkA15w3VsEbjP06q_6IsOLkL45LgCWg4.js"></script>
+<script src="http://careers.foxnews.com/sites/careers.foxnews.com/files/js/js_gX_pUg8EdJKV3HrX1Au-CYWFRavvWWDyZNDdCYq7tXc.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"careers_boot","theme_token":"rLwMW2SXxem5-iWoFVXnd5WoAn_YqjQTEw4Xxv6l8qo","js":{"sites\/all\/themes\/bootstrap\/js\/bootstrap.js":1,"sites\/careers.foxnews.com\/themes\/careers_boot\/js\/jquery-1.7.1.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1,"sites\/careers.foxnews.com\/themes\/careers_boot\/js\/bootstrap.min.js":1,"sites\/careers.foxnews.com\/themes\/careers_boot\/js\/plugins.js":1,"sites\/careers.foxnews.com\/themes\/careers_boot\/js\/scripts.js":1},"css":{"modules\/system\/system.base.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"modules\/field\/theme\/field.css":1,"sites\/careers.foxnews.com\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"sites\/careers.foxnews.com\/themes\/careers_boot\/css\/style.css":1}},"bootstrap":{"anchorsFix":0,"anchorsSmoothScrolling":1,"popoverEnabled":0,"popoverOptions":{"animation":1,"html":0,"placement":"right","selector":"","trigger":"click","title":"","content":"","delay":0,"container":"body"},"tooltipEnabled":0,"tooltipOptions":{"animation":1,"html":0,"placement":"auto left","selector":"","trigger":"hover focus","delay":0,"container":"body"}}});</script>
+
 		
-		<div id="weather" class="w-10 b-2">
-			<div class="info">
-				<div class="m">
-					<img src="//global.fncstatic.com/static/v/all/img/weather/icons_96x96/85.png" alt="">
-				</div>
-				<div class="region">
-					<strong>100°<span>F</span></strong>
-					<p>New York, NY <br>10017</p>
-					<a href="//www.foxnews.com/weather/your-weather/index.html">Detailed Forecast</a>
-				</div>
-			</div>
-			<form>
-				<fieldset>
-					<legend>Get Forecast</legend>
-					<input type="text" name="area" value="Enter Zip Code">
-					<input type="submit" name="area" value="get forecast">
-				</fieldset>
-			</form>
-		</div>
-	</div>
-	<div>
-		<div class="w-10 b-1">
-			<div class="advert">
-				<div class="ad dc" id="frame1-300x250"></div>
-				<p class="advert-txt">Advertisement</p>
-			</div>
-		</div>
-				<div class="w-3 b-2 t">
-			<div>
-				<p>.@KellyannePolls reacts to FBI agent removed over anti-Trump texts: “It’s very frustrating to many law-abiding Amer… https://t.co/57IEnZXxTQ</p>
-				<a href="https://twitter.com/foxandfriends" class="twt" target="_blank">foxandfriends</a>
-			</div>
-		</div>
+
+		<!-- facebook -->
+		<script>
+		window.fbAsyncInit = function() {
+		  FB.init({
+			appId      : '403229876401166',
+			xfbml      : true,
+			version    : 'v2.2'
+		  });
+		};
+
+		(function(d, s, id){
+		   var js, fjs = d.getElementsByTagName(s)[0];
+		   if (d.getElementById(id)) {return;}
+		   js = d.createElement(s); js.id = id;
+		   js.src = "//connect.facebook.net/en_US/sdk.js";
+		   fjs.parentNode.insertBefore(js, fjs);
+		 }(document, 'script', 'facebook-jssdk'));
+		</script>
+
+	</head>
+	<!--[if IE 9]><body class="ie9 html front not-logged-in no-sidebars page-node" "><![endif]-->
+	<!--[if lt IE 9]>   <body class="ie8 html front not-logged-in no-sidebars page-node" "><![endif]-->
+	<!--[if (gt IE 8)|!(IE)]><!-->
+	<body class="html front not-logged-in no-sidebars page-node" ><!--<![endif]-->
 		
-				<div class="w-14 h" data-article-url="">
-			<div class="m"><a href="#"><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="258" height="283" alt=""><span></span><div class="play" data-video-id="5666220101001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>			<div class="w-6 b-4 t">
-				<p><a href="#">Gregg Jarrett on FBI agent dismissed from Mueller probe</a></p>			</div>
-		</div>
-			</div>
-	<div>
-				<div class="w-14 h" data-article-url="">
-			<div class="m"><a href="#"><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="486" height="274" alt=""><span></span><div class="play" data-video-id="5666212894001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>			<div class="w-14 b-4 t">
-				<p><a href="#">Army issues hundreds of waivers for past marijuana use</a></p>			</div>
-		</div>
-				
-				<div class="w-10 h" data-article-url="">
-			<div class="m"><a href="#"><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="324" height="192" alt=""><span></span><div class="play" data-video-id="5666200252001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>			<div class="w-10 b-5 t">
-				<p><a href="#">Atheists claim coach broke the law by praying with team</a></p>			</div>
-		</div>
-				
-				<div class="w-3 h" data-article-url="">
-			<div class="b-2 t">
-				<p><a href="#">Huckabee: ABC's Brian Ross is 'recklessly dishonest'</a></p>			</div>
-			<div class="m"><a href="#"><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="162" height="218" alt=""><span></span><div class="play" data-video-id="5666202292001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>		</div>
-			</div>
-	<div>
-				<div class="w-10 h" data-article-url="">
-			<div class="m"><a href="#"><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="180" height="204" alt=""><span></span><div class="play" data-video-id="5666209477001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>			<div class="w-2 b-2 t">
-				<p><a href="#">Author discusses how the best marriages work</a></p>			</div>
-		</div>
-				
-				<div class="w-14 h" data-article-url="">
-			<div class="w-2 b-1 t">
-				<p><a href="#">Operation Holiday Cheer sends Christmas trees to troops</a></p>			</div>
-			<div class="m"><a href="#"><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="342" height="204" alt=""><span></span><div class="play" data-video-id="5666210159001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>		</div>
-				
-				<div class="w-3 h" data-article-url="">
-			<div class="m"><a href="#"><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="162" height="79" alt=""><span></span><div class="play" data-video-id="5666227317001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>			<div class="b-5 t">
-				<p><a href="#">After the Show Show: Fake news</a></p>			</div>
-		</div>
-			</div>
-	<div>
-	  		<div class="w-3 b-4 t">
-			<div>
-				<p>RT @FoxNews: .@AlanDersh on @foxandfriends: “You cannot charge a president with obstruction of justice for exercising his constitutional po…</p>
-				<a href="https://twitter.com/foxandfriends" class="twt" target="_blank">foxandfriends</a>
+				<!-- Google Tag Manager -->
+		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZJCN6"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+		<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-MZJCN6');</script>
+		<!-- End Google Tag Manager -->
+		
+		<!--[if lt IE 9]>		
+		<div class="modal fade ie8" id="browserModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="gtm-signup-close" aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title">Your Browser is Unsupported</h2>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12">
+									<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a class="alert-link" href="http://browsehappy.com/">click here</a> to update your browser.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-				<div class="w-10 b-5 t">
-			<div>
-				<p>RT @FoxNews: .@dbongino on @foxandfriends: “I don’t understand how this Mueller investigation at this point has any credibility left.” http…</p>
-				<a href="https://twitter.com/foxandfriends" class="twt" target="_blank">foxandfriends</a>
-			</div>
-		</div>
-				<div class="w-14 h" data-article-url="">
-			<div class="w-4 b-3 t">
-				<div>
-					<p><a href="#">Holiday hacks for last minute travel</a></p>				</div>
-			</div>
-			<div class="m"><a href="#"><img src="http://global.fncstatic.com/static/v/all/img/clear.gif" width="288" height="185" alt=""><span></span><div class="play" data-video-id="5666193608001"><img src="/static/p/show-page/fn/img/fox-friends/play.png" alt="Play"></div></a></div>		</div>
-			</div>
-</section></div>
-<div id="block-fox-and-friends-cooking-with-friends-block" class="block block-fox-and-friends">
-      
-<section id="blogs" class="mod">
-	<header>
-		<h2>Cooking with 'Friends' </h2>
-		<a href="/on-air/fox-and-friends/blog/category/Cooking+with+%27Friends%27">View More</a>
-	</header>
-		<div class="w-14 h">
-	  <div class="w-2 b-1 t"><time datetime="2017-10-15">October 15th, 2017</time><a href="/on-air/fox-and-friends/blog/2017/10/15/cooking-friends-fox-friends-first-bake" target=_blank><p>Cooking with 'Friends': 'FOX & Friends First' Bake-off!</p></a></div>	  <div class="m"><a href="/on-air/fox-and-friends/blog/2017/10/15/cooking-friends-fox-friends-first-bake" target=_blank><img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/10/12/640/360/694940094001_5607042239001_5607015887001-vs.jpg" width="342" height="214" alt=""><span></span></a></div>	</div>
-		<div class="w-10 h">
-	  <div class="w-16 b-5 t"><time datetime="2017-10-11">October 11th, 2017</time><a href="/on-air/fox-and-friends/blog/2017/10/11/cooking-friends-valerie-bertinellis-bacon-caramel-scuffins" target=_blank><p>Cooking with 'Friends': Valerie Bertinelli's Bacon-Caramel Scuffins</p></a></div>	  <div class="m"><a href="/on-air/fox-and-friends/blog/2017/10/11/cooking-friends-valerie-bertinellis-bacon-caramel-scuffins" target=_blank><img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/10/11/640/360/694940094001_5605681706001_5605651977001-vs.jpg" width="192" height="214" alt=""><span></span></a></div>	</div>
-		<div class="w-3 h">
-		<div class="m"><a href="/on-air/fox-and-friends/blog/2017/09/14/cooking-friends-jason-chaffetzs-swedish-pancakes" target=_blank><img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/09/14/640/360/694940094001_5575957059001_5575949937001-vs.jpg" width="162" height="101" alt=""><span></span></a></div>		<div class="w-3 b-4 t"><time datetime="2017-09-14">September 14th, 2017</time><a href="/on-air/fox-and-friends/blog/2017/09/14/cooking-friends-jason-chaffetzs-swedish-pancakes" target=_blank><p>Cooking with 'Friends': Jason Chaffetz's Swedish Pancakes</p></a></div>	</div>
-	</section>
-</div>
-<div id="block-fox-show-standard-blocks-promo-block" class="block block-fox-show-standard-blocks">
-      </div>
-  		<section id="rundown" class="mod">
-      	<header>
-      		<h2>The Rundown</h2>
-      	</header>
-    		    <div id="block-fox-and-friends-todays-rundown-block1" class="block block-fox-and-friends">
-      
-<div class="w-10">
-	<header class="b-2">
-		<h3>1st <span>hr</span></h3>
-		<time datetime="06:00">6am <span>et</span></time>
-	</header>
-	<div class="b-1">
-		<ul>
-						<li>
-				<div>
-										<a target=_blank  href="http://video.foxnews.com/v/5666987077001/?playlist_id=930909787001">
-												<div>
-							<h4>A look at how the tax bill could impact the health care system</h4>
-							<p></p>
-						</div>
-												<div class="m">
-							<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style85x100/public/doctor_2.jpg" alt="">
-						</div>
-																</a>
-									</div>
-			</li>
-						<li>
-				<div>
-											<div>
-							<h4>And, we're celebrating National Cookie Day</h4>
-							<p></p>
-						</div>
-												<div class="m">
-							<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style85x100/public/cookies.jpg" alt="">
-						</div>
-															</div>
-			</li>
-						<li>
-				<div>
-											<div>
-							<h4></h4>
-							<p></p>
-						</div>
-															</div>
-			</li>
-					</ul>
-	</div>
-</div>
-</div>
-<div id="block-fox-and-friends-todays-rundown-block2" class="block block-fox-and-friends">
-      
-<div class="w-10">
-	<header class="b-4">
-		<h3>2nd <span>hr</span></h3>
-		<time datetime="07:00">7am <span>et</span></time>
-	</header>
-	<div class="b-3">
-		<ul>
-						<li>
-				<div>
-										<a target=_blank  href="http://video.foxnews.com/v/5667026419001/?playlist_id=930909787001#sp=show-clips">
-												<div>
-							<h4>Alan Dershowitz provides insight about obstruction of justice </h4>
-							<p></p>
-						</div>
-												<div class="m">
-							<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style85x100/public/Alan%20Dershowitz_13.jpg" alt="">
-						</div>
-																</a>
-									</div>
-			</li>
-						<li>
-				<div>
-										<a target=_blank  href="http://video.foxnews.com/v/5667040067001/?playlist_id=930909787001#sp=show-clips">
-												<div>
-							<h4>Plus, we'll hear from Kellyanne Conway</h4>
-							<p></p>
-						</div>
-												<div class="m">
-							<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style85x100/public/kellyanne_4.jpg" alt="">
-						</div>
-																</a>
-									</div>
-			</li>
-						<li>
-				<div>
-											<div>
-							<h4></h4>
-							<p></p>
-						</div>
-															</div>
-			</li>
-					</ul>
-	</div>
-</div>
-</div>
-<div id="block-fox-and-friends-todays-rundown-block3" class="block block-fox-and-friends">
-      
-<div class="w-10">
-	<header class="b-3">
-		<h3>3rd <span>hr</span></h3>
-		<time datetime="08:00">8am <span>et</span></time>
-	</header>
-	<div class="b-2">
-		<ul>
-						<li>
-				<div>
-											<div>
-							<h4>Rep. Kevin McCarthy talks tax reform</h4>
-							<p></p>
-						</div>
-												<div class="m">
-							<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style85x100/public/mccarthy.jpg" alt="">
-						</div>
-															</div>
-			</li>
-						<li>
-				<div>
-											<div>
-							<h4>Plus, 'Fox & Friends' celebrates veteran-owned businesses, starting with 'Bottle Breacher'</h4>
-							<p></p>
-						</div>
-												<div class="m">
-							<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style85x100/public/bottle%20breacher_0.JPG" alt="">
-						</div>
-															</div>
-			</li>
-						<li>
-				<div>
-											<div>
-							<h4></h4>
-							<p></p>
-						</div>
-															</div>
-			</li>
-					</ul>
-	</div>
-</div>
-</div>
-      </section>
-  		    <div id="block-fox-and-friends-content-promo-block" class="block block-fox-and-friends">
-      <section class="everyday-hero">
-    <div class="inner">
-        <div class="logo">THANKING OUR - EVERYDAY HEROES</div>
-        <p>They are the brave men and women who risk their lives to keep us safe every day. They are our police officers, firefighters and first responders. They say it's just 'part of the job'. And so often, their stories don't get told.</p>
-<span>We here at Fox and Friends - want to change that.</span>
-<p>We want to share their incredible stories. You can help us honor these heroes by telling us how your life has been changed by someone who answered your call for help. </p>        <a class="button" href="email?subject=law-enforcement-hero">Email Us</a>
-    </div>
-</section></div>
-<div id="block-fox-and-friends-connect-with-us-block" class="block block-fox-and-friends">
-      <div id="block-fox-and-friends-curvy-couch-block" class="block block-fox-and-friends">
-	<section id="connect" class="mod">
-		<header>
-			<h2>join the conversation</h2>
-		</header>
-		<div class="b-1 t"><span></span><a href="https://www.facebook.com/foxandfriends" target="blank"><h3>Like Us on Facebook</h3></a></div>
-		<div class="b-3 t"><span></span><a href="https://twitter.com/foxandfriends" target="blank"><h3>Tweet @foxandfriends</h3></a></div>
-		<div class="b-2 t"><span></span><a href="http://instagram.com/foxandfriends" target="blank"><h3>Follow Us on Instagram</h3></a></div>
-		<div class="b-5 t mail-overlay2"><span></span><a href="#"><h3>E-mail us at friends@foxnews.com</h3></a></div>		
-	</section>
-</div></div>
-<div id="block-fox-and-friends-curvy-couch-block" class="block block-fox-and-friends">
-      <section id="couch" class="mod">
-	<header>
-		<h2>All-American Summer Highlights</h2>
-	</header>
-	<div class="w-14 h">
-		<div class="m">
-		        <a target=_blank  href="http://video.foxnews.com/v/5560950594001/?#sp=show-clips/daytime">
-        <img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style486x115/public/486_gaynor.jpg" alt="">
-        <span></span>
-      </a>
-      		</div>
-		<div class="w-14 b-3 t">
-		        <h4><a target=_blank  href="http://video.foxnews.com/v/5560950594001/?#sp=show-clips/daytime">
-        Gloria Gaynor performs 'I Will Survive'      </a></h4>
-      			<p></p>
-		</div>
-	</div>
-	<div class="w-3 h">
-		<div class="w-3 b-2 t">
-			      <h4><a target=_blank  href="http://video.foxnews.com/v/5551514127001/?playlist_id=930909787001#sp=show-clips">
-        Joe Nichols performs 'Never Gets Old'      </a></h4>
-      			<p></p>
-		</div>
-		<div class="m">
-		        <a target=_blank  href="http://video.foxnews.com/v/5551514127001/?playlist_id=930909787001#sp=show-clips">
-        <img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style162x121/public/162_joe_nichols.jpg" alt="">
-        <span></span>
-      </a>
-      		</div>
-	</div>
-	<div class="w-10 h">
-		<div class="m">
-		        <a target=_blank  href="http://video.foxnews.com/v/5544823583001/">
-        <img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style162x214/public/214_loggins.jpg" alt="">
-        <span></span>
-      </a>
-      		</div>
-		<div class="w-3 b-4 t">
-			      <h4><a target=_blank  href="http://video.foxnews.com/v/5544823583001/">
-        Kenny Loggins performs 'I'm Alright'      </a></h4>
-      			<p></p>
-		</div>
-	</div>
-</section></div>
-<div id="block-fox-and-friends-recent-mixed-blogs-media" class="block block-fox-and-friends">
-      
-<section id="blogs" class="mod">
-	<header>
-		<h2>Latest Blog Posts</h2>
-		<a href="/on-air/fox-and-friends/blog">View the Full Blog</a>
-	</header>
-		<div class="w-14 h">
-	  <div class="w-2 b-1 t"><time datetime="2017-11-23">November 23rd, 2017</time><a href="/on-air/fox-and-friends/blog/2017/11/23/delicious-ways-enjoy-thanksgiving-leftovers"><p>Delicious ways to enjoy Thanksgiving leftovers</p></a></div>	  <div class="m"><a href="/on-air/fox-and-friends/blog/2017/11/23/delicious-ways-enjoy-thanksgiving-leftovers"><img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style342x214/public/thanksgiving.jpg" alt=""><span></span><span class="mark articles"></span></a></div>	</div>
-		<div class="w-10 h">
-	  <div class="w-16 b-5 t"><time datetime="2017-11-18">November 18th, 2017</time><a href="/on-air/fox-and-friends/blog/2017/11/18/chef-george-durans-thanksgiving-recipes"><p>Chef George Duran's Thanksgiving Recipes</p></a></div>	  <div class="m"><a href="/on-air/fox-and-friends/blog/2017/11/18/chef-george-durans-thanksgiving-recipes"><img src="http://a57.foxnews.com/media2.foxnews.com/BrightCove/694940094001/2017/11/18/640/360/694940094001_5651163279001_5651156077001-vs.jpg" width="192" height="214" alt=""><span></span><span class="mark videos"></span></a></div>	</div>
-		<div class="w-3 h">
-		<div class="m"><a href="/on-air/fox-and-friends/blog/2017/11/16/mega-morning-deals-fox-friends-viewers"><img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style162x101/public/800_mmd_logo_24.jpg" alt=""><span></span><span class="mark articles"></span></a></div>		<div class="w-3 b-4 t"><time datetime="2017-11-16">November 16th, 2017</time><a href="/on-air/fox-and-friends/blog/2017/11/16/mega-morning-deals-fox-friends-viewers"><p>Mega Morning Deals for 'Fox & Friends' viewers!</p></a></div>	</div>
-	</section></div>
-<div id="block-multiblock-7" class="block block-multiblock">
-      
-<section id="seen" class="mod">
-	<header>
-		<h2>As Seen On Fox & Friends</h2>
-		<a href="/on-air/fox-and-friends/as-seen-on">See All Features</a>
-	</header>
-	<div id="features">
-		<div>
-			<ul>
-								<li class="w-2 s-1 b-4"  >
-				  <a href="/on-air/fox-and-friends/as-seen-on/licensed-lie-sidney-powell">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style144x103/public/Liscensed%20to%20Lie.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>'Licensed to Lie' by Sidney Powell</h4>
-						<p>A tragic suicide, a likely murder, wrongful imprisonment, and gripping courtroom scenes draw readers into this compelling story giving them a frightening perspective on justice corrupted and who should be accountable when evidence is withheld.</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-								<li class="w-2 s-2 b-5"  >
-				  <a href="/on-air/fox-and-friends/as-seen-on/andrew-jackson-and-miracle-new-orleans-brian-kilmeade-and-don-yaeger">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style144x103/public/9780735213234.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>"Andrew Jackson and the Miracle of New Orleans" by Brian Kilmeade and Don Yaeger</h4>
-						<p>Another history pageturner from the authors of the #1 bestsellers George Washington’s Secret Six and Thomas Jefferson and the Tripoli Pirates.</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-								<li class="w-12 s-3 b-1"  >
-				  <a href="/on-air/fox-and-friends/as-seen-on/left-standing-mason-wells-0">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style120x172/public/left%20standing.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>'Left Standing' by Mason Wells</h4>
-						<p>After witnessing the devastation done by the Boston and Paris terror attacks and being critically injured in the Brussels bombing, Mason Wells was left with third-degree burns, emotional scars, and a shaken spirit</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-								<li class="w-2 s-4 b-3"  >
-				  <a href="/on-air/fox-and-friends/as-seen-on/how-make-your-family-business-last-mitzi-perdue">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style144x103/public/51g66lf0znL._SX331_BO1%2C204%2C203%2C200_.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>'How to Make Your Family Business Last' by Mitzi Perdue</h4>
-						<p>Mitzi Perdue gives practical advice on how a family businesses can develop a culture that supports keeping the family business in the family.</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-								<li class="w-2 s-5 b-2"  >
-				  <a href="/on-air/fox-and-friends/as-seen-on/left-standing-mason-wells">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style144x103/public/717VxW39tlL.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>'Left Standing' by Mason Wells</h4>
-						<p>After witnessing the devastation done by the Boston and Paris terror attacks and being critically injured in the Brussels bombing, Mason Wells was left with third-degree burns, emotional scars, and a shaken spirit.</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-								<li class="w-2" style="display: none;" >
-				  <a href="/on-air/fox-and-friends/as-seen-on/power-gene-simmons">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style144x103/public/on%20power.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>'On Power' by Gene Simmons</h4>
-						<p>YOU DESERVE TO HAVE POWER. IT IS YOURS FOR THE TAKING. GENE SIMMONS IS HERE TO UNLOCK THE DOORS TO THE TEMPLE.</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-								<li class="w-2" style="display: none;" >
-				  <a href="/on-air/fox-and-friends/as-seen-on/outlaw-platoon-sean-parnell">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style144x103/public/outlaw%20platoon.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>'Outlaw Platoon' by Sean Parnell</h4>
-						<p>A riveting story of American fighting men, Outlaw Platoon is Lieutenant Sean Parnell’s stunning personal account of the legendary U.S. Army’s 10th Mountain Division’s heroic stand in the mountains of Afghanistan.</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-								<li class="w-2" style="display: none;" >
-				  <a href="/on-air/fox-and-friends/as-seen-on/discipline-equals-freedom-jocko-willink">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style120x172/public/discipline%20freedom.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>'Discipline Equals Freedom' by Jocko Willink </h4>
-						<p>FIND YOUR WILL, FIND YOUR DISCIPLINE--AND YOU WILL FIND YOUR FREEDOM</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-								<li class="w-2" style="display: none;" >
-				  <a href="/on-air/fox-and-friends/as-seen-on/all-out-war-plot-destroy-trump-ed-klein">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style144x103/public/all%20out%20war.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>'All Out War: The Plot to Destroy Trump' by Ed Klein</h4>
-						<p>That's what the media, the Democrats, and the Never-Trump Republicans are waging on the democratically elected president of the United States.</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-								<li class="w-2" style="display: none;" >
-				  <a href="/on-air/fox-and-friends/as-seen-on/win-bigly-scott-adams">
-					<div class="m">
-						<img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style144x103/public/win%20bigly.jpg" alt="">
-					</div>
-					<div class="summary t">
-						<h4>'Win Bigly' by Scott Adams</h4>
-						<p>From the creator of Dilbert, an unflinching look at the strategies Donald Trump used to persuade voters to elect the most unconventional candidate in the history of the presidency, and how anyone can learn his methods for succeeding against long odds.</p>
-					</div>
-					<div class="ov"></div>
-					</a>
-				</li>
-							</ul>
-			<div class="ctrl">
-				<a href="#" class="prev">Previous</a>
-				<a href="#" class="next">Next</a>
-			</div>
-		</div>
-	</div>
-</section></div>
-<div id="block-multiblock-5" class="block block-multiblock">
-      <section id="hosts" class="mod">
-	<header>
-		<h2>MEET YOUR HOSTS</h2>
-</header>
-  <div class="w-3 b-4 t">
-  	<div class="m">
-  	        <a target=_blank  href="http://www.foxnews.com/on-air/personalities/brian-kilmeade/bio/">
-        <img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style121x134/public/host-brian-kilmeade.png" alt="Brian Kilmeade">
-        <div class="ghost"><span>View<br> Bio</span></div>
-      </a>
-        	</div>
-  	<h4>Brian Kilmeade</h4>
-  	<img src="http://global.fncstatic.com/static/p/show-page/fn/img/fox-friends/twt.png" alt="">
-     <div class="tweet-place-holder" style="display:block;" data-twitter-account="kilmeade"></div>
-  </div>
-  <div class="w-3 b-1 t">
-  	<div class="m">
-  	        <a  href="http://www.foxnews.com/person/e/ainsley-earhardt.html">
-        <img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style121x134/public/host-ainsley-earhardt.png" alt="Ainsley Earhardt">
-        <div class="ghost"><span>View<br> Bio</span></div>
-      </a>
-        	</div>
-  	<h4>Ainsley Earhardt</h4>
-  	<img src="http://global.fncstatic.com/static/p/show-page/fn/img/fox-friends/twt.png" alt="">
-     <div class="tweet-place-holder" style="display:block;" data-twitter-account="ainsleyearhardt"></div>
-  </div>
-  <div class="w-3 b-5 t">
-  	<div class="m">
-  	        <a target=_blank  href="http://www.foxnews.com/on-air/personalities/steve-doocy/bio/">
-        <img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style121x134/public/host-steve-doocy.png" alt="Steve Doocy">
-        <div class="ghost"><span>View<br> Bio</span></div>
-      </a>
-        	</div>
-  	<h4>Steve Doocy</h4>
-  	<img src="http://global.fncstatic.com/static/p/show-page/fn/img/fox-friends/twt.png" alt="">
-     <div class="tweet-place-holder" style="display:block;" data-twitter-account="SteveDoocy"></div>
-  </div>
-  <div class="w-3 b-2 t">
-  	<div class="m">
-  	        <a target=_blank  href="http://www.foxnews.com/person/h/abby-huntsman.html">
-        <img src="/on-air/fox-and-friends/sites/foxnews.com.on-air.fox-and-friends/files/styles/style121x134/public/huntsman-abby.png" alt="Abby Huntsman">
-        <div class="ghost"><span>View<br> Bio</span></div>
-      </a>
-        	</div>
-  	<h4>Abby Huntsman</h4>
-  	<img src="http://global.fncstatic.com/static/p/show-page/fn/img/fox-friends/twt.png" alt="">
-     <div class="tweet-place-holder" style="display:block;" data-twitter-account="HuntsmanAbby"></div>
-  </div>
-</section></div>
-<div id="node-29" class="node node-page clearfix">
+		<![endif]-->
 
-  
-      
-  
-  <div class="content">
-    <span class="print-link"></span>  </div>
-
-  
-  
-</div>
-  		<section id="help" class="mod last">
-				<header>
-					<h2>BETTER WITH FRIENDS</h2>
-				</header>
-				    <div id="block-fox-and-friends-here-to-help-block1" class="block block-fox-and-friends">
-      
-<div class="w-7 b-5 t">
-	<h3>breakfast with 'friends'</h3>
-	<p>Nominate your hometown diner to be featured on FOX & Friends as our hosts tour the country to talk politics!</p>
-	<a href="http://www.foxnews.com/on-air/fox-and-friends/email?subject=breafast-with-friends">nominate a diner</a>
-</div></div>
-<div id="block-fox-and-friends-here-to-help-block2" class="block block-fox-and-friends">
-      
-<div class="w-7 b-4 t">
-	<h3>Bob Massi the Property Man</h3>
-	<p>We know real estate law can be tricky. Luckily Bob is here to clear up your confusion and help rebuild your dreams.<br><a href="http://video.foxnews.com/playlist/robert-massi/" target="_new" style="position:relative; bottom:0; padding:0">Click here to watch Bob's advice</a></br></p>
-	<a href="http://www.foxnews.com/on-air/fox-and-friends/email?subject=rebuilding-dreams">submit a question</a>
-</div></div>
-<div id="block-fox-and-friends-here-to-help-block3" class="block block-fox-and-friends">
-      
-<div class="w-7 b-2 t">
-	<h3>ramsey solutions</h3>
-	<p>Need financial advice and don't know who to trust? Dave Ramsey and his team answer your questions live on air!</p>
-	<a href="http://www.foxnews.com/on-air/fox-and-friends/email?subject=ramsey-solutions">submit a question</a>
-</div></div>
-<div id="block-fox-and-friends-here-to-help-block4" class="block block-fox-and-friends">
-      
-<div class="w-7 b-1 t">
-	<h3>normal or nuts?</h3>
-	<p>Worried about that quirky habit of yours? Never fear, Dr. Keith Ablow is here. E-mail the doctor a question and tune in to see if he answers it on air.</p>
-	<a href="email?subject=normal-or-nuts">submit a question</a>
-</div></div>
-      </section>
-		</div>
-	</div>
-</div>
-    <div id="block-foxnews-general-7" class="block block-foxnews-general">
-      <div id="footer">
-	<div class="clear-block block block-fox_news_general" id="block-fox_news_general-8">
-		<div class="encap">
-			<div class="branding"><a href="//www.foxnews.com"><img src="//global.fncstatic.com/static/p/show-page/all/img/logo-fn-2.png" width="86" height="97" alt="Fox News"></a></div>
-			<div class="shows">
-				<h2>Shows</h2>
-				<nav>
-					<ul>
-						<li><a href="//www.foxnews.com/on-air/americas-news-hq/">America's News HQ</a></li>
-						<li><a href="//www.foxnews.com/on-air/americas-newsroom/">America's Newsroom</a></li>
-						<li><a href="//www.foxnews.com/on-air/your-world-cavuto/">Cavuto</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-files/">Fox Files</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-and-friends-first/">Fox &amp; Friends First</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-friends/">Fox &amp; Friends</a></li>
-						<li><a href="//www.foxnews.com/on-air/fox-friends/index.html?page=weekend">Fox &amp; Friends Weekend</a></li>
-						<li><a href="//www.foxnews.com/shows/fox-news-at-night.html">Fox News @ Night</a></li>
-						<li><a href="//www.foxnews.com/shows/fox-news-reporting.html">Fox News Reporting</a></li>
-					</ul>
-					<ul>
-						<li><a href="//www.foxnews.com/on-air/fox-news-sunday/">Fox News Sunday</a></li>
-						<li><a href="//www.foxnews.com/on-air/geraldo/">Geraldo Rivera Reports</a></li>
-						<li><a href="//www.foxnews.com/on-air/hannity/">Hannity</a></li>
-						<li><a href="//www.foxnews.com/on-air/happening-now/">Happening Now</a></li>
-						<li><a href="//www.foxnews.com/on-air/justice-jeanine/">Justice with Judge Jeanine</a></li>
-						<li><a href="//www.foxnews.com/shows/l-and-l">Legends &amp; Lies: The Patriots</a></li>
-						<li><a href="//www.foxnews.com/on-air/media-buzz/">#mediabuzz</a></li>
-						<li><a href="//www.foxnews.com/on-air/outnumbered/">Outnumbered</a></li>
-						<li><a href="//www.foxnews.com/on-air/outnumbered-overtime/">Outnumbered Overtime with Harris Faulkner</a></li>
-					</ul>
-					<ul>
-						<li><a href="//www.foxnews.com/on-air/shepard-smith/">Shepard Smith Reporting</a></li>
-						<li><a href="//www.foxnews.com/on-air/special-report/">Special Report</a></li>
-						<li><a href="//www.foxnews.com/shows/fox-news-specials.html">Specials</a></li>
-						<li><a href="//www.foxnews.com/on-air/sunday-morning-futures/index.html">Sunday Morning Futures</a></li>
-						<li><a href="//www.foxnews.com/on-air/cost-of-freedom/">The Cost of Freedom</a></li>
-						<li><a href="//www.foxnews.com/on-air/the-daily-briefing/">The Daily Briefing with Dana Perino</a></li>
-						<li><a href="//www.foxnews.com/on-air/the-five/">The Five</a></li>
-						<li><a href="//www.foxnews.com/shows/greg-gutfeld-show">The Greg Gutfeld Show</a></li>
-						<li><a href="//www.foxnews.com/on-air/journal-editorial-report/">The Journal Editorial Report</a></li>
-					</ul>
-					<ul>
-						<li><a href="//www.foxnews.com/on-air/the-next-revolution-with-steve-hilton/index.html">The Next Revolution with Steve Hilton</a></li>
-						<li><a href="//www.foxnews.com/shows/the-property-man/">The Property Man</a></li>
-						<li><a href="//www.foxnews.com/on-air/the-story-with-martha-maccallum/index.html">The Story with Martha MacCallum</a></li>
-						<li><a href="//www.foxnews.com/on-air/tucker-carlson-tonight/">Tucker Carlson Tonight</a></li>
-						<li><a href="//www.foxnews.com/on-air/war-stories/">War Stories</a></li>
-						<li><a href="//www.foxnews.com/on-air/watters-world/">Watters' World</a></li>
-					</ul>
+		<div id="site-header">
+			<div class="container">
+				<a id="main-careers-logo" href="http://careers.foxnews.com">
+					<img alt="Fox News Careers" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/fnc-logo.png">
+				</a>
+				<nav class="main navbar navbar-default" role="navigation">
+					<div class="main-menu ">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#car-top-menu-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+						</div>
+						<div class="wrapper">
+							<div class="collapse navbar-collapse" id="car-top-menu-collapse">
+								<nav class="navbar" role="navigation"><ul id="main-site-nav" class="nav navbar-nav"><li class="first leaf active"><a href="/" class="active">Home</a></li>
+<li class="leaf"><a href="/jobs">Jobs</a></li>
+<li class="last leaf"><a href="/students">Students</a></li>
+ </ul></nav>								<ul id="follow-buttons-mobile" class="share-buttons follow-buttons">
+									<li class="follow-text">Follow Us</li>
+									<a id="fb-follow-mobile" href="https://www.facebook.com/foxnewscareers" target="_blank"><li class="fb"><span class="icon fb-icon"></span></li></a
+									><a id="tw-follow-mobile" href="https://www.twitter.com/foxnewscareers" target="_blank"><li class="tw"><span class="icon tw-icon"></span></li></a
+									><a id="lkin-follow-mobile" href="https://www.linkedin.com/company/fox-news-channel" target="_blank"><li class="lkin"><span class="icon lkin-icon"></span></li></a>
+								</ul>
+							</div><!-- /.navbar-collapse -->
+						</div>
+					</div><!-- /.main-menu -->
 				</nav>
-			</div><!-- /shows -->
-			<div class="networks">
-				<h2>Networks</h2>
-				<ul>
-					<li><a href="//www.foxnews.com/" target="_blank">Fox News</a></li>
-					<li><a href="//www.foxbusiness.com/" target="_blank">Fox Business</a></li>
-				</ul>
-			</div><!-- /networks -->
-			<div class="search">
-				<h2>Search</h2>
-				<form method="get" action="//www.foxnews.com/search-results/search">
-					<fieldset>
-						<input type="text" name="q">
-						<input type="submit" name="submit" value="Go">
-					</fieldset>
-				</form>
-			</div><!-- /search -->
+				
+				<button type="button" id="follow-toggle" class="btn btn-primary" data-toggle="modal" data-target="#followModal"><span class="glyphicon glyphicon-plus"></span></button>
+				<span id="follow-us-text" data-toggle="modal" data-target="#followModal">FOLLOW US</span>			
+			</div>
 		</div>
-		<p>This material may not be published, broadcast, rewritten, or redistributed. &copy;2017 FOX News Network, LLC. All rights reserved. All market data delayed 20 minutes.</p>
+		<div class="modal fade" id="followModal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span class="gtm-follow-close" aria-hidden="true">&times;</span></button>
+						<h2 class="modal-title">FOLLOW FOX NEWS CAREERS</h2>
+					</div>
+					<div class="modal-body">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-xs-12">
+									<h3>Stay informed about the latest jobs and opportunities at FOX!</h3>
+									<ul id="follow-buttons-nav" class="share-buttons follow-buttons">
+										<a id="fb-follow-modal" href="https://www.facebook.com/foxnewscareers" target="_blank"><li class="fb"><span class="fb-icon icon"></span></li></a
+										><a id="tw-follow-modal" href="https://www.twitter.com/foxnewscareers" target="_blank"><li class="tw"><span class="tw-icon icon"></span></li></a
+										><a id="lkin-follow-modal" href="https://www.linkedin.com/company/fox-news-channel" target="_blank"><li class="lkin"><span class="lkin-icon icon"></span></li></a>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div><!-- /.modal-content -->
+			</div><!-- /.modal-dialog -->
+		</div><!-- /.modal -->
+
+			
+		<div id="site-content">     
+   
+    <section id="introduction" class="page-section">
+      
+<div class="img-group">
+	
+ 
+  
+			<img class="activate" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/bts-room.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/HomePageTopSlide-Kev-2.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/wallace.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/controlroom-2.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/debate.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/BigTop-Homepage-2.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/controlroom-foxnewsdeck.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/fbn.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/BigTop-Homepage-10.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/BigTop-Homepage-1.jpg
+"/>
+			<img src="http://careers.foxnews.com/sites/careers.foxnews.com/files/new-studio.jpg
+"/>
+	
+
+</div>
+<div class="intro-text">
+	<div class="inner-content">
+		<div class="inner-center">
+			<img class="top-box-header" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/your-future.png" alt="Your Future is Here." />
+			<div class="description">
+				<p>Joining the number one cable news network in America is a singular opportunity to be part of a highly successful, dynamic team that has transformed the way people get their information. <span class="expand-symbol">[+]</span><span class="expanded-info">Fox News is committed to delivering news as it happens. We love what we do and we&rsquo;re looking for passionate, talented people to help us lead, grow and achieve our goals.</span></p>
+			</div>			
+			<div class="see-all-wrapper see-all-group">
+				<a class="see-all-jobs btn btn-primary" href="/jobs">Find a Job<span class="glyphicon glyphicon-search"></span></a>
+			</div>
+			<p class="lg-text-view">Fox News is committed to delivering news as it happens. We love what we do and we&rsquo;re looking for passionate, talented people to help us lead, grow and achieve our goals.</p>
+		</div>
 	</div>
-</div>
-</div>
-<div id="email-overlay" style="display:none">	
-	<form method="post" action="send" id="comment-form">
-		<fieldset>
-			<span class="close"></span>
-			<h1>Contact the Show</h1>
-			<ul class="input">
-				<li>
-					<ul class="email-name">
-						<li><h2>First Name</h2><input type="text" name="first-name" id="first-name" value="First Name"></li>
-						<li><h2>Last Initial</h2><input type="text" name="initial" id="initial" value="" maxlength="1"></li>
-					</ul>
-				</li>
-				<li><h2>Your Email<p>(Email address will not be shared on air)</p></h2><input type="text" name="email" id="email" value="me@example.com"></li>
-				<li>
-					<ul class="drops">
-					   <li id="state-drop">
-					      <h3>State</h3>
-					      <span class="indicator"></span>
-					      <select class="styled" name="state">
-								<option value="AK">AK</option>
-								<option value="AL">AL</option>
-								<option value="AR">AR</option>
-								<option value="AZ">AZ</option>
-								<option value="CA">CA</option>
-								<option value="CO">CO</option>
-								<option value="CT">CT</option>
-								<option value="DC">DC</option>
-								<option value="DE">DE</option>
-								<option value="FL">FL</option>
-								<option value="GA">GA</option>
-								<option value="HI">HI</option>
-								<option value="IA">IA</option>
-								<option value="ID">ID</option>
-								<option value="IL">IL</option>
-								<option value="IN">IN</option>
-								<option value="KS">KS</option>
-								<option value="KY">KY</option>
-								<option value="LA">LA</option>
-								<option value="MA">MA</option>
-								<option value="MD">MD</option>
-								<option value="ME">ME</option>
-								<option value="MI">MI</option>
-								<option value="MN">MN</option>
-								<option value="MO">MO</option>
-								<option value="MS">MS</option>
-								<option value="MT">MT</option>
-								<option value="NC">NC</option>
-								<option value="ND">ND</option>
-								<option value="NE">NE</option>
-								<option value="NH">NH</option>
-								<option value="NJ">NJ</option>
-								<option value="NM">NM</option>
-								<option value="NV">NV</option>
-								<option value="NY">NY</option>
-								<option value="OH">OH</option>
-								<option value="OK">OK</option>
-								<option value="OR">OR</option>
-								<option value="PA">PA</option>
-								<option value="RI">RI</option>
-								<option value="SC">SC</option>
-								<option value="SD">SD</option>
-								<option value="TN">TN</option>
-								<option value="TX">TX</option>
-								<option value="UT">UT</option>
-								<option value="VA">VA</option>
-								<option value="VT">VT</option>
-								<option value="WA">WA</option>
-								<option value="WI">WI</option>
-								<option value="WV">WV</option>
-								<option value="WY">WY</option>
-						  </select>
-					   </li>
-					   <li id="subject-drop">
-						   <h3>Subject</h3>
-						   <span class="indicator"></span>
-						   <select class="styled" name="subject">
-						   	                  			<option value="Bake Me A Wish">Bake Me A Wish</option>
-                                  			<option value="law enforcement hero">law enforcement hero</option>
-                                  			<option value="Missing Air Force Ring">Missing Air Force Ring</option>
-                                  			<option value="legalease">legalease</option>
-                                  			<option value="normal or nuts?">normal or nuts?</option>
-                                  			<option value="on the job hunt">on the job hunt</option>
-                                  			<option value="breakfast with friends">breakfast with friends</option>
-                                  			<option value="rebuilding dreams">rebuilding dreams</option>
-                                  			<option value="ramsey solutions">ramsey solutions</option>
-                                  			<option value="so sue me">so sue me</option>
-                                  			<option value="other">other</option>
-                 						  </select>
-						</li>
-					</ul>
-				</li>				
-				<li><h2>Comment or Question</h2><textarea rows="5" cols="50" name="comments" id="comments">Comment or Question...</textarea></li>
-								<input id="submit" class="submit" type="submit" name="submit" value="Send">
-			</ul>
-			<div class="validate">
-				<h1>Contact the Show</h1>
-				<p>Thank you!</p> 
-				<p>Your message has been delivered.</p>
-			</div>	
-		</fieldset>
-	</form>
-</div>	<script type="text/javascript">
-		(function($){
-			$.ad.pre();
-			$(window).load(function(){$.ad.init();});
-		}(jQuery));
-	</script>
-	<script type="text/javascript">
-		try { FOX_Shows.pageReady(); } catch(err) { }
-		try { FOX.pageReady(); } catch(err) { }
-	</script>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6d10dcb7c1","applicationID":"32455909","transactionName":"blVTZENSWUZYUUxdDlcfcFNFWlhbFlxXUARmQFBXVGxBXFxF","queueTime":0,"applicationTime":924,"ttGuid":"","agentToken":"","atts":"QhJQEgtISkg=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</div>    </section>
+
+    <section id="intro-graphics" class="page-section">
+      <div class="container">
+        <div class="clearfix row">
+          <div class="fox-logos col-xs-12 col-sm-5 col-md-6">
+            <img class="img-fnc" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/logo-front-fnc.png" alt="FOX News Channel">
+            <img class="img-fbn" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/logo-front-fbn.png" alt="FOX Business">
+            <img class="img-rad" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/logo-front-radio.png" alt="FOX News Radio">
+            <img class="img-fbcom" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/logo-front-fbndotcom.png" alt="FoxBusiness.com">
+            <img class="img-com" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/logo-front-dotcom.png" alt="FoxNews.com">
+            <img class="img-head" src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/logo-front-headlines.png" alt="FOX News Headlines 24/7">
+          </div>
+          <div class="words col-xs-12 col-sm-7 col-md-6">
+            <div class="words-left col-xs-12 col-sm-7 col-md-8">
+              <span class="area-header header-2">DEVELOPMENT</span>
+              <span class="area-header header-4">REPORTING</span>
+              <span class="area-header header-8">PRODUCTION</span>
+              <span class="area-header header-1">WEB DESIGN</span>
+            </div>
+            <div class="words-right col-xs-12 col-sm-5 col-md-4">
+              <span class="area-header header-10">SALES</span>
+              <span class="area-header header-6">MARKETING</span>
+              <span class="area-header header-3">EDITING</span>
+              <span class="area-header header-7">FINANCE</span>
+              <span class="area-header header-5">GRAPHICS</span>
+            </div>            
+          </div>
+        </div>
+      </div>
+    </section>
+
+        <section id="recent-jobs" class="recent-jobs page-section">
+      <div class="recent-scroll-marker"></div>
+      <div class="scroll-wrapper">
+        <div id="scroll-help" class="btn-primary btn scroll-button"><span class="glyphicon glyphicon-chevron-down"></span><span class="text">Scroll</span></div>
+      </div>
+      <div class="container">
+        <div id="block-views-recent-jobs-block" class="block block-views">
+	<img src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/recent-jobs.png" alt="Recent Jobs" class="header-img">
+	<div class="content">
+   		
+  <div class="view view-recent-jobs view-id-recent_jobs view-display-id-block view-dom-id-3dc4f242eeb67ff5f48703a020159bad">
+                
+    
+    
+                  <div class="view-content">
+          
+
+				<div class="views-row views-row-1 views-row-odd views-row-first">
+			
+		  
+	  <div>	    	    <h3 class="position"><a href="/jobs/fox-news-channel/it-server-and-desktop-security-engineer">IT Server and Desktop Security Engineer</a></h3>	  </div>		  
+	  <div>	    	    <h5 class="property">Fox News Channel</h5>	  </div>	
+		</div>
+			<div class="views-row views-row-2 views-row-even">
+			
+		  
+	  <div>	    	    <h3 class="position"><a href="/jobs/fox-news-channel/freelance-video-editor">Freelance Video Editor</a></h3>	  </div>		  
+	  <div>	    	    <h5 class="property">Fox News Channel</h5>	  </div>	
+		</div>
+			<div class="views-row views-row-3 views-row-odd">
+			
+		  
+	  <div>	    	    <h3 class="position"><a href="/jobs/fox-news-channel/freelance-audio-assistant-a2">Freelance, Audio Assistant- A2</a></h3>	  </div>		  
+	  <div>	    	    <h5 class="property">Fox News Channel</h5>	  </div>	
+		</div>
+			<div class="views-row views-row-4 views-row-even">
+			
+		  
+	  <div>	    	    <h3 class="position"><a href="/jobs/fox-news-channel/associate-producerwriter">Associate Producer/Writer</a></h3>	  </div>		  
+	  <div>	    	    <h5 class="property">Fox News Channel</h5>	  </div>	
+		</div>
+			<div class="views-row views-row-5 views-row-odd">
+			
+		  
+	  <div>	    	    <h3 class="position"><a href="/jobs/fox-news-channel/broadcast-systems-design-engineer">Broadcast Systems Design Engineer</a></h3>	  </div>		  
+	  <div>	    	    <h5 class="property">Fox News Channel</h5>	  </div>	
+		</div>
+			<div class="views-row views-row-6 views-row-even">
+			
+		  
+	  <div>	    	    <h3 class="position"><a href="/jobs/fox-news-channel/senior-producer-daytime">Senior Producer, Daytime</a></h3>	  </div>		  
+	  <div>	    	    <h5 class="property">Fox News Channel</h5>	  </div>	
+		</div>
+			<div class="views-row views-row-7 views-row-odd">
+			
+		  
+	  <div>	    	    <h3 class="position"><a href="/jobs/fox-news-channel/windows-server-administrator">Windows Server Administrator</a></h3>	  </div>		  
+	  <div>	    	    <h5 class="property">Fox News Channel</h5>	  </div>	
+		</div>
+			<div class="views-row views-row-8 views-row-even views-row-last">
+			
+		  
+	  <div>	    	    <h3 class="position"><a href="/jobs/fox-news-channel/freelance-senior-video-operator">Freelance Senior Video Operator</a></h3>	  </div>		  
+	  <div>	    	    <h5 class="property">Fox News Channel</h5>	  </div>	
+		</div>
+	
+        </div>
+      
+    
+    
+    
+    
+    
+    
+  </div>
+	</div>
+	<div class="see-all-group">
+		<a class="see-all-jobs btn btn-primary" href="/jobs">See all jobs<span class="icon button-arrow"></span></a>
+	</div>
+</div>      </div>
+    </section>
+    
+        
+    
+    <section id="across-media" class="page-section">
+      <div class="container">
+        <div class="media-row clearfix row">
+          <div class="across-media-bkgd"></div>
+          <div class="media-text col-xs-12 col-sm-6">
+            <img src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/across-media.png" alt="Across Media">
+            <section id="block-block-2" class="block block-block clearfix">
+
+      
+  <h4>Any Time on Any Platform</h4>
+<p>Fox News is the most watched cable news network every day, number one every night, and is reaching more viewers in more ways than ever before.  Topping the TV ratings, delivering powerful news radio, and providing essential online destinations, Fox News dominates daytime, primetime – any time on any platform! </p>
+
+</section> <!-- /.block -->
+          </div>
+        </div>
+        <div class="world-row clearfix row">
+          <div class="across-world-bkgd"></div>
+          <div class="world-slideshow col-xs-12 col-sm-6">
+            <section id="block-views-slideshow-around-the-world-block" class="block block-views clearfix">
+
+      
+  
+  <div class="view view-slideshow-around-the-world view-id-slideshow_around_the_world view-display-id-block view-dom-id-a611cea031f66c2382de94e01cd653a5">
+                
+    
+    
+                  <div id="slideshow_around_the_world" class="carousel slide" data-interval="false">
+          
+
+	
+	<div class="carousel-inner">
+					<div class="item active views-row views-row-1 views-row-odd views-row-first">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld_claman.jpg?itok=gSE4lSTM" width="400" height="270" />				</div>
+					<div class="item views-row views-row-2 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld17.jpg?itok=XEuHRbGR" width="400" height="270" />				</div>
+					<div class="item views-row views-row-3 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/Around_The_World_Template_1.jpg?itok=p0yIlMQT" width="400" height="270" />				</div>
+					<div class="item views-row views-row-4 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld15.jpg?itok=UUNomerk" width="400" height="270" />				</div>
+					<div class="item views-row views-row-5 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld05.jpg?itok=av2oBfWM" width="400" height="270" />				</div>
+					<div class="item views-row views-row-6 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld14.jpg?itok=chKAJo9C" width="400" height="270" />				</div>
+					<div class="item views-row views-row-7 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld21.jpg?itok=AVuKpCi6" width="400" height="270" />				</div>
+					<div class="item views-row views-row-8 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld03.jpg?itok=K8rmVd5k" width="400" height="270" />				</div>
+					<div class="item views-row views-row-9 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld20.jpg?itok=-bntChVz" width="400" height="270" />				</div>
+					<div class="item views-row views-row-10 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/Around_The_World_2017-Harris.jpg?itok=t2lPAISe" width="400" height="270" />				</div>
+					<div class="item views-row views-row-11 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld18.jpg?itok=lnfeU2if" width="400" height="270" />				</div>
+					<div class="item views-row views-row-12 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld04.jpg?itok=FDkCats2" width="400" height="270" />				</div>
+					<div class="item views-row views-row-13 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/Around_The_World_2017-Joel.jpg?itok=gJxzVEQE" width="400" height="270" />				</div>
+					<div class="item views-row views-row-14 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/Around_The_World_2017-Dana.jpg?itok=fcdBs9h-" width="400" height="270" />				</div>
+					<div class="item views-row views-row-15 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld24.jpg?itok=im9Ncl0I" width="400" height="270" />				</div>
+					<div class="item views-row views-row-16 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/Around_The_World_2017-Corke.jpg?itok=kF2UEyNA" width="400" height="270" />				</div>
+					<div class="item views-row views-row-17 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld12.jpg?itok=sCEHEKPz" width="400" height="270" />				</div>
+					<div class="item views-row views-row-18 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld_hemmer.jpg?itok=mun85r4m" width="400" height="270" />				</div>
+					<div class="item views-row views-row-19 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/Greg_compressed.jpg?itok=g4l5Qr64" width="400" height="270" />				</div>
+					<div class="item views-row views-row-20 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld13.jpg?itok=pzVfj00D" width="400" height="270" />				</div>
+					<div class="item views-row views-row-21 views-row-odd">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld16.jpg?itok=aaay5C0j" width="400" height="270" />				</div>
+					<div class="item views-row views-row-22 views-row-even">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/400_270_AroundWorld08.jpg?itok=t5RYB5u7" width="400" height="270" />				</div>
+					<div class="item views-row views-row-23 views-row-odd views-row-last">
+					<img typeof="foaf:Image" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/400_270/public/Around_The_World_2017-Juan.jpg?itok=c12hQkYZ" width="400" height="270" />				</div>
+			</div>
+
+
+          <a class="left carousel-control" href="#slideshow_around_the_world" data-slide="prev">
+            <span class="icon prev-left-icon"></span>
+          </a>
+          <a class="right carousel-control" href="#slideshow_around_the_world" data-slide="next">
+            <span class="icon next-right-icon"></span>
+          </a>
+        </div>
+
+      
+    
+    
+    
+    
+    
+    
+  </div>
+
+</section> <!-- /.block -->
+          </div>
+          <div class="world-text col-xs-12 col-sm-6">
+            <img src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/around-world.png" alt="Around World">
+            <section id="block-block-3" class="block block-block clearfix">
+
+      
+  <h4>On the Scene</h4>
+<p>We’re everywhere, reporting on the issues impacting America and the stories shaping our world.  Our international team breaks news first and delivers Fair &amp; Balanced journalism from around the globe.</p>
+
+</section> <!-- /.block -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="focus" class="page-section">
+      <div class="container">
+        <div class="focus-bkgd"></div>
+        <div class="focus-content-row clearfix row">
+          <div class="focus-image col-xs-12 col-sm-6 col-sm-push-6">
+            <img src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/digital-focus.png" alt="Digital Focus">
+          </div>
+          <div class="focus-content col-xs-12 col-sm-6 col-sm-pull-6">
+            <section id="block-block-4" class="block block-block clearfix">
+
+      
+  <p>We hire the best and brightest developers.  Our people work in small, dedicated teams that take projects from idea to realization, moving quickly to break new ground and deliver information to millions in real-time.  Fox News has revolutionized the way people watch news, and now we’re transforming the way people stay informed and connect online.  Whether you are an engineer, project manager, producer or designer, working at Fox News Digital means using cutting edge technologies and performing on a very big stage.</p>
+
+</section> <!-- /.block -->
+          </div>
+        </div>
+      </div>
+    </section>    
+
+        <section id="working-at-foxnews" class="page-section">
+      <div class="container">
+        <div class="clearfix row">
+          <div class="working-bkgd"></div>
+          <div class="working-content">
+            <img src="http://careers.foxnews.com/sites/careers.foxnews.com/themes/careers_boot/img/working-at-fnc.png" alt="Working at Fox News">
+            <div class="working-slideshow col-xs-12"> 
+              <section id="block-views-slideshow-working-at-foxnews-block" class="block block-views clearfix">
+
+      
+  
+  <div class="view view-slideshow-working-at-foxnews view-id-slideshow_working_at_foxnews view-display-id-block view-dom-id-cddc17c4324a6fcba0af089d3f7bfccd">
+                
+    
+    
+                  <div class="view-content">
+          
+
+							<div class="views-row views-row-1 views-row-odd views-row-first col-xs-6 col-md-4 working-text">
+				<section id="block-block-6" class="block block-block clearfix">
+
+      
+  <p>Fox News is looking for talented, competitive and dedicated employees who thrive in a 24-hour breaking news environment.  Whether you're entry-level or a seasoned pro, a financial analyst or a journalist, Fox News offers career opportunities across a wide range of business units and locations. Every employee contributes to our global news product, so if you're ready to make your mark, apply now ... Your future is here.</p>
+
+</section> <!-- /.block -->
+				<span class="glyphicon glyphicon-plus"></span>
+			</div>
+		 
+		<div class="views-row views-row-1 views-row-odd views-row-first col-xs-6 col-md-4">
+			
+		  
+	  	    	    <img typeof="foaf:Image" class="img-responsive" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/580x350/public/580_350_WorkingFox01.jpg?itok=dB2GmFsg" width="580" height="350" />	  		  
+	  	    	    <p>Fox News headquarters in New York City</p>
+	  	
+		</div>		
+			 
+		<div class="views-row views-row-2 views-row-even col-xs-6 col-md-4">
+			
+		  
+	  	    	    <img typeof="foaf:Image" class="img-responsive" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/580x350/public/580_350_WorkingFox02.jpg?itok=4e_S7kHB" width="580" height="350" />	  		  
+	  	    	    <p>The Fox News ticker at Fox News HQ</p>
+	  	
+		</div>		
+			 
+		<div class="views-row views-row-3 views-row-odd col-xs-6 col-md-4">
+			
+		  
+	  	    	    <img typeof="foaf:Image" class="img-responsive" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/580x350/public/580_350_WorkingFox04.jpg?itok=LD0muPHc" width="580" height="350" />	  		  
+	  	    	    <p>Cafeteria and employee lounge at the headquarters in New York City</p>
+	  	
+		</div>		
+			 
+		<div class="views-row views-row-4 views-row-even col-xs-6 col-md-4">
+			
+		  
+	  	    	    <img typeof="foaf:Image" class="img-responsive" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/580x350/public/580_350_WorkingFox05.jpg?itok=vXzpNb3v" width="580" height="350" />	  		  
+	  	    	    <p>Employee gym at the headquarters in New York</p>
+	  	
+		</div>		
+			 
+		<div class="views-row views-row-5 views-row-odd views-row-last col-xs-6 col-md-4">
+			
+		  
+	  	    	    <img typeof="foaf:Image" class="img-responsive" src="http://careers.foxnews.com/sites/careers.foxnews.com/files/styles/580x350/public/Working-At-Fox-Marcus-Garvey-Park.png?itok=sMYhGG28" width="580" height="350" />	  		  
+	  	    	    <p>Fox News employees join 21st Century Fox for New York Cares Day Spring in Harlem’s Marcus Garvey Park</p>
+	  	
+		</div>		
+	
+        </div>
+      
+    
+    
+    
+    
+    
+    
+  </div>
+
+</section> <!-- /.block -->
+            </div>
+          </div>
+          <div class="see-all-wrapper see-all-group col-xs-12">
+            <a class="see-all-jobs btn btn-primary" href="/jobs">See all jobs<span class="icon button-arrow"></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div><!-- /#site-content -->
+
+			
+		<div id="site-footer">	
+			<footer class="container">
+				<div class="row">
+				
+					<div id="legal" class="col-xs-12 col-sm-5">
+						<p>Fox News Network, LLC is an EOE.</p>
+						<p>This material may not be published, broadcast, rewritten, redistributed or publically disseminated in any manner whatsoever.<br/>
+						©2017 FOX News Network, LLC. All rights reserved.</p>
+					</div>
+					<div class="col-xs-12 col-sm-3">
+						<section id="block-menu-menu-footer-navigation" class="block block-menu clearfix">
+
+        <h2 class="block-title">Footer -- Navigation</h2>
+    
+  <ul class="menu nav"><li class="first leaf active"><a href="/" title="" class="active">Home</a></li>
+<li class="leaf"><a href="/jobs" title="">Jobs</a></li>
+<li class="leaf"><a href="/about" title="">About</a></li>
+<li class="leaf"><a href="/frequently-asked-questions" title="">F.A.Q.</a></li>
+<li class="leaf"><a href="http://careers.foxnews.com/privacy-policy#ad-choice" title="">Ad Choices</a></li>
+<li class="leaf"><a href="/privacy-policy" title="">New Privacy Policy</a></li>
+<li class="leaf"><a href="/terms-use" title="">New Terms of Use</a></li>
+<li class="last leaf"><a href="/terms-new" title="">What&#039;s New in the Updated Terms of Use?</a></li>
+</ul>
+</section> <!-- /.block -->
+					</div>
+					<div class="col-xs-12 col-sm-4">
+						<section id="block-menu-menu-footer-properties" class="block block-menu clearfix">
+
+        <h2 class="block-title">Footer -- Properties</h2>
+    
+  <ul class="menu nav"><li class="first leaf"><a href="http://foxnews.com" title="">FoxNews.com</a></li>
+<li class="leaf"><a href="http://radio.foxnews.com" title="">Fox News Radio</a></li>
+<li class="leaf"><a href="http://foxbusiness.com" title="">FoxBusiness.com</a></li>
+<li class="leaf"><a href="http://fncu.foxnews.com" title="">College Content</a></li>
+<li class="leaf"><a href="http://foxnation.com" title="">Fox Nation</a></li>
+<li class="last leaf"><a href="http://foxnewsinsider.com" title="">Fox News Insider</a></li>
+</ul>
+</section> <!-- /.block -->
+					</div>
+					<div class="pmd col-xs-12">
+					<p>FOX NEWS policy is to provide equal employment opportunities to all applicants and employees without regard to race, color, religion, sex (including pregnancy), national origin, age, disability or genetics, or any other status protected by the laws or regulations in the locations where we operate. FOX NEWS equal employment opportunity philosophy applies to all aspects of employment, including, but not limited to, recruiting, hiring, training, transfer, promotion, employee benefits, compensation, and termination.</p>
+				</div>	  	
+				</div>		
+			</footer>
+		</div>
+		<span id="back-to-top" class="glyphicon glyphicon-circle-arrow-up"></span>
+		<div class="back-top-bkgd"></div>
+
+	</body>
+
 </html>
